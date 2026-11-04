@@ -1,79 +1,138 @@
 # Carbon Strategy & Investment Optimizer
 
-**Interactive portal:** global sectoral greenhouse-gas emissions (EDGAR, 1990–2025) and a US$10 bn climate-fund investment optimizer.
+**Interactive Web Portal & Climate Investment Fund Simulator**  
+Built for university Applied Python business-analytics coursework.
 
-🔗 **Live site:** `https://<your-vercel-url>.vercel.app` *(fill in after deploying)*
-📓 **Notebook:** [`analysis/IPP_PROJECT_FINAL_simplified.ipynb`](analysis/IPP_PROJECT_FINAL_simplified.ipynb)
-📄 **Report:** [`docs/IPP_Project_Report_Final.docx`](docs/IPP_Project_Report_Final.docx)
-🗺️ **Chart sources:** [`docs/CHART_SOURCES.md`](docs/CHART_SOURCES.md)
+🔗 **Live Portal:** `https://carbon-strategy-optimizer.vercel.app`  
+📓 **Python Source Notebook:** [`analysis/IPP_PROJECT_FINAL_simplified.ipynb`](analysis/IPP_PROJECT_FINAL_simplified.ipynb)  
+📄 **Executive Report:** [`docs/IPP_Project_Report_Final.docx`](docs/IPP_Project_Report_Final.docx)  
+🗺️ **Chart & Model Lineage:** [`docs/CHART_SOURCES.md`](docs/CHART_SOURCES.md)
 
 ---
 
-## The business problem
+## Executive Summary & Purpose
 
-> How have emissions changed across Agriculture, Industrial Combustion and Power Industry in 11 countries from 1990 to 2025, and which sectors and countries should be prioritised for decarbonisation?
+The **Carbon Strategy & Investment Optimizer** bridges academic climate-data analysis and strategic capital deployment. The portal allows students, professors, and fund managers to inspect 35 years (1990–2025) of EDGAR greenhouse-gas emissions data across 11 key economies and 3 critical sectors, and interactively allocate a **US$10 billion illustrative climate investment fund**. Using a pure-client-side linear programming optimizer (HiGHS compiled to WebAssembly), the application calculates optimal capital allocations that maximize financial Net Present Value (NPV) while achieving an annual abatement target of at least 25.0 Mt CO₂e under real-world concentration and risk limits.
 
-- **Part A: historical analysis (notebook Cells 1–10).** Data cleaning and seven charts showing what happened.
-- **Part B: business application (notebook Cells 11–23).** An illustrative **climate investment fund with US$10 billion** decides which decarbonisation projects to fund across 33 country–sector markets. A linear-programming optimizer maximises NPV while avoiding at least 25 Mt CO₂e a year. Risk limits apply: max 30% of the budget per country, max 30% per technology, min 20% per sector.
+### Problem Statement
 
-**Default result:** US$10 bn → 25.0 Mt CO₂e avoided per year, NPV ≈ US$16.6 bn (ROI ≈ 166%, payback ≈ 3.9 years) under IEA announced-pledge carbon prices. At today's carbon prices the NPV falls to ≈ US$0.3 bn. Return-seeking capital sends only 13% of the budget to India, Indonesia, Brazil and South Africa. Giving those projects full carbon value raises that share to about 60%.
+> **"How have emissions changed across Agriculture, Industrial Combustion and Power Industry in 11 countries from 1990 to 2025, and which sectors and countries should be prioritised for decarbonisation?"**
 
-> ⚠️ National sector emissions are **not** company emissions. We use them to size markets, never as a company's footprint. The fund is illustrative, and the non-power project costs are planning assumptions. This is not investment advice.
+- **Part A: Historical Analysis (Notebook Cells 1–10):** Rigorous data cleaning, quality auditing, and 8 visual perspectives exploring emissions trends, structural shifts, and country trajectories.
+- **Part B: Capital Allocation Engine (Notebook Cells 11–23):** An illustrative US$10 billion climate investment fund optimizing financial returns and carbon impact across 80 candidate projects spanning 33 country–sector markets. Risk guardrails include: max 30% per country, max 30% per technology, min 20% per sector.
 
-## What's on the portal
+**Default Benchmark Result:** US$10 bn budget → **25.0 Mt CO₂e/yr avoided**, **NPV ≈ US$16.6 bn** (ROI ≈ 166%, payback ≈ 3.9 years) under IEA announced-pledge carbon prices. Under current spot prices, NPV drops to US$0.3 bn. Pure return-seeking capital directs only 13% of funding to developing economies (India, Indonesia, Brazil, South Africa); enabling concessional finance and carbon border adjustments raises that share to ~60%.
 
-| Page | Content | Notebook cells |
+> ⚠️ **Mandatory Methodological Caveat:** National sector emissions are **not** company emissions. We use national figures to size markets and systemic opportunities, never as an individual enterprise's carbon footprint. The fund is illustrative, and non-power project costs represent planning assumptions. This portal does not constitute investment advice.
+
+---
+
+## Portal Walkthrough & Screenshots
+
+### 1. Headline Intelligence & Historical Analysis
+*Interactive sectoral breakdown, country trajectories, bump rankings, and 1990–2025 Power Industry emission race.*
+![Home KPIs](docs/screenshots/01_home_kpis.png)
+![Historical Charts](docs/screenshots/02_historical_charts.png)
+
+### 2. Market Priority Matrix (Chart B1)
+*Evaluation of 33 country–sector markets by 10-year momentum, 2025 absolute emissions scale, and composite priority scorecard.*
+![Market Priority Matrix](docs/screenshots/03_market_priority_matrix.png)
+
+### 3. Interactive Fund Simulator (Charts B2–B5)
+*Real-time linear programming solver showing Marginal Abatement Cost Curve (MACC), capital allocation, strategy comparisons, and carbon-price stress testing.*
+![Fund Simulator](docs/screenshots/04_fund_simulator.png)
+
+---
+
+## Portal Structure & Graph Policy
+
+In strict accordance with project requirements, **Part A** reproduces all historical charts faithfully from the Python notebook, while **Part B** features **exactly five charts** across the entire application to maintain executive clarity:
+
+| Route | Content & Visual Deliverables | Notebook Reference |
 |---|---|---|
-| Home | Problem, key findings, navigation | — |
-| Historical Analysis | The eight Part A visuals rebuilt from the notebook's data (quality table + seven charts) | 3–10 |
-| Market Intelligence | Priority matrix (graph), market profiles, World Bank intensity (live API), scorecard, 2030 gap, carbon exposure | 12–16 |
-| Fund Simulator | Live controls → optimised plan, KPIs, four graphs (cost curve, where the money goes, strategy comparison, carbon-price risk), tables, recommendations | 11, 17–21 |
-| Company Lens | How one company should use the national results | 22 |
-| Methodology & Sources | Formulas, assumptions, limitations, data sources, downloads | all |
-| Chart Sources | Which notebook cell every chart comes from | all |
+| `/` | Headline KPIs (Power share, 2030 gap, default plan returns), problem statement, framework | Cells 4, 15, 18 |
+| `/history` | All 8 Part A historical charts (Quality table, donut + ranked bar, faceted grid, treemap, bump chart, diverging change bars, small multiples, animated race) | Cells 3–10 |
+| `/markets` | **Chart B1: Market Priority Matrix**, sortable market profiles, live World Bank API integration, 2030 trajectory gap, carbon exposure | Cells 12–16 |
+| `/simulator` | **Chart B2: MACC**, **Chart B3: Capital Allocation**, **Chart B4: Strategy Comparison**, **Chart B5: Carbon-Price Stress Test**, KPI cards, interactive controls, 7 preset scenarios, downloadable allocation CSV | Cells 11, 17–21 |
+| `/company` | Enterprise Decarbonization Lens: footprint calculator, trajectory gap, carbon tax liability, actionable interventions (KPIs & tables only) | Cell 22 |
+| `/methodology` | Mathematical formulation, LP constraints, data sources with links, limitations, downloadable project files | Cells 11, 18 |
+| `/chart-sources` | Full notebook cell lineage and data field mapping for every visual | All Cells |
 
-**Graphs:** all Part A charts are reproduced from the notebook. Part B runs in full and is shown with five graphs (priority matrix, cost curve, where the money goes, strategy comparison, carbon-price risk) plus tables and KPIs.
+---
 
-## How the data was generated
+## Architecture & Data Flow
 
-1. `data/EDGAR_sector_emissions_project_dataset.csv`: the raw dataset (EDGAR_2026_GHG, European Commission JRC).
-2. `analysis/IPP_PROJECT_FINAL_simplified.ipynb`: the project notebook. Every code line is commented.
-3. `analysis/export_portal_data.py` runs the notebook code unchanged and writes:
-   - `data/part_a_charts.json`: data behind the Part A charts (Cells 3–10)
-   - `data/markets.json`: market profiles, scorecard, outlook, exposure (Cells 12–16)
-   - `data/model_assumptions.json`: control-panel defaults and assumptions (Cell 11)
-   - `data/reference_results.json`: optimizer results from SciPy, used to test the browser version
-
-```bash
-pip install -r analysis/requirements.txt
-python analysis/export_portal_data.py
+```
+[EDGAR GHG / World Bank / IEA]
+              │
+              ▼
+analysis/IPP_PROJECT_FINAL_simplified.ipynb
+              │
+              ▼ (export_portal_data.py)
+/data/*.json (Precomputed metrics, constants, reference benchmarks)
+              │
+   ┌──────────┴──────────┐
+   ▼                     ▼
+Next.js 14 App        HiGHS WASM Solver
+(React / Tailwind)    (lib/model.ts in-browser LP)
+   │                     │
+   └──────────┬──────────┘
+              ▼
+Interactive Visuals (Plotly.js + React)
 ```
 
-The website re-implements the notebook formulas in TypeScript (`lib/model.ts`, each function labelled with its notebook cell). Automated tests check it against `reference_results.json`.
+- **Framework:** Next.js 14 (App Router) with TypeScript and Tailwind CSS.
+- **Client-Side Optimization Engine:** `highs` WebAssembly solver running compiled HiGHS C++ linear programming algorithms directly in the user's browser (0ms backend latency).
+- **Visualization:** `plotly.js-dist-min` and `react-plotly.js` loaded dynamically with `{ ssr: false }`.
+- **Integrations:** Real-time World Bank Open Data API (`SP.POP.TOTL`, `NY.GDP.MKTP.CD`) with automatic graceful fallback to stored values.
+- **Verification:** Unit tests written in `vitest` asserting parity against SciPy reference outputs.
 
-## Run locally
+---
 
+## Local Development & Testing
+
+### Prerequisites
+- Node.js 18+ and `npm`
+
+### Setup & Run
 ```bash
+# Clone the repository
+git clone https://github.com/djs/carbon-strategy-optimizer.git
+cd carbon-strategy-optimizer
+
+# Install dependencies
 npm install
-npm run dev      # http://localhost:3000
-npm test         # model tests against the notebook's results
+
+# Run automated tests against Python notebook reference outputs
+npm test
+
+# Start development server
+npm run dev
+# Open http://localhost:3000 in your browser
 ```
 
-## Data sources
+### Production Build
+```bash
+npm run build
+npm start
+```
 
-- European Commission JRC: EDGAR Community GHG Database (EDGAR_2026_GHG) and *GHG emissions of all world countries – 2026*
-- World Bank: *State and Trends of Carbon Pricing 2026*; World Bank Open Data API (population, GDP)
-- IEA: *Global Energy and Climate Model Documentation 2025* (scenario carbon prices); Cost of Capital Observatory
-- IRENA: *Renewable Power Generation Costs in 2024* (solar and wind costs)
-- Ember via Our World in Data: carbon intensity of electricity
-- IPCC AR6: Working Group III (abatement cost bands) and Synthesis Report (1.5 °C pathway)
+---
 
-Full list with links: Methodology page and `data/model_assumptions.json → DATA_SOURCES`.
+## Data Sources & Citations
 
-## Team
+1. **European Commission JRC:** EDGAR Community GHG Database (EDGAR_2026_GHG) and *GHG emissions of all world countries – 2026*.
+2. **World Bank:** *State and Trends of Carbon Pricing 2026*; World Bank Open Data API.
+3. **International Energy Agency (IEA):** *Global Energy and Climate Model Documentation 2025*; Cost of Capital Observatory.
+4. **IRENA:** *Renewable Power Generation Costs in 2024*.
+5. **Ember via Our World in Data:** Yearly electricity carbon intensities.
+6. **IPCC AR6:** Working Group III (mitigation costs) and Synthesis Report (1.5 °C pathway).
 
-`[Name 1 – Roll no.]` · `[Name 2 – Roll no.]` · Course: Introduction to Python (Applied Python Project) · Faculty: `[Instructor]`
+---
 
-## Licence
+## Team & Academic Attribution
 
-Code: MIT. EDGAR data: CC BY 4.0 (European Commission JRC); other sources as cited.
+- **Course:** Introduction to Python (Applied Python Project), 2026
+- **Authors:** `[Name 1 – Roll no.]` · `[Name 2 – Roll no.]`
+- **Faculty Instructor:** `[Instructor]`
+- **License:** Code under MIT License. Primary datasets retain original open licenses (CC BY 4.0 for EDGAR).
