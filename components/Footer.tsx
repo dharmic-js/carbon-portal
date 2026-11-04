@@ -58,7 +58,7 @@ export default function Footer() {
             </p>
             <div className="flex items-center gap-3">
               <a
-                href="https://github.com/bcwiuabvskjc/IPP_PROJECT_PORTAL"
+                href="https://github.com/dharmic-js/carbon-portal"
                 target="_blank"
                 rel="noreferrer"
                 className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-xs text-slate-200 transition"

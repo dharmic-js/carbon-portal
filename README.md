@@ -3,8 +3,7 @@
 **Interactive Web Portal & Climate Investment Fund Simulator**  
 Built for university Applied Python business-analytics coursework.
 
-🔗 **Live Portal:** [https://carbon-strategy-optimizer.vercel.app](https://carbon-strategy-optimizer.vercel.app)  
-📂 **GitHub Repository:** [https://github.com/bcwiuabvskjc/IPP_PROJECT_PORTAL](https://github.com/bcwiuabvskjc/IPP_PROJECT_PORTAL)  
+🔗 **Live Portal:** `https://carbon-strategy-optimizer.vercel.app`  
 📓 **Python Source Notebook:** [`analysis/IPP_PROJECT_FINAL_simplified.ipynb`](analysis/IPP_PROJECT_FINAL_simplified.ipynb)  
 📄 **Executive Report:** [`docs/IPP_Project_Report_Final.docx`](docs/IPP_Project_Report_Final.docx)  
 🗺️ **Chart & Model Lineage:** [`docs/CHART_SOURCES.md`](docs/CHART_SOURCES.md)
@@ -98,8 +97,8 @@ Interactive Visuals (Plotly.js + React)
 ### Setup & Run
 ```bash
 # Clone the repository
-git clone https://github.com/bcwiuabvskjc/IPP_PROJECT_PORTAL.git
-cd IPP_PROJECT_PORTAL
+git clone https://github.com/dharmic-js/carbon-portal.git
+cd carbon-portal
 
 # Install dependencies
 npm install
