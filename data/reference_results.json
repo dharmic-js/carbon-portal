@@ -1,0 +1,2465 @@
+{
+ "_about": "Expected results computed by the notebook (scipy linprog, HiGHS). A JavaScript port must reproduce kpi values within tolerance: Mt ±0.05, NPV ±0.5%, Invested ±1 US$m. Per-project allocations may differ only where two projects are exactly tied.",
+ "projects_default_scenario": [
+  {
+   "Country": "Australia",
+   "Sector": "Agriculture",
+   "Project": "Precision fertiliser management",
+   "Priority_Score": 65.757576,
+   "Capex_per_tpa": 400.0,
+   "Benefit_per_t": 30.0,
+   "Carbon_price": 40.0,
+   "Abatement_cost_per_t": 21.80183,
+   "Tonnes_per_USDm": 2500.0,
+   "NPV_per_USD": 0.351304,
+   "Annual_cash_per_USD": 0.175,
+   "Life": 10,
+   "Max_Mt": 1.360499,
+   "Max_invest_USDm": 544.199493
+  },
+  {
+   "Country": "Australia",
+   "Sector": "Agriculture",
+   "Project": "Livestock methane feed additives",
+   "Priority_Score": 65.757576,
+   "Capex_per_tpa": 400.0,
+   "Benefit_per_t": -20.0,
+   "Carbon_price": 40.0,
+   "Abatement_cost_per_t": 71.80183,
+   "Tonnes_per_USDm": 2500.0,
+   "NPV_per_USD": -0.613913,
+   "Annual_cash_per_USD": 0.05,
+   "Life": 10,
+   "Max_Mt": 1.360499,
+   "Max_invest_USDm": 544.199493
+  },
+  {
+   "Country": "Australia",
+   "Sector": "Industrial Combustion",
+   "Project": "Industrial energy efficiency",
+   "Priority_Score": 37.878788,
+   "Capex_per_tpa": 450.0,
+   "Benefit_per_t": 45.0,
+   "Carbon_price": 160.0,
+   "Abatement_cost_per_t": -1.645971,
+   "Tonnes_per_USDm": 2222.222222,
+   "NPV_per_USD": 3.728511,
+   "Annual_cash_per_USD": 0.455556,
+   "Life": 15,
+   "Max_Mt": 0.815254,
+   "Max_invest_USDm": 366.86442
+  },
+  {
+   "Country": "Australia",
+   "Sector": "Industrial Combustion",
+   "Project": "Electrified process heat (heat pumps)",
+   "Priority_Score": 37.878788,
+   "Capex_per_tpa": 900.0,
+   "Benefit_per_t": 10.0,
+   "Carbon_price": 160.0,
+   "Abatement_cost_per_t": 62.218328,
+   "Tonnes_per_USDm": 1111.111111,
+   "NPV_per_USD": 1.353973,
+   "Annual_cash_per_USD": 0.188889,
+   "Life": 20,
+   "Max_Mt": 0.611441,
+   "Max_invest_USDm": 550.29663
+  },
+  {
+   "Country": "Australia",
+   "Sector": "Industrial Combustion",
+   "Project": "Clean fuel switch (biomass / hydrogen)",
+   "Priority_Score": 37.878788,
+   "Capex_per_tpa": 1200.0,
+   "Benefit_per_t": -60.0,
+   "Carbon_price": 160.0,
+   "Abatement_cost_per_t": 156.291105,
+   "Tonnes_per_USDm": 833.333333,
+   "NPV_per_USD": 0.038518,
+   "Annual_cash_per_USD": 0.083333,
+   "Life": 20,
+   "Max_Mt": 0.407627,
+   "Max_invest_USDm": 489.15256
+  },
+  {
+   "Country": "Australia",
+   "Sector": "Power Industry",
+   "Project": "Utility-scale solar PV",
+   "Priority_Score": 38.636364,
+   "Capex_per_tpa": 883.823849,
+   "Benefit_per_t": 81.980738,
+   "Carbon_price": 160.0,
+   "Abatement_cost_per_t": -19.271264,
+   "Tonnes_per_USDm": 1131.447178,
+   "NPV_per_USD": 2.858759,
+   "Annual_cash_per_USD": 0.273788,
+   "Life": 25,
+   "Max_Mt": 3.741783,
+   "Max_invest_USDm": 3307.077049
+  },
+  {
+   "Country": "Australia",
+   "Sector": "Power Industry",
+   "Project": "Onshore wind",
+   "Priority_Score": 38.636364,
+   "Capex_per_tpa": 665.74575,
+   "Benefit_per_t": 78.594451,
+   "Carbon_price": 160.0,
+   "Abatement_cost_per_t": -31.358155,
+   "Tonnes_per_USDm": 1502.074928,
+   "NPV_per_USD": 4.051083,
+   "Annual_cash_per_USD": 0.358387,
+   "Life": 25,
+   "Max_Mt": 2.494522,
+   "Max_invest_USDm": 1660.717418
+  },
+  {
+   "Country": "Brazil",
+   "Sector": "Agriculture",
+   "Project": "Precision fertiliser management",
+   "Priority_Score": 73.787879,
+   "Capex_per_tpa": 400.0,
+   "Benefit_per_t": 30.0,
+   "Carbon_price": 16.25,
+   "Abatement_cost_per_t": 35.098158,
+   "Tonnes_per_USDm": 2500.0,
+   "NPV_per_USD": -0.289534,
+   "Annual_cash_per_USD": 0.115625,
+   "Life": 10,
+   "Max_Mt": 6.875769,
+   "Max_invest_USDm": 2750.307564
+  },
+  {
+   "Country": "Brazil",
+   "Sector": "Agriculture",
+   "Project": "Livestock methane feed additives",
+   "Priority_Score": 73.787879,
+   "Capex_per_tpa": 400.0,
+   "Benefit_per_t": -20.0,
+   "Carbon_price": 16.25,
+   "Abatement_cost_per_t": 85.098158,
+   "Tonnes_per_USDm": 2500.0,
+   "NPV_per_USD": -1.057605,
+   "Annual_cash_per_USD": -0.009375,
+   "Life": 10,
+   "Max_Mt": 6.875769,
+   "Max_invest_USDm": 2750.307564
+  },
+  {
+   "Country": "Brazil",
+   "Sector": "Industrial Combustion",
+   "Project": "Industrial energy efficiency",
+   "Priority_Score": 48.787879,
+   "Capex_per_tpa": 450.0,
+   "Benefit_per_t": 45.0,
+   "Carbon_price": 65.0,
+   "Abatement_cost_per_t": 14.1632,
+   "Tonnes_per_USDm": 2222.222222,
+   "NPV_per_USD": 0.859264,
+   "Annual_cash_per_USD": 0.244444,
+   "Life": 15,
+   "Max_Mt": 1.795631,
+   "Max_invest_USDm": 808.034088
+  },
+  {
+   "Country": "Brazil",
+   "Sector": "Industrial Combustion",
+   "Project": "Electrified process heat (heat pumps)",
+   "Priority_Score": 48.787879,
+   "Capex_per_tpa": 900.0,
+   "Benefit_per_t": 10.0,
+   "Carbon_price": 65.0,
+   "Abatement_cost_per_t": 95.713662,
+   "Tonnes_per_USDm": 1111.111111,
+   "NPV_per_USD": -0.290536,
+   "Annual_cash_per_USD": 0.083333,
+   "Life": 20,
+   "Max_Mt": 1.346723,
+   "Max_invest_USDm": 1212.051132
+  },
+  {
+   "Country": "Brazil",
+   "Sector": "Industrial Combustion",
+   "Project": "Clean fuel switch (biomass / hydrogen)",
+   "Priority_Score": 48.787879,
+   "Capex_per_tpa": 1200.0,
+   "Benefit_per_t": -60.0,
+   "Carbon_price": 65.0,
+   "Abatement_cost_per_t": 200.95155,
+   "Tonnes_per_USDm": 833.333333,
+   "NPV_per_USD": -0.964527,
+   "Annual_cash_per_USD": 0.004167,
+   "Life": 20,
+   "Max_Mt": 0.897816,
+   "Max_invest_USDm": 1077.378784
+  },
+  {
+   "Country": "Brazil",
+   "Sector": "Power Industry",
+   "Project": "Utility-scale solar PV",
+   "Priority_Score": 25.0,
+   "Capex_per_tpa": 4218.250189,
+   "Benefit_per_t": 391.271702,
+   "Carbon_price": 65.0,
+   "Abatement_cost_per_t": 73.44479,
+   "Tonnes_per_USDm": 237.065123,
+   "NPV_per_USD": -0.018172,
+   "Annual_cash_per_USD": 0.108166,
+   "Life": 25,
+   "Max_Mt": 1.019854,
+   "Max_invest_USDm": 4301.997604
+  },
+  {
+   "Country": "Brazil",
+   "Sector": "Power Industry",
+   "Project": "Onshore wind",
+   "Priority_Score": 25.0,
+   "Capex_per_tpa": 3177.422899,
+   "Benefit_per_t": 375.109882,
+   "Carbon_price": 65.0,
+   "Abatement_cost_per_t": -25.059327,
+   "Tonnes_per_USDm": 314.720461,
+   "NPV_per_USD": 0.257275,
+   "Annual_cash_per_USD": 0.138512,
+   "Life": 25,
+   "Max_Mt": 0.679902,
+   "Max_invest_USDm": 2160.337437
+  },
+  {
+   "Country": "Canada",
+   "Sector": "Agriculture",
+   "Project": "Precision fertiliser management",
+   "Priority_Score": 56.060606,
+   "Capex_per_tpa": 400.0,
+   "Benefit_per_t": 30.0,
+   "Carbon_price": 40.0,
+   "Abatement_cost_per_t": 21.80183,
+   "Tonnes_per_USDm": 2500.0,
+   "NPV_per_USD": 0.351304,
+   "Annual_cash_per_USD": 0.175,
+   "Life": 10,
+   "Max_Mt": 0.730798,
+   "Max_invest_USDm": 292.319245
+  },
+  {
+   "Country": "Canada",
+   "Sector": "Agriculture",
+   "Project": "Livestock methane feed additives",
+   "Priority_Score": 56.060606,
+   "Capex_per_tpa": 400.0,
+   "Benefit_per_t": -20.0,
+   "Carbon_price": 40.0,
+   "Abatement_cost_per_t": 71.80183,
+   "Tonnes_per_USDm": 2500.0,
+   "NPV_per_USD": -0.613913,
+   "Annual_cash_per_USD": 0.05,
+   "Life": 10,
+   "Max_Mt": 0.730798,
+   "Max_invest_USDm": 292.319245
+  },
+  {
+   "Country": "Canada",
+   "Sector": "Industrial Combustion",
+   "Project": "Industrial energy efficiency",
+   "Priority_Score": 45.30303,
+   "Capex_per_tpa": 450.0,
+   "Benefit_per_t": 45.0,
+   "Carbon_price": 160.0,
+   "Abatement_cost_per_t": -1.645971,
+   "Tonnes_per_USDm": 2222.222222,
+   "NPV_per_USD": 3.728511,
+   "Annual_cash_per_USD": 0.455556,
+   "Life": 15,
+   "Max_Mt": 1.333599,
+   "Max_invest_USDm": 600.119522
+  },
+  {
+   "Country": "Canada",
+   "Sector": "Industrial Combustion",
+   "Project": "Electrified process heat (heat pumps)",
+   "Priority_Score": 45.30303,
+   "Capex_per_tpa": 900.0,
+   "Benefit_per_t": 10.0,
+   "Carbon_price": 160.0,
+   "Abatement_cost_per_t": 62.218328,
+   "Tonnes_per_USDm": 1111.111111,
+   "NPV_per_USD": 1.353973,
+   "Annual_cash_per_USD": 0.188889,
+   "Life": 20,
+   "Max_Mt": 1.000199,
+   "Max_invest_USDm": 900.179283
+  },
+  {
+   "Country": "Canada",
+   "Sector": "Industrial Combustion",
+   "Project": "Clean fuel switch (biomass / hydrogen)",
+   "Priority_Score": 45.30303,
+   "Capex_per_tpa": 1200.0,
+   "Benefit_per_t": -60.0,
+   "Carbon_price": 160.0,
+   "Abatement_cost_per_t": 156.291105,
+   "Tonnes_per_USDm": 833.333333,
+   "NPV_per_USD": 0.038518,
+   "Annual_cash_per_USD": 0.083333,
+   "Life": 20,
+   "Max_Mt": 0.666799,
+   "Max_invest_USDm": 800.159362
+  },
+  {
+   "Country": "Canada",
+   "Sector": "Power Industry",
+   "Project": "Utility-scale solar PV",
+   "Priority_Score": 32.272727,
+   "Capex_per_tpa": 2429.358748,
+   "Benefit_per_t": 225.339723,
+   "Carbon_price": 160.0,
+   "Abatement_cost_per_t": -52.970751,
+   "Tonnes_per_USDm": 411.631259,
+   "NPV_per_USD": 1.235552,
+   "Annual_cash_per_USD": 0.158618,
+   "Life": 25,
+   "Max_Mt": 1.824397,
+   "Max_invest_USDm": 4432.113934
+  },
+  {
+   "Country": "Canada",
+   "Sector": "Power Industry",
+   "Project": "Onshore wind",
+   "Priority_Score": 32.272727,
+   "Capex_per_tpa": 1829.929419,
+   "Benefit_per_t": 216.031869,
+   "Carbon_price": 160.0,
+   "Abatement_cost_per_t": -86.19388,
+   "Tonnes_per_USDm": 546.469164,
+   "NPV_per_USD": 1.896162,
+   "Annual_cash_per_USD": 0.20549,
+   "Life": 25,
+   "Max_Mt": 1.216264,
+   "Max_invest_USDm": 2225.678054
+  },
+  {
+   "Country": "China",
+   "Sector": "Agriculture",
+   "Project": "Precision fertiliser management",
+   "Priority_Score": 72.575758,
+   "Capex_per_tpa": 400.0,
+   "Benefit_per_t": 30.0,
+   "Carbon_price": 16.25,
+   "Abatement_cost_per_t": 24.347183,
+   "Tonnes_per_USDm": 2500.0,
+   "NPV_per_USD": -0.14899,
+   "Annual_cash_per_USD": 0.115625,
+   "Life": 10,
+   "Max_Mt": 7.736371,
+   "Max_invest_USDm": 3094.548425
+  },
+  {
+   "Country": "China",
+   "Sector": "Agriculture",
+   "Project": "Livestock methane feed additives",
+   "Priority_Score": 72.575758,
+   "Capex_per_tpa": 400.0,
+   "Benefit_per_t": -20.0,
+   "Carbon_price": 16.25,
+   "Abatement_cost_per_t": 74.347183,
+   "Tonnes_per_USDm": 2500.0,
+   "NPV_per_USD": -1.069001,
+   "Annual_cash_per_USD": -0.009375,
+   "Life": 10,
+   "Max_Mt": 7.736371,
+   "Max_invest_USDm": 3094.548425
+  },
+  {
+   "Country": "China",
+   "Sector": "Agriculture",
+   "Project": "Rice paddy water management (AWD)",
+   "Priority_Score": 72.575758,
+   "Capex_per_tpa": 300.0,
+   "Benefit_per_t": 5.0,
+   "Carbon_price": 16.25,
+   "Abatement_cost_per_t": 35.760387,
+   "Tonnes_per_USDm": 3333.333333,
+   "NPV_per_USD": -0.478661,
+   "Annual_cash_per_USD": 0.070833,
+   "Life": 10,
+   "Max_Mt": 7.736371,
+   "Max_invest_USDm": 2320.911319
+  },
+  {
+   "Country": "China",
+   "Sector": "Industrial Combustion",
+   "Project": "Industrial energy efficiency",
+   "Priority_Score": 71.060606,
+   "Capex_per_tpa": 450.0,
+   "Benefit_per_t": 45.0,
+   "Carbon_price": 65.0,
+   "Abatement_cost_per_t": 1.333244,
+   "Tonnes_per_USDm": 2222.222222,
+   "NPV_per_USD": 1.374105,
+   "Annual_cash_per_USD": 0.244444,
+   "Life": 15,
+   "Max_Mt": 50.078666,
+   "Max_invest_USDm": 22535.399707
+  },
+  {
+   "Country": "China",
+   "Sector": "Industrial Combustion",
+   "Project": "Electrified process heat (heat pumps)",
+   "Priority_Score": 71.060606,
+   "Capex_per_tpa": 900.0,
+   "Benefit_per_t": 10.0,
+   "Carbon_price": 65.0,
+   "Abatement_cost_per_t": 68.466101,
+   "Tonnes_per_USDm": 1111.111111,
+   "NPV_per_USD": -0.044173,
+   "Annual_cash_per_USD": 0.083333,
+   "Life": 20,
+   "Max_Mt": 37.559,
+   "Max_invest_USDm": 33803.09956
+  },
+  {
+   "Country": "China",
+   "Sector": "Industrial Combustion",
+   "Project": "Clean fuel switch (biomass / hydrogen)",
+   "Priority_Score": 71.060606,
+   "Capex_per_tpa": 1200.0,
+   "Benefit_per_t": -60.0,
+   "Carbon_price": 65.0,
+   "Abatement_cost_per_t": 164.621468,
+   "Tonnes_per_USDm": 833.333333,
+   "NPV_per_USD": -0.952209,
+   "Annual_cash_per_USD": 0.004167,
+   "Life": 20,
+   "Max_Mt": 25.039333,
+   "Max_invest_USDm": 30047.199609
+  },
+  {
+   "Country": "China",
+   "Sector": "Power Industry",
+   "Project": "Utility-scale solar PV",
+   "Priority_Score": 93.181818,
+   "Capex_per_tpa": 883.823849,
+   "Benefit_per_t": 81.980738,
+   "Carbon_price": 65.0,
+   "Abatement_cost_per_t": -12.842098,
+   "Tonnes_per_USDm": 1131.447178,
+   "NPV_per_USD": 1.125884,
+   "Annual_cash_per_USD": 0.166301,
+   "Life": 25,
+   "Max_Mt": 246.168167,
+   "Max_invest_USDm": 217569.296805
+  },
+  {
+   "Country": "China",
+   "Sector": "Power Industry",
+   "Project": "Onshore wind",
+   "Priority_Score": 93.181818,
+   "Capex_per_tpa": 665.74575,
+   "Benefit_per_t": 78.594451,
+   "Carbon_price": 65.0,
+   "Abatement_cost_per_t": -26.515346,
+   "Tonnes_per_USDm": 1502.074928,
+   "NPV_per_USD": 1.757237,
+   "Annual_cash_per_USD": 0.21569,
+   "Life": 25,
+   "Max_Mt": 164.112111,
+   "Max_invest_USDm": 109256.940653
+  },
+  {
+   "Country": "Germany",
+   "Sector": "Agriculture",
+   "Project": "Precision fertiliser management",
+   "Priority_Score": 24.242424,
+   "Capex_per_tpa": 400.0,
+   "Benefit_per_t": 30.0,
+   "Carbon_price": 40.0,
+   "Abatement_cost_per_t": 21.80183,
+   "Tonnes_per_USDm": 2500.0,
+   "NPV_per_USD": 0.351304,
+   "Annual_cash_per_USD": 0.175,
+   "Life": 10,
+   "Max_Mt": 0.449553,
+   "Max_invest_USDm": 179.821078
+  },
+  {
+   "Country": "Germany",
+   "Sector": "Agriculture",
+   "Project": "Livestock methane feed additives",
+   "Priority_Score": 24.242424,
+   "Capex_per_tpa": 400.0,
+   "Benefit_per_t": -20.0,
+   "Carbon_price": 40.0,
+   "Abatement_cost_per_t": 71.80183,
+   "Tonnes_per_USDm": 2500.0,
+   "NPV_per_USD": -0.613913,
+   "Annual_cash_per_USD": 0.05,
+   "Life": 10,
+   "Max_Mt": 0.449553,
+   "Max_invest_USDm": 179.821078
+  },
+  {
+   "Country": "Germany",
+   "Sector": "Industrial Combustion",
+   "Project": "Industrial energy efficiency",
+   "Priority_Score": 30.757576,
+   "Capex_per_tpa": 450.0,
+   "Benefit_per_t": 45.0,
+   "Carbon_price": 160.0,
+   "Abatement_cost_per_t": -1.645971,
+   "Tonnes_per_USDm": 2222.222222,
+   "NPV_per_USD": 3.728511,
+   "Annual_cash_per_USD": 0.455556,
+   "Life": 15,
+   "Max_Mt": 1.534609,
+   "Max_invest_USDm": 690.57393
+  },
+  {
+   "Country": "Germany",
+   "Sector": "Industrial Combustion",
+   "Project": "Electrified process heat (heat pumps)",
+   "Priority_Score": 30.757576,
+   "Capex_per_tpa": 900.0,
+   "Benefit_per_t": 10.0,
+   "Carbon_price": 160.0,
+   "Abatement_cost_per_t": 62.218328,
+   "Tonnes_per_USDm": 1111.111111,
+   "NPV_per_USD": 1.353973,
+   "Annual_cash_per_USD": 0.188889,
+   "Life": 20,
+   "Max_Mt": 1.150957,
+   "Max_invest_USDm": 1035.860894
+  },
+  {
+   "Country": "Germany",
+   "Sector": "Industrial Combustion",
+   "Project": "Clean fuel switch (biomass / hydrogen)",
+   "Priority_Score": 30.757576,
+   "Capex_per_tpa": 1200.0,
+   "Benefit_per_t": -60.0,
+   "Carbon_price": 160.0,
+   "Abatement_cost_per_t": 156.291105,
+   "Tonnes_per_USDm": 833.333333,
+   "NPV_per_USD": 0.038518,
+   "Annual_cash_per_USD": 0.083333,
+   "Life": 20,
+   "Max_Mt": 0.767304,
+   "Max_invest_USDm": 920.765239
+  },
+  {
+   "Country": "Germany",
+   "Sector": "Power Industry",
+   "Project": "Utility-scale solar PV",
+   "Priority_Score": 29.69697,
+   "Capex_per_tpa": 1406.083396,
+   "Benefit_per_t": 130.423901,
+   "Carbon_price": 160.0,
+   "Abatement_cost_per_t": -30.658828,
+   "Tonnes_per_USDm": 711.195369,
+   "NPV_per_USD": 1.911078,
+   "Annual_cash_per_USD": 0.206548,
+   "Life": 25,
+   "Max_Mt": 2.683397,
+   "Max_invest_USDm": 3773.07951
+  },
+  {
+   "Country": "Germany",
+   "Sector": "Power Industry",
+   "Project": "Onshore wind",
+   "Priority_Score": 29.69697,
+   "Capex_per_tpa": 1059.140966,
+   "Benefit_per_t": 125.036627,
+   "Carbon_price": 160.0,
+   "Abatement_cost_per_t": -49.887973,
+   "Tonnes_per_USDm": 944.161383,
+   "NPV_per_USD": 2.79297,
+   "Annual_cash_per_USD": 0.269121,
+   "Life": 25,
+   "Max_Mt": 1.788931,
+   "Max_invest_USDm": 1894.730232
+  },
+  {
+   "Country": "India",
+   "Sector": "Agriculture",
+   "Project": "Precision fertiliser management",
+   "Priority_Score": 89.242424,
+   "Capex_per_tpa": 400.0,
+   "Benefit_per_t": 30.0,
+   "Carbon_price": 16.25,
+   "Abatement_cost_per_t": 35.098158,
+   "Tonnes_per_USDm": 2500.0,
+   "NPV_per_USD": -0.289534,
+   "Annual_cash_per_USD": 0.115625,
+   "Life": 10,
+   "Max_Mt": 8.780638,
+   "Max_invest_USDm": 3512.255227
+  },
+  {
+   "Country": "India",
+   "Sector": "Agriculture",
+   "Project": "Livestock methane feed additives",
+   "Priority_Score": 89.242424,
+   "Capex_per_tpa": 400.0,
+   "Benefit_per_t": -20.0,
+   "Carbon_price": 16.25,
+   "Abatement_cost_per_t": 85.098158,
+   "Tonnes_per_USDm": 2500.0,
+   "NPV_per_USD": -1.057605,
+   "Annual_cash_per_USD": -0.009375,
+   "Life": 10,
+   "Max_Mt": 8.780638,
+   "Max_invest_USDm": 3512.255227
+  },
+  {
+   "Country": "India",
+   "Sector": "Agriculture",
+   "Project": "Rice paddy water management (AWD)",
+   "Priority_Score": 89.242424,
+   "Capex_per_tpa": 300.0,
+   "Benefit_per_t": 5.0,
+   "Carbon_price": 16.25,
+   "Abatement_cost_per_t": 43.823618,
+   "Tonnes_per_USDm": 3333.333333,
+   "NPV_per_USD": -0.56476,
+   "Annual_cash_per_USD": 0.070833,
+   "Life": 10,
+   "Max_Mt": 8.780638,
+   "Max_invest_USDm": 2634.19142
+  },
+  {
+   "Country": "India",
+   "Sector": "Industrial Combustion",
+   "Project": "Industrial energy efficiency",
+   "Priority_Score": 86.363636,
+   "Capex_per_tpa": 450.0,
+   "Benefit_per_t": 45.0,
+   "Carbon_price": 65.0,
+   "Abatement_cost_per_t": 14.1632,
+   "Tonnes_per_USDm": 2222.222222,
+   "NPV_per_USD": 0.859264,
+   "Annual_cash_per_USD": 0.244444,
+   "Life": 15,
+   "Max_Mt": 15.167626,
+   "Max_invest_USDm": 6825.431752
+  },
+  {
+   "Country": "India",
+   "Sector": "Industrial Combustion",
+   "Project": "Electrified process heat (heat pumps)",
+   "Priority_Score": 86.363636,
+   "Capex_per_tpa": 900.0,
+   "Benefit_per_t": 10.0,
+   "Carbon_price": 65.0,
+   "Abatement_cost_per_t": 95.713662,
+   "Tonnes_per_USDm": 1111.111111,
+   "NPV_per_USD": -0.290536,
+   "Annual_cash_per_USD": 0.083333,
+   "Life": 20,
+   "Max_Mt": 11.37572,
+   "Max_invest_USDm": 10238.147629
+  },
+  {
+   "Country": "India",
+   "Sector": "Industrial Combustion",
+   "Project": "Clean fuel switch (biomass / hydrogen)",
+   "Priority_Score": 86.363636,
+   "Capex_per_tpa": 1200.0,
+   "Benefit_per_t": -60.0,
+   "Carbon_price": 65.0,
+   "Abatement_cost_per_t": 200.95155,
+   "Tonnes_per_USDm": 833.333333,
+   "NPV_per_USD": -0.964527,
+   "Annual_cash_per_USD": 0.004167,
+   "Life": 20,
+   "Max_Mt": 7.583813,
+   "Max_invest_USDm": 9100.57567
+  },
+  {
+   "Country": "India",
+   "Sector": "Power Industry",
+   "Project": "Utility-scale solar PV",
+   "Priority_Score": 90.454545,
+   "Capex_per_tpa": 692.548539,
+   "Benefit_per_t": 64.238638,
+   "Carbon_price": 65.0,
+   "Abatement_cost_per_t": 12.0581,
+   "Tonnes_per_USDm": 1443.942113,
+   "NPV_per_USD": 0.693895,
+   "Annual_cash_per_USD": 0.186613,
+   "Life": 25,
+   "Max_Mt": 55.00179,
+   "Max_invest_USDm": 38091.409349
+  },
+  {
+   "Country": "India",
+   "Sector": "Power Industry",
+   "Project": "Onshore wind",
+   "Priority_Score": 90.454545,
+   "Capex_per_tpa": 521.666446,
+   "Benefit_per_t": 61.585205,
+   "Carbon_price": 65.0,
+   "Abatement_cost_per_t": -4.114218,
+   "Tonnes_per_USDm": 1916.933718,
+   "NPV_per_USD": 1.202593,
+   "Annual_cash_per_USD": 0.242655,
+   "Life": 25,
+   "Max_Mt": 36.66786,
+   "Max_invest_USDm": 19128.392249
+  },
+  {
+   "Country": "Indonesia",
+   "Sector": "Agriculture",
+   "Project": "Precision fertiliser management",
+   "Priority_Score": 61.969697,
+   "Capex_per_tpa": 400.0,
+   "Benefit_per_t": 30.0,
+   "Carbon_price": 16.25,
+   "Abatement_cost_per_t": 35.098158,
+   "Tonnes_per_USDm": 2500.0,
+   "NPV_per_USD": -0.289534,
+   "Annual_cash_per_USD": 0.115625,
+   "Life": 10,
+   "Max_Mt": 1.442181,
+   "Max_invest_USDm": 576.872359
+  },
+  {
+   "Country": "Indonesia",
+   "Sector": "Agriculture",
+   "Project": "Livestock methane feed additives",
+   "Priority_Score": 61.969697,
+   "Capex_per_tpa": 400.0,
+   "Benefit_per_t": -20.0,
+   "Carbon_price": 16.25,
+   "Abatement_cost_per_t": 85.098158,
+   "Tonnes_per_USDm": 2500.0,
+   "NPV_per_USD": -1.057605,
+   "Annual_cash_per_USD": -0.009375,
+   "Life": 10,
+   "Max_Mt": 1.442181,
+   "Max_invest_USDm": 576.872359
+  },
+  {
+   "Country": "Indonesia",
+   "Sector": "Agriculture",
+   "Project": "Rice paddy water management (AWD)",
+   "Priority_Score": 61.969697,
+   "Capex_per_tpa": 300.0,
+   "Benefit_per_t": 5.0,
+   "Carbon_price": 16.25,
+   "Abatement_cost_per_t": 43.823618,
+   "Tonnes_per_USDm": 3333.333333,
+   "NPV_per_USD": -0.56476,
+   "Annual_cash_per_USD": 0.070833,
+   "Life": 10,
+   "Max_Mt": 1.442181,
+   "Max_invest_USDm": 432.65427
+  },
+  {
+   "Country": "Indonesia",
+   "Sector": "Industrial Combustion",
+   "Project": "Industrial energy efficiency",
+   "Priority_Score": 70.0,
+   "Capex_per_tpa": 450.0,
+   "Benefit_per_t": 45.0,
+   "Carbon_price": 65.0,
+   "Abatement_cost_per_t": 14.1632,
+   "Tonnes_per_USDm": 2222.222222,
+   "NPV_per_USD": 0.859264,
+   "Annual_cash_per_USD": 0.244444,
+   "Life": 15,
+   "Max_Mt": 3.009032,
+   "Max_invest_USDm": 1354.064295
+  },
+  {
+   "Country": "Indonesia",
+   "Sector": "Industrial Combustion",
+   "Project": "Electrified process heat (heat pumps)",
+   "Priority_Score": 70.0,
+   "Capex_per_tpa": 900.0,
+   "Benefit_per_t": 10.0,
+   "Carbon_price": 65.0,
+   "Abatement_cost_per_t": 95.713662,
+   "Tonnes_per_USDm": 1111.111111,
+   "NPV_per_USD": -0.290536,
+   "Annual_cash_per_USD": 0.083333,
+   "Life": 20,
+   "Max_Mt": 2.256774,
+   "Max_invest_USDm": 2031.096442
+  },
+  {
+   "Country": "Indonesia",
+   "Sector": "Industrial Combustion",
+   "Project": "Clean fuel switch (biomass / hydrogen)",
+   "Priority_Score": 70.0,
+   "Capex_per_tpa": 1200.0,
+   "Benefit_per_t": -60.0,
+   "Carbon_price": 65.0,
+   "Abatement_cost_per_t": 200.95155,
+   "Tonnes_per_USDm": 833.333333,
+   "NPV_per_USD": -0.964527,
+   "Annual_cash_per_USD": 0.004167,
+   "Life": 20,
+   "Max_Mt": 1.504516,
+   "Max_invest_USDm": 1805.419059
+  },
+  {
+   "Country": "Indonesia",
+   "Sector": "Power Industry",
+   "Project": "Utility-scale solar PV",
+   "Priority_Score": 81.212121,
+   "Capex_per_tpa": 682.364001,
+   "Benefit_per_t": 63.293952,
+   "Carbon_price": 65.0,
+   "Abatement_cost_per_t": 11.880775,
+   "Tonnes_per_USDm": 1465.493488,
+   "NPV_per_USD": 0.70661,
+   "Annual_cash_per_USD": 0.188014,
+   "Life": 25,
+   "Max_Mt": 14.5632,
+   "Max_invest_USDm": 9937.403461
+  },
+  {
+   "Country": "Indonesia",
+   "Sector": "Power Industry",
+   "Project": "Onshore wind",
+   "Priority_Score": 81.212121,
+   "Capex_per_tpa": 513.994881,
+   "Benefit_per_t": 60.67954,
+   "Carbon_price": 65.0,
+   "Abatement_cost_per_t": -4.053715,
+   "Tonnes_per_USDm": 1945.544669,
+   "NPV_per_USD": 1.219474,
+   "Annual_cash_per_USD": 0.244515,
+   "Life": 25,
+   "Max_Mt": 9.7088,
+   "Max_invest_USDm": 4990.273518
+  },
+  {
+   "Country": "Japan",
+   "Sector": "Agriculture",
+   "Project": "Precision fertiliser management",
+   "Priority_Score": 35.757576,
+   "Capex_per_tpa": 400.0,
+   "Benefit_per_t": 30.0,
+   "Carbon_price": 40.0,
+   "Abatement_cost_per_t": 21.80183,
+   "Tonnes_per_USDm": 2500.0,
+   "NPV_per_USD": 0.351304,
+   "Annual_cash_per_USD": 0.175,
+   "Life": 10,
+   "Max_Mt": 0.438509,
+   "Max_invest_USDm": 175.403423
+  },
+  {
+   "Country": "Japan",
+   "Sector": "Agriculture",
+   "Project": "Livestock methane feed additives",
+   "Priority_Score": 35.757576,
+   "Capex_per_tpa": 400.0,
+   "Benefit_per_t": -20.0,
+   "Carbon_price": 40.0,
+   "Abatement_cost_per_t": 71.80183,
+   "Tonnes_per_USDm": 2500.0,
+   "NPV_per_USD": -0.613913,
+   "Annual_cash_per_USD": 0.05,
+   "Life": 10,
+   "Max_Mt": 0.438509,
+   "Max_invest_USDm": 175.403423
+  },
+  {
+   "Country": "Japan",
+   "Sector": "Industrial Combustion",
+   "Project": "Industrial energy efficiency",
+   "Priority_Score": 40.30303,
+   "Capex_per_tpa": 450.0,
+   "Benefit_per_t": 45.0,
+   "Carbon_price": 160.0,
+   "Abatement_cost_per_t": -1.645971,
+   "Tonnes_per_USDm": 2222.222222,
+   "NPV_per_USD": 3.728511,
+   "Annual_cash_per_USD": 0.455556,
+   "Life": 15,
+   "Max_Mt": 2.789871,
+   "Max_invest_USDm": 1255.442099
+  },
+  {
+   "Country": "Japan",
+   "Sector": "Industrial Combustion",
+   "Project": "Electrified process heat (heat pumps)",
+   "Priority_Score": 40.30303,
+   "Capex_per_tpa": 900.0,
+   "Benefit_per_t": 10.0,
+   "Carbon_price": 160.0,
+   "Abatement_cost_per_t": 62.218328,
+   "Tonnes_per_USDm": 1111.111111,
+   "NPV_per_USD": 1.353973,
+   "Annual_cash_per_USD": 0.188889,
+   "Life": 20,
+   "Max_Mt": 2.092403,
+   "Max_invest_USDm": 1883.163149
+  },
+  {
+   "Country": "Japan",
+   "Sector": "Industrial Combustion",
+   "Project": "Clean fuel switch (biomass / hydrogen)",
+   "Priority_Score": 40.30303,
+   "Capex_per_tpa": 1200.0,
+   "Benefit_per_t": -60.0,
+   "Carbon_price": 160.0,
+   "Abatement_cost_per_t": 156.291105,
+   "Tonnes_per_USDm": 833.333333,
+   "NPV_per_USD": 0.038518,
+   "Annual_cash_per_USD": 0.083333,
+   "Life": 20,
+   "Max_Mt": 1.394936,
+   "Max_invest_USDm": 1673.922799
+  },
+  {
+   "Country": "Japan",
+   "Sector": "Power Industry",
+   "Project": "Utility-scale solar PV",
+   "Priority_Score": 45.909091,
+   "Capex_per_tpa": 972.762098,
+   "Benefit_per_t": 90.230371,
+   "Carbon_price": 160.0,
+   "Abatement_cost_per_t": -21.21051,
+   "Tonnes_per_USDm": 1028.000579,
+   "NPV_per_USD": 2.625484,
+   "Annual_cash_per_USD": 0.257237,
+   "Life": 25,
+   "Max_Mt": 10.914245,
+   "Max_invest_USDm": 10616.96413
+  },
+  {
+   "Country": "Japan",
+   "Sector": "Power Industry",
+   "Project": "Onshore wind",
+   "Priority_Score": 45.909091,
+   "Capex_per_tpa": 732.739033,
+   "Benefit_per_t": 86.503327,
+   "Carbon_price": 160.0,
+   "Abatement_cost_per_t": -34.513692,
+   "Tonnes_per_USDm": 1364.742363,
+   "NPV_per_USD": 3.741394,
+   "Annual_cash_per_USD": 0.336414,
+   "Life": 25,
+   "Max_Mt": 7.276164,
+   "Max_invest_USDm": 5331.52902
+  },
+  {
+   "Country": "South Africa",
+   "Sector": "Agriculture",
+   "Project": "Precision fertiliser management",
+   "Priority_Score": 43.181818,
+   "Capex_per_tpa": 400.0,
+   "Benefit_per_t": 30.0,
+   "Carbon_price": 16.25,
+   "Abatement_cost_per_t": 35.098158,
+   "Tonnes_per_USDm": 2500.0,
+   "NPV_per_USD": -0.289534,
+   "Annual_cash_per_USD": 0.115625,
+   "Life": 10,
+   "Max_Mt": 0.393614,
+   "Max_invest_USDm": 157.445729
+  },
+  {
+   "Country": "South Africa",
+   "Sector": "Agriculture",
+   "Project": "Livestock methane feed additives",
+   "Priority_Score": 43.181818,
+   "Capex_per_tpa": 400.0,
+   "Benefit_per_t": -20.0,
+   "Carbon_price": 16.25,
+   "Abatement_cost_per_t": 85.098158,
+   "Tonnes_per_USDm": 2500.0,
+   "NPV_per_USD": -1.057605,
+   "Annual_cash_per_USD": -0.009375,
+   "Life": 10,
+   "Max_Mt": 0.393614,
+   "Max_invest_USDm": 157.445729
+  },
+  {
+   "Country": "South Africa",
+   "Sector": "Industrial Combustion",
+   "Project": "Industrial energy efficiency",
+   "Priority_Score": 39.242424,
+   "Capex_per_tpa": 450.0,
+   "Benefit_per_t": 45.0,
+   "Carbon_price": 65.0,
+   "Abatement_cost_per_t": 14.1632,
+   "Tonnes_per_USDm": 2222.222222,
+   "NPV_per_USD": 0.859264,
+   "Annual_cash_per_USD": 0.244444,
+   "Life": 15,
+   "Max_Mt": 0.889517,
+   "Max_invest_USDm": 400.282628
+  },
+  {
+   "Country": "South Africa",
+   "Sector": "Industrial Combustion",
+   "Project": "Electrified process heat (heat pumps)",
+   "Priority_Score": 39.242424,
+   "Capex_per_tpa": 900.0,
+   "Benefit_per_t": 10.0,
+   "Carbon_price": 65.0,
+   "Abatement_cost_per_t": 95.713662,
+   "Tonnes_per_USDm": 1111.111111,
+   "NPV_per_USD": -0.290536,
+   "Annual_cash_per_USD": 0.083333,
+   "Life": 20,
+   "Max_Mt": 0.667138,
+   "Max_invest_USDm": 600.423942
+  },
+  {
+   "Country": "South Africa",
+   "Sector": "Industrial Combustion",
+   "Project": "Clean fuel switch (biomass / hydrogen)",
+   "Priority_Score": 39.242424,
+   "Capex_per_tpa": 1200.0,
+   "Benefit_per_t": -60.0,
+   "Carbon_price": 65.0,
+   "Abatement_cost_per_t": 200.95155,
+   "Tonnes_per_USDm": 833.333333,
+   "NPV_per_USD": -0.964527,
+   "Annual_cash_per_USD": 0.004167,
+   "Life": 20,
+   "Max_Mt": 0.444758,
+   "Max_invest_USDm": 533.710171
+  },
+  {
+   "Country": "South Africa",
+   "Sector": "Power Industry",
+   "Project": "Utility-scale solar PV",
+   "Priority_Score": 53.181818,
+   "Capex_per_tpa": 663.816196,
+   "Benefit_per_t": 61.573515,
+   "Carbon_price": 65.0,
+   "Abatement_cost_per_t": 11.557835,
+   "Tonnes_per_USDm": 1506.4411,
+   "NPV_per_USD": 0.73077,
+   "Annual_cash_per_USD": 0.190676,
+   "Life": 25,
+   "Max_Mt": 5.309378,
+   "Max_invest_USDm": 3524.450887
+  },
+  {
+   "Country": "South Africa",
+   "Sector": "Power Industry",
+   "Project": "Onshore wind",
+   "Priority_Score": 53.181818,
+   "Capex_per_tpa": 500.023632,
+   "Benefit_per_t": 59.030167,
+   "Carbon_price": 65.0,
+   "Abatement_cost_per_t": -3.943528,
+   "Tonnes_per_USDm": 1999.905476,
+   "NPV_per_USD": 1.251547,
+   "Annual_cash_per_USD": 0.248049,
+   "Life": 25,
+   "Max_Mt": 3.539585,
+   "Max_invest_USDm": 1769.876205
+  },
+  {
+   "Country": "United Kingdom",
+   "Sector": "Agriculture",
+   "Project": "Precision fertiliser management",
+   "Priority_Score": 28.939394,
+   "Capex_per_tpa": 400.0,
+   "Benefit_per_t": 30.0,
+   "Carbon_price": 40.0,
+   "Abatement_cost_per_t": 21.80183,
+   "Tonnes_per_USDm": 2500.0,
+   "NPV_per_USD": 0.351304,
+   "Annual_cash_per_USD": 0.175,
+   "Life": 10,
+   "Max_Mt": 0.497879,
+   "Max_invest_USDm": 199.151658
+  },
+  {
+   "Country": "United Kingdom",
+   "Sector": "Agriculture",
+   "Project": "Livestock methane feed additives",
+   "Priority_Score": 28.939394,
+   "Capex_per_tpa": 400.0,
+   "Benefit_per_t": -20.0,
+   "Carbon_price": 40.0,
+   "Abatement_cost_per_t": 71.80183,
+   "Tonnes_per_USDm": 2500.0,
+   "NPV_per_USD": -0.613913,
+   "Annual_cash_per_USD": 0.05,
+   "Life": 10,
+   "Max_Mt": 0.497879,
+   "Max_invest_USDm": 199.151658
+  },
+  {
+   "Country": "United Kingdom",
+   "Sector": "Industrial Combustion",
+   "Project": "Industrial energy efficiency",
+   "Priority_Score": 6.666667,
+   "Capex_per_tpa": 450.0,
+   "Benefit_per_t": 45.0,
+   "Carbon_price": 160.0,
+   "Abatement_cost_per_t": -1.645971,
+   "Tonnes_per_USDm": 2222.222222,
+   "NPV_per_USD": 3.728511,
+   "Annual_cash_per_USD": 0.455556,
+   "Life": 15,
+   "Max_Mt": 0.394688,
+   "Max_invest_USDm": 177.609401
+  },
+  {
+   "Country": "United Kingdom",
+   "Sector": "Industrial Combustion",
+   "Project": "Electrified process heat (heat pumps)",
+   "Priority_Score": 6.666667,
+   "Capex_per_tpa": 900.0,
+   "Benefit_per_t": 10.0,
+   "Carbon_price": 160.0,
+   "Abatement_cost_per_t": 62.218328,
+   "Tonnes_per_USDm": 1111.111111,
+   "NPV_per_USD": 1.353973,
+   "Annual_cash_per_USD": 0.188889,
+   "Life": 20,
+   "Max_Mt": 0.296016,
+   "Max_invest_USDm": 266.414101
+  },
+  {
+   "Country": "United Kingdom",
+   "Sector": "Industrial Combustion",
+   "Project": "Clean fuel switch (biomass / hydrogen)",
+   "Priority_Score": 6.666667,
+   "Capex_per_tpa": 1200.0,
+   "Benefit_per_t": -60.0,
+   "Carbon_price": 160.0,
+   "Abatement_cost_per_t": 156.291105,
+   "Tonnes_per_USDm": 833.333333,
+   "NPV_per_USD": 0.038518,
+   "Annual_cash_per_USD": 0.083333,
+   "Life": 20,
+   "Max_Mt": 0.197344,
+   "Max_invest_USDm": 236.812534
+  },
+  {
+   "Country": "United Kingdom",
+   "Sector": "Power Industry",
+   "Project": "Utility-scale solar PV",
+   "Priority_Score": 9.545455,
+   "Capex_per_tpa": 2138.283506,
+   "Benefit_per_t": 198.340494,
+   "Carbon_price": 160.0,
+   "Abatement_cost_per_t": -46.624025,
+   "Tonnes_per_USDm": 467.664834,
+   "NPV_per_USD": 1.361909,
+   "Annual_cash_per_USD": 0.167583,
+   "Life": 25,
+   "Max_Mt": 0.364245,
+   "Max_invest_USDm": 778.858125
+  },
+  {
+   "Country": "United Kingdom",
+   "Sector": "Power Industry",
+   "Project": "Onshore wind",
+   "Priority_Score": 9.545455,
+   "Capex_per_tpa": 1610.675202,
+   "Benefit_per_t": 190.147866,
+   "Carbon_price": 160.0,
+   "Abatement_cost_per_t": -75.866503,
+   "Tonnes_per_USDm": 620.857637,
+   "NPV_per_USD": 2.06391,
+   "Annual_cash_per_USD": 0.217392,
+   "Life": 25,
+   "Max_Mt": 0.24283,
+   "Max_invest_USDm": 391.119782
+  },
+  {
+   "Country": "United States",
+   "Sector": "Agriculture",
+   "Project": "Precision fertiliser management",
+   "Priority_Score": 60.606061,
+   "Capex_per_tpa": 400.0,
+   "Benefit_per_t": 30.0,
+   "Carbon_price": 40.0,
+   "Abatement_cost_per_t": 21.80183,
+   "Tonnes_per_USDm": 2500.0,
+   "NPV_per_USD": 0.351304,
+   "Annual_cash_per_USD": 0.175,
+   "Life": 10,
+   "Max_Mt": 3.979618,
+   "Max_invest_USDm": 1591.847158
+  },
+  {
+   "Country": "United States",
+   "Sector": "Agriculture",
+   "Project": "Livestock methane feed additives",
+   "Priority_Score": 60.606061,
+   "Capex_per_tpa": 400.0,
+   "Benefit_per_t": -20.0,
+   "Carbon_price": 40.0,
+   "Abatement_cost_per_t": 71.80183,
+   "Tonnes_per_USDm": 2500.0,
+   "NPV_per_USD": -0.613913,
+   "Annual_cash_per_USD": 0.05,
+   "Life": 10,
+   "Max_Mt": 3.979618,
+   "Max_invest_USDm": 1591.847158
+  },
+  {
+   "Country": "United States",
+   "Sector": "Industrial Combustion",
+   "Project": "Industrial energy efficiency",
+   "Priority_Score": 61.666667,
+   "Capex_per_tpa": 450.0,
+   "Benefit_per_t": 45.0,
+   "Carbon_price": 160.0,
+   "Abatement_cost_per_t": -1.645971,
+   "Tonnes_per_USDm": 2222.222222,
+   "NPV_per_USD": 3.728511,
+   "Annual_cash_per_USD": 0.455556,
+   "Life": 15,
+   "Max_Mt": 9.23032,
+   "Max_invest_USDm": 4153.64422
+  },
+  {
+   "Country": "United States",
+   "Sector": "Industrial Combustion",
+   "Project": "Electrified process heat (heat pumps)",
+   "Priority_Score": 61.666667,
+   "Capex_per_tpa": 900.0,
+   "Benefit_per_t": 10.0,
+   "Carbon_price": 160.0,
+   "Abatement_cost_per_t": 62.218328,
+   "Tonnes_per_USDm": 1111.111111,
+   "NPV_per_USD": 1.353973,
+   "Annual_cash_per_USD": 0.188889,
+   "Life": 20,
+   "Max_Mt": 6.92274,
+   "Max_invest_USDm": 6230.46633
+  },
+  {
+   "Country": "United States",
+   "Sector": "Industrial Combustion",
+   "Project": "Clean fuel switch (biomass / hydrogen)",
+   "Priority_Score": 61.666667,
+   "Capex_per_tpa": 1200.0,
+   "Benefit_per_t": -60.0,
+   "Carbon_price": 160.0,
+   "Abatement_cost_per_t": 156.291105,
+   "Tonnes_per_USDm": 833.333333,
+   "NPV_per_USD": 0.038518,
+   "Annual_cash_per_USD": 0.083333,
+   "Life": 20,
+   "Max_Mt": 4.61516,
+   "Max_invest_USDm": 5538.192293
+  },
+  {
+   "Country": "United States",
+   "Sector": "Power Industry",
+   "Project": "Utility-scale solar PV",
+   "Priority_Score": 50.757576,
+   "Capex_per_tpa": 1208.352919,
+   "Benefit_per_t": 112.08304,
+   "Carbon_price": 160.0,
+   "Abatement_cost_per_t": -26.347431,
+   "Tonnes_per_USDm": 827.572793,
+   "NPV_per_USD": 2.173513,
+   "Annual_cash_per_USD": 0.225169,
+   "Life": 25,
+   "Max_Mt": 36.535777,
+   "Max_invest_USDm": 44148.113185
+  },
+  {
+   "Country": "United States",
+   "Sector": "Power Industry",
+   "Project": "Onshore wind",
+   "Priority_Score": 50.757576,
+   "Capex_per_tpa": 910.199268,
+   "Benefit_per_t": 107.453352,
+   "Carbon_price": 160.0,
+   "Abatement_cost_per_t": -42.872477,
+   "Tonnes_per_USDm": 1098.660519,
+   "NPV_per_USD": 3.141371,
+   "Annual_cash_per_USD": 0.29384,
+   "Life": 25,
+   "Max_Mt": 24.357185,
+   "Max_invest_USDm": 22169.89186
+  }
+ ],
+ "projects_by_scenario_summary": {
+  "Current policies": {
+   "n": 80,
+   "sum_max_mt": 909.377763,
+   "mean_npv_per_usd": -0.284356
+  },
+  "Announced pledges (IEA APS)": {
+   "n": 80,
+   "sum_max_mt": 909.377763,
+   "mean_npv_per_usd": 0.731381
+  },
+  "Net zero (IEA NZE)": {
+   "n": 80,
+   "sum_max_mt": 909.377763,
+   "mean_npv_per_usd": 1.128831
+  }
+ },
+ "cases": [
+  {
+   "name": "default",
+   "settings": {
+    "BUDGET_USD_M": 10000,
+    "TARGET_MT_PER_YEAR": 25,
+    "SCENARIO": "Announced pledges (IEA APS)",
+    "OBJECTIVE": "Maximise financial return (NPV)",
+    "MAX_COUNTRY_SHARE": 0.3,
+    "MIN_SECTOR_SHARE": 0.2,
+    "MAX_PROJECT_SHARE": 0.3
+   },
+   "status": "All constraints satisfied",
+   "kpi": {
+    "Invested_USDm": 9999.98,
+    "Mt_avoided_per_year": 24.999946,
+    "Lifetime_Mt_avoided": 333.332717,
+    "NPV_USDm": 16644.658332,
+    "ROI_pct": 166.446916,
+    "Payback_years": 3.886544,
+    "Capital_per_t_per_year": 400.000057
+   },
+   "target_met": true,
+   "by_country_usdm": {
+    "Australia": 2249.82,
+    "Canada": 600.12,
+    "China": 2320.91,
+    "Germany": 179.82,
+    "India": 246.43,
+    "Indonesia": 432.65,
+    "Japan": 1255.44,
+    "South Africa": 661.24,
+    "United Kingdom": 199.15,
+    "United States": 1854.4
+   },
+   "by_sector_usdm": {
+    "Agriculture": 4999.99,
+    "Industrial Combustion": 2999.99,
+    "Power Industry": 2000.0
+   },
+   "by_project_usdm": {
+    "Industrial energy efficiency": 2999.99,
+    "Onshore wind": 2000.0,
+    "Precision fertiliser management": 2000.0,
+    "Rice paddy water management (AWD)": 2999.99
+   },
+   "plan": [
+    {
+     "Country": "Australia",
+     "Sector": "Agriculture",
+     "Project": "Precision fertiliser management",
+     "Invest_USDm": 544.2
+    },
+    {
+     "Country": "Australia",
+     "Sector": "Industrial Combustion",
+     "Project": "Industrial energy efficiency",
+     "Invest_USDm": 366.86
+    },
+    {
+     "Country": "Australia",
+     "Sector": "Power Industry",
+     "Project": "Onshore wind",
+     "Invest_USDm": 1338.76
+    },
+    {
+     "Country": "Canada",
+     "Sector": "Industrial Combustion",
+     "Project": "Industrial energy efficiency",
+     "Invest_USDm": 600.12
+    },
+    {
+     "Country": "China",
+     "Sector": "Agriculture",
+     "Project": "Rice paddy water management (AWD)",
+     "Invest_USDm": 2320.91
+    },
+    {
+     "Country": "Germany",
+     "Sector": "Agriculture",
+     "Project": "Precision fertiliser management",
+     "Invest_USDm": 179.82
+    },
+    {
+     "Country": "India",
+     "Sector": "Agriculture",
+     "Project": "Rice paddy water management (AWD)",
+     "Invest_USDm": 246.43
+    },
+    {
+     "Country": "Indonesia",
+     "Sector": "Agriculture",
+     "Project": "Rice paddy water management (AWD)",
+     "Invest_USDm": 432.65
+    },
+    {
+     "Country": "Japan",
+     "Sector": "Industrial Combustion",
+     "Project": "Industrial energy efficiency",
+     "Invest_USDm": 1255.44
+    },
+    {
+     "Country": "South Africa",
+     "Sector": "Power Industry",
+     "Project": "Onshore wind",
+     "Invest_USDm": 661.24
+    },
+    {
+     "Country": "United Kingdom",
+     "Sector": "Agriculture",
+     "Project": "Precision fertiliser management",
+     "Invest_USDm": 199.15
+    },
+    {
+     "Country": "United States",
+     "Sector": "Agriculture",
+     "Project": "Precision fertiliser management",
+     "Invest_USDm": 1076.83
+    },
+    {
+     "Country": "United States",
+     "Sector": "Industrial Combustion",
+     "Project": "Industrial energy efficiency",
+     "Invest_USDm": 777.57
+    }
+   ],
+   "robustness": [
+    {
+     "Scenario": "Current policies",
+     "NPV_USD_bn": 0.260817,
+     "ROI_pct": 2.608175,
+     "Payback_years": 9.96833
+    },
+    {
+     "Scenario": "Announced pledges (IEA APS)",
+     "NPV_USD_bn": 16.644658,
+     "ROI_pct": 166.446916,
+     "Payback_years": 3.886544
+    },
+    {
+     "Scenario": "Net zero (IEA NZE)",
+     "NPV_USD_bn": 20.571443,
+     "ROI_pct": 205.714837,
+     "Payback_years": 3.33236
+    }
+   ],
+   "n_projects_in_universe": 80
+  },
+  {
+   "name": "impact_objective",
+   "settings": {
+    "BUDGET_USD_M": 10000,
+    "TARGET_MT_PER_YEAR": 25,
+    "SCENARIO": "Announced pledges (IEA APS)",
+    "OBJECTIVE": "Maximise CO2e avoided",
+    "MAX_COUNTRY_SHARE": 0.3,
+    "MIN_SECTOR_SHARE": 0.2,
+    "MAX_PROJECT_SHARE": 0.3
+   },
+   "status": "All constraints satisfied",
+   "kpi": {
+    "Invested_USDm": 10000.0,
+    "Mt_avoided_per_year": 25.931746,
+    "Lifetime_Mt_avoided": 341.349203,
+    "NPV_USDm": 2431.569456,
+    "ROI_pct": 24.315695,
+    "Payback_years": 6.676362,
+    "Capital_per_t_per_year": 385.627718
+   },
+   "target_met": true,
+   "by_country_usdm": {
+    "Brazil": 2634.19,
+    "China": 2365.81,
+    "India": 3000.0,
+    "Indonesia": 230.12,
+    "South Africa": 1769.88
+   },
+   "by_sector_usdm": {
+    "Agriculture": 6000.0,
+    "Industrial Combustion": 2000.0,
+    "Power Industry": 2000.0
+   },
+   "by_project_usdm": {
+    "Industrial energy efficiency": 2000.0,
+    "Livestock methane feed additives": 365.81,
+    "Onshore wind": 2000.0,
+    "Precision fertiliser management": 2634.19,
+    "Rice paddy water management (AWD)": 3000.0
+   },
+   "plan": [
+    {
+     "Country": "Brazil",
+     "Sector": "Agriculture",
+     "Project": "Precision fertiliser management",
+     "Invest_USDm": 2634.19
+    },
+    {
+     "Country": "China",
+     "Sector": "Agriculture",
+     "Project": "Rice paddy water management (AWD)",
+     "Invest_USDm": 365.81
+    },
+    {
+     "Country": "China",
+     "Sector": "Industrial Combustion",
+     "Project": "Industrial energy efficiency",
+     "Invest_USDm": 2000.0
+    },
+    {
+     "Country": "India",
+     "Sector": "Agriculture",
+     "Project": "Livestock methane feed additives",
+     "Invest_USDm": 365.81
+    },
+    {
+     "Country": "India",
+     "Sector": "Agriculture",
+     "Project": "Rice paddy water management (AWD)",
+     "Invest_USDm": 2634.19
+    },
+    {
+     "Country": "Indonesia",
+     "Sector": "Power Industry",
+     "Project": "Onshore wind",
+     "Invest_USDm": 230.12
+    },
+    {
+     "Country": "South Africa",
+     "Sector": "Power Industry",
+     "Project": "Onshore wind",
+     "Invest_USDm": 1769.88
+    }
+   ],
+   "robustness": [
+    {
+     "Scenario": "Current policies",
+     "NPV_USD_bn": -2.794477,
+     "ROI_pct": -27.944766,
+     "Payback_years": 11.413258
+    },
+    {
+     "Scenario": "Announced pledges (IEA APS)",
+     "NPV_USD_bn": 2.431569,
+     "ROI_pct": 24.315695,
+     "Payback_years": 6.676362
+    },
+    {
+     "Scenario": "Net zero (IEA NZE)",
+     "NPV_USD_bn": 8.828258,
+     "ROI_pct": 88.282575,
+     "Payback_years": 4.412622
+    }
+   ],
+   "n_projects_in_universe": 80
+  },
+  {
+   "name": "net_zero_prices",
+   "settings": {
+    "BUDGET_USD_M": 10000,
+    "TARGET_MT_PER_YEAR": 25,
+    "SCENARIO": "Net zero (IEA NZE)",
+    "OBJECTIVE": "Maximise financial return (NPV)",
+    "MAX_COUNTRY_SHARE": 0.3,
+    "MIN_SECTOR_SHARE": 0.2,
+    "MAX_PROJECT_SHARE": 0.3
+   },
+   "status": "All constraints satisfied",
+   "kpi": {
+    "Invested_USDm": 9999.98,
+    "Mt_avoided_per_year": 24.999946,
+    "Lifetime_Mt_avoided": 333.332717,
+    "NPV_USDm": 20571.442592,
+    "ROI_pct": 205.714837,
+    "Payback_years": 3.33236,
+    "Capital_per_t_per_year": 400.000057
+   },
+   "target_met": true,
+   "by_country_usdm": {
+    "Australia": 2249.82,
+    "Canada": 600.12,
+    "China": 2320.91,
+    "Germany": 179.82,
+    "India": 246.43,
+    "Indonesia": 432.65,
+    "Japan": 1255.44,
+    "South Africa": 661.24,
+    "United Kingdom": 199.15,
+    "United States": 1854.4
+   },
+   "by_sector_usdm": {
+    "Agriculture": 4999.99,
+    "Industrial Combustion": 2999.99,
+    "Power Industry": 2000.0
+   },
+   "by_project_usdm": {
+    "Industrial energy efficiency": 2999.99,
+    "Onshore wind": 2000.0,
+    "Precision fertiliser management": 2000.0,
+    "Rice paddy water management (AWD)": 2999.99
+   },
+   "plan": [
+    {
+     "Country": "Australia",
+     "Sector": "Agriculture",
+     "Project": "Precision fertiliser management",
+     "Invest_USDm": 544.2
+    },
+    {
+     "Country": "Australia",
+     "Sector": "Industrial Combustion",
+     "Project": "Industrial energy efficiency",
+     "Invest_USDm": 366.86
+    },
+    {
+     "Country": "Australia",
+     "Sector": "Power Industry",
+     "Project": "Onshore wind",
+     "Invest_USDm": 1338.76
+    },
+    {
+     "Country": "Canada",
+     "Sector": "Industrial Combustion",
+     "Project": "Industrial energy efficiency",
+     "Invest_USDm": 600.12
+    },
+    {
+     "Country": "China",
+     "Sector": "Agriculture",
+     "Project": "Rice paddy water management (AWD)",
+     "Invest_USDm": 2320.91
+    },
+    {
+     "Country": "Germany",
+     "Sector": "Agriculture",
+     "Project": "Precision fertiliser management",
+     "Invest_USDm": 179.82
+    },
+    {
+     "Country": "India",
+     "Sector": "Agriculture",
+     "Project": "Rice paddy water management (AWD)",
+     "Invest_USDm": 246.43
+    },
+    {
+     "Country": "Indonesia",
+     "Sector": "Agriculture",
+     "Project": "Rice paddy water management (AWD)",
+     "Invest_USDm": 432.65
+    },
+    {
+     "Country": "Japan",
+     "Sector": "Industrial Combustion",
+     "Project": "Industrial energy efficiency",
+     "Invest_USDm": 1255.44
+    },
+    {
+     "Country": "South Africa",
+     "Sector": "Power Industry",
+     "Project": "Onshore wind",
+     "Invest_USDm": 661.24
+    },
+    {
+     "Country": "United Kingdom",
+     "Sector": "Agriculture",
+     "Project": "Precision fertiliser management",
+     "Invest_USDm": 199.15
+    },
+    {
+     "Country": "United States",
+     "Sector": "Agriculture",
+     "Project": "Precision fertiliser management",
+     "Invest_USDm": 1076.83
+    },
+    {
+     "Country": "United States",
+     "Sector": "Industrial Combustion",
+     "Project": "Industrial energy efficiency",
+     "Invest_USDm": 777.57
+    }
+   ],
+   "robustness": [
+    {
+     "Scenario": "Current policies",
+     "NPV_USD_bn": 0.260817,
+     "ROI_pct": 2.608175,
+     "Payback_years": 9.96833
+    },
+    {
+     "Scenario": "Announced pledges (IEA APS)",
+     "NPV_USD_bn": 16.644658,
+     "ROI_pct": 166.446916,
+     "Payback_years": 3.886544
+    },
+    {
+     "Scenario": "Net zero (IEA NZE)",
+     "NPV_USD_bn": 20.571443,
+     "ROI_pct": 205.714837,
+     "Payback_years": 3.33236
+    }
+   ],
+   "n_projects_in_universe": 80
+  },
+  {
+   "name": "current_prices",
+   "settings": {
+    "BUDGET_USD_M": 10000,
+    "TARGET_MT_PER_YEAR": 25,
+    "SCENARIO": "Current policies",
+    "OBJECTIVE": "Maximise financial return (NPV)",
+    "MAX_COUNTRY_SHARE": 0.3,
+    "MIN_SECTOR_SHARE": 0.2,
+    "MAX_PROJECT_SHARE": 0.3
+   },
+   "status": "All constraints satisfied",
+   "kpi": {
+    "Invested_USDm": 9999.99,
+    "Mt_avoided_per_year": 24.99998,
+    "Lifetime_Mt_avoided": 333.33305,
+    "NPV_USDm": 2101.318846,
+    "ROI_pct": 21.013209,
+    "Payback_years": 8.387773,
+    "Capital_per_t_per_year": 399.999924
+   },
+   "target_met": true,
+   "by_country_usdm": {
+    "Australia": 1705.62,
+    "Canada": 892.44,
+    "China": 3000.0,
+    "Germany": 690.57,
+    "India": 732.18,
+    "Indonesia": 432.65,
+    "Japan": 175.4,
+    "South Africa": 661.24,
+    "United Kingdom": 177.61,
+    "United States": 1532.28
+   },
+   "by_sector_usdm": {
+    "Agriculture": 5000.0,
+    "Industrial Combustion": 2999.99,
+    "Power Industry": 2000.0
+   },
+   "by_project_usdm": {
+    "Industrial energy efficiency": 2999.99,
+    "Onshore wind": 2000.0,
+    "Precision fertiliser management": 2000.0,
+    "Rice paddy water management (AWD)": 3000.0
+   },
+   "plan": [
+    {
+     "Country": "Australia",
+     "Sector": "Industrial Combustion",
+     "Project": "Industrial energy efficiency",
+     "Invest_USDm": 366.86
+    },
+    {
+     "Country": "Australia",
+     "Sector": "Power Industry",
+     "Project": "Onshore wind",
+     "Invest_USDm": 1338.76
+    },
+    {
+     "Country": "Canada",
+     "Sector": "Agriculture",
+     "Project": "Precision fertiliser management",
+     "Invest_USDm": 292.32
+    },
+    {
+     "Country": "Canada",
+     "Sector": "Industrial Combustion",
+     "Project": "Industrial energy efficiency",
+     "Invest_USDm": 600.12
+    },
+    {
+     "Country": "China",
+     "Sector": "Agriculture",
+     "Project": "Rice paddy water management (AWD)",
+     "Invest_USDm": 1835.17
+    },
+    {
+     "Country": "China",
+     "Sector": "Industrial Combustion",
+     "Project": "Industrial energy efficiency",
+     "Invest_USDm": 1164.83
+    },
+    {
+     "Country": "Germany",
+     "Sector": "Industrial Combustion",
+     "Project": "Industrial energy efficiency",
+     "Invest_USDm": 690.57
+    },
+    {
+     "Country": "India",
+     "Sector": "Agriculture",
+     "Project": "Rice paddy water management (AWD)",
+     "Invest_USDm": 732.18
+    },
+    {
+     "Country": "Indonesia",
+     "Sector": "Agriculture",
+     "Project": "Rice paddy water management (AWD)",
+     "Invest_USDm": 432.65
+    },
+    {
+     "Country": "Japan",
+     "Sector": "Agriculture",
+     "Project": "Precision fertiliser management",
+     "Invest_USDm": 175.4
+    },
+    {
+     "Country": "South Africa",
+     "Sector": "Power Industry",
+     "Project": "Onshore wind",
+     "Invest_USDm": 661.24
+    },
+    {
+     "Country": "United Kingdom",
+     "Sector": "Industrial Combustion",
+     "Project": "Industrial energy efficiency",
+     "Invest_USDm": 177.61
+    },
+    {
+     "Country": "United States",
+     "Sector": "Agriculture",
+     "Project": "Precision fertiliser management",
+     "Invest_USDm": 1532.28
+    }
+   ],
+   "robustness": [
+    {
+     "Scenario": "Current policies",
+     "NPV_USD_bn": 2.101319,
+     "ROI_pct": 21.013209,
+     "Payback_years": 8.387773
+    },
+    {
+     "Scenario": "Announced pledges (IEA APS)",
+     "NPV_USD_bn": 13.860349,
+     "ROI_pct": 138.603624,
+     "Payback_years": 4.29725
+    },
+    {
+     "Scenario": "Net zero (IEA NZE)",
+     "NPV_USD_bn": 18.728673,
+     "ROI_pct": 187.286919,
+     "Payback_years": 3.49833
+    }
+   ],
+   "n_projects_in_universe": 80
+  },
+  {
+   "name": "big_budget",
+   "settings": {
+    "BUDGET_USD_M": 20000,
+    "TARGET_MT_PER_YEAR": 45,
+    "SCENARIO": "Announced pledges (IEA APS)",
+    "OBJECTIVE": "Maximise financial return (NPV)",
+    "MAX_COUNTRY_SHARE": 0.3,
+    "MIN_SECTOR_SHARE": 0.2,
+    "MAX_PROJECT_SHARE": 0.3
+   },
+   "status": "All constraints satisfied",
+   "kpi": {
+    "Invested_USDm": 19999.97,
+    "Mt_avoided_per_year": 44.999929,
+    "Lifetime_Mt_avoided": 658.286865,
+    "NPV_USDm": 45679.705092,
+    "ROI_pct": 228.398868,
+    "Payback_years": 3.498604,
+    "Capital_per_t_per_year": 444.444478
+   },
+   "target_met": true,
+   "by_country_usdm": {
+    "Australia": 3110.73,
+    "Canada": 892.44,
+    "China": 2320.91,
+    "Germany": 870.39,
+    "India": 2634.19,
+    "Indonesia": 432.65,
+    "Japan": 5070.34,
+    "United Kingdom": 199.15,
+    "United States": 4469.17
+   },
+   "by_sector_usdm": {
+    "Agriculture": 7094.17,
+    "Industrial Combustion": 5999.99,
+    "Power Industry": 6905.81
+   },
+   "by_project_usdm": {
+    "Industrial energy efficiency": 5999.99,
+    "Onshore wind": 6000.0,
+    "Precision fertiliser management": 1706.42,
+    "Rice paddy water management (AWD)": 5387.75,
+    "Utility-scale solar PV": 905.81
+   },
+   "plan": [
+    {
+     "Country": "Australia",
+     "Sector": "Agriculture",
+     "Project": "Precision fertiliser management",
+     "Invest_USDm": 544.2
+    },
+    {
+     "Country": "Australia",
+     "Sector": "Power Industry",
+     "Project": "Utility-scale solar PV",
+     "Invest_USDm": 905.81
+    },
+    {
+     "Country": "Australia",
+     "Sector": "Power Industry",
+     "Project": "Onshore wind",
+     "Invest_USDm": 1660.72
+    },
+    {
+     "Country": "Canada",
+     "Sector": "Agriculture",
+     "Project": "Precision fertiliser management",
+     "Invest_USDm": 292.32
+    },
+    {
+     "Country": "Canada",
+     "Sector": "Industrial Combustion",
+     "Project": "Industrial energy efficiency",
+     "Invest_USDm": 600.12
+    },
+    {
+     "Country": "China",
+     "Sector": "Agriculture",
+     "Project": "Rice paddy water management (AWD)",
+     "Invest_USDm": 2320.91
+    },
+    {
+     "Country": "Germany",
+     "Sector": "Agriculture",
+     "Project": "Precision fertiliser management",
+     "Invest_USDm": 179.82
+    },
+    {
+     "Country": "Germany",
+     "Sector": "Industrial Combustion",
+     "Project": "Industrial energy efficiency",
+     "Invest_USDm": 690.57
+    },
+    {
+     "Country": "India",
+     "Sector": "Agriculture",
+     "Project": "Rice paddy water management (AWD)",
+     "Invest_USDm": 2634.19
+    },
+    {
+     "Country": "Indonesia",
+     "Sector": "Agriculture",
+     "Project": "Rice paddy water management (AWD)",
+     "Invest_USDm": 432.65
+    },
+    {
+     "Country": "Japan",
+     "Sector": "Agriculture",
+     "Project": "Precision fertiliser management",
+     "Invest_USDm": 175.4
+    },
+    {
+     "Country": "Japan",
+     "Sector": "Industrial Combustion",
+     "Project": "Industrial energy efficiency",
+     "Invest_USDm": 555.66
+    },
+    {
+     "Country": "Japan",
+     "Sector": "Power Industry",
+     "Project": "Onshore wind",
+     "Invest_USDm": 4339.28
+    },
+    {
+     "Country": "United Kingdom",
+     "Sector": "Agriculture",
+     "Project": "Precision fertiliser management",
+     "Invest_USDm": 199.15
+    },
+    {
+     "Country": "United States",
+     "Sector": "Agriculture",
+     "Project": "Precision fertiliser management",
+     "Invest_USDm": 315.53
+    },
+    {
+     "Country": "United States",
+     "Sector": "Industrial Combustion",
+     "Project": "Industrial energy efficiency",
+     "Invest_USDm": 4153.64
+    }
+   ],
+   "robustness": [
+    {
+     "Scenario": "Current policies",
+     "NPV_USD_bn": 3.532999,
+     "ROI_pct": 17.665021,
+     "Payback_years": 9.754123
+    },
+    {
+     "Scenario": "Announced pledges (IEA APS)",
+     "NPV_USD_bn": 45.679705,
+     "ROI_pct": 228.398868,
+     "Payback_years": 3.498604
+    },
+    {
+     "Scenario": "Net zero (IEA NZE)",
+     "NPV_USD_bn": 53.069973,
+     "ROI_pct": 265.350262,
+     "Payback_years": 3.094644
+    }
+   ],
+   "n_projects_in_universe": 80
+  },
+  {
+   "name": "impossible_target",
+   "settings": {
+    "BUDGET_USD_M": 10000,
+    "TARGET_MT_PER_YEAR": 100,
+    "SCENARIO": "Announced pledges (IEA APS)",
+    "OBJECTIVE": "Maximise financial return (NPV)",
+    "MAX_COUNTRY_SHARE": 0.3,
+    "MIN_SECTOR_SHARE": 0.2,
+    "MAX_PROJECT_SHARE": 0.3
+   },
+   "status": "Target infeasible – showing max-impact plan",
+   "kpi": {
+    "Invested_USDm": 10000.0,
+    "Mt_avoided_per_year": 25.931746,
+    "Lifetime_Mt_avoided": 341.349203,
+    "NPV_USDm": 2431.569456,
+    "ROI_pct": 24.315695,
+    "Payback_years": 6.676362,
+    "Capital_per_t_per_year": 385.627718
+   },
+   "target_met": false,
+   "by_country_usdm": {
+    "Brazil": 2634.19,
+    "China": 2365.81,
+    "India": 3000.0,
+    "Indonesia": 230.12,
+    "South Africa": 1769.88
+   },
+   "by_sector_usdm": {
+    "Agriculture": 6000.0,
+    "Industrial Combustion": 2000.0,
+    "Power Industry": 2000.0
+   },
+   "by_project_usdm": {
+    "Industrial energy efficiency": 2000.0,
+    "Livestock methane feed additives": 365.81,
+    "Onshore wind": 2000.0,
+    "Precision fertiliser management": 2634.19,
+    "Rice paddy water management (AWD)": 3000.0
+   },
+   "plan": [
+    {
+     "Country": "Brazil",
+     "Sector": "Agriculture",
+     "Project": "Precision fertiliser management",
+     "Invest_USDm": 2634.19
+    },
+    {
+     "Country": "China",
+     "Sector": "Agriculture",
+     "Project": "Rice paddy water management (AWD)",
+     "Invest_USDm": 365.81
+    },
+    {
+     "Country": "China",
+     "Sector": "Industrial Combustion",
+     "Project": "Industrial energy efficiency",
+     "Invest_USDm": 2000.0
+    },
+    {
+     "Country": "India",
+     "Sector": "Agriculture",
+     "Project": "Livestock methane feed additives",
+     "Invest_USDm": 365.81
+    },
+    {
+     "Country": "India",
+     "Sector": "Agriculture",
+     "Project": "Rice paddy water management (AWD)",
+     "Invest_USDm": 2634.19
+    },
+    {
+     "Country": "Indonesia",
+     "Sector": "Power Industry",
+     "Project": "Onshore wind",
+     "Invest_USDm": 230.12
+    },
+    {
+     "Country": "South Africa",
+     "Sector": "Power Industry",
+     "Project": "Onshore wind",
+     "Invest_USDm": 1769.88
+    }
+   ],
+   "robustness": [
+    {
+     "Scenario": "Current policies",
+     "NPV_USD_bn": -2.794477,
+     "ROI_pct": -27.944766,
+     "Payback_years": 11.413258
+    },
+    {
+     "Scenario": "Announced pledges (IEA APS)",
+     "NPV_USD_bn": 2.431569,
+     "ROI_pct": 24.315695,
+     "Payback_years": 6.676362
+    },
+    {
+     "Scenario": "Net zero (IEA NZE)",
+     "NPV_USD_bn": 8.828258,
+     "ROI_pct": 88.282575,
+     "Payback_years": 4.412622
+    }
+   ],
+   "n_projects_in_universe": 80
+  },
+  {
+   "name": "loose_limits",
+   "settings": {
+    "BUDGET_USD_M": 10000,
+    "TARGET_MT_PER_YEAR": 25,
+    "SCENARIO": "Announced pledges (IEA APS)",
+    "OBJECTIVE": "Maximise financial return (NPV)",
+    "MAX_COUNTRY_SHARE": 1.0,
+    "MIN_SECTOR_SHARE": 0.0,
+    "MAX_PROJECT_SHARE": 1.0
+   },
+   "status": "All constraints satisfied",
+   "kpi": {
+    "Invested_USDm": 9999.98,
+    "Mt_avoided_per_year": 24.999955,
+    "Lifetime_Mt_avoided": 333.987257,
+    "NPV_USDm": 26369.965543,
+    "ROI_pct": 263.700183,
+    "Payback_years": 2.824876,
+    "Capital_per_t_per_year": 399.999924
+   },
+   "target_met": true,
+   "by_country_usdm": {
+    "Australia": 522.03,
+    "Canada": 600.12,
+    "China": 2320.91,
+    "Germany": 690.57,
+    "Indonesia": 279.66,
+    "Japan": 1255.44,
+    "United Kingdom": 177.61,
+    "United States": 4153.64
+   },
+   "by_sector_usdm": {
+    "Agriculture": 2600.57,
+    "Industrial Combustion": 7244.24,
+    "Power Industry": 155.17
+   },
+   "by_project_usdm": {
+    "Industrial energy efficiency": 7244.24,
+    "Onshore wind": 155.17,
+    "Rice paddy water management (AWD)": 2600.57
+   },
+   "plan": [
+    {
+     "Country": "Australia",
+     "Sector": "Industrial Combustion",
+     "Project": "Industrial energy efficiency",
+     "Invest_USDm": 366.86
+    },
+    {
+     "Country": "Australia",
+     "Sector": "Power Industry",
+     "Project": "Onshore wind",
+     "Invest_USDm": 155.17
+    },
+    {
+     "Country": "Canada",
+     "Sector": "Industrial Combustion",
+     "Project": "Industrial energy efficiency",
+     "Invest_USDm": 600.12
+    },
+    {
+     "Country": "China",
+     "Sector": "Agriculture",
+     "Project": "Rice paddy water management (AWD)",
+     "Invest_USDm": 2320.91
+    },
+    {
+     "Country": "Germany",
+     "Sector": "Industrial Combustion",
+     "Project": "Industrial energy efficiency",
+     "Invest_USDm": 690.57
+    },
+    {
+     "Country": "Indonesia",
+     "Sector": "Agriculture",
+     "Project": "Rice paddy water management (AWD)",
+     "Invest_USDm": 279.66
+    },
+    {
+     "Country": "Japan",
+     "Sector": "Industrial Combustion",
+     "Project": "Industrial energy efficiency",
+     "Invest_USDm": 1255.44
+    },
+    {
+     "Country": "United Kingdom",
+     "Sector": "Industrial Combustion",
+     "Project": "Industrial energy efficiency",
+     "Invest_USDm": 177.61
+    },
+    {
+     "Country": "United States",
+     "Sector": "Industrial Combustion",
+     "Project": "Industrial energy efficiency",
+     "Invest_USDm": 4153.64
+    }
+   ],
+   "robustness": [
+    {
+     "Scenario": "Current policies",
+     "NPV_USD_bn": 1.368593,
+     "ROI_pct": 13.685953,
+     "Payback_years": 8.985163
+    },
+    {
+     "Scenario": "Announced pledges (IEA APS)",
+     "NPV_USD_bn": 26.369966,
+     "ROI_pct": 263.700183,
+     "Payback_years": 2.824876
+    },
+    {
+     "Scenario": "Net zero (IEA NZE)",
+     "NPV_USD_bn": 30.717589,
+     "ROI_pct": 307.176502,
+     "Payback_years": 2.502104
+    }
+   ],
+   "n_projects_in_universe": 80
+  }
+ ],
+ "default_extras": {
+  "strategy_comparison": [
+   {
+    "Strategy": "Equal split",
+    "Invested_USDm": 10000.0,
+    "Mt_avoided_per_year": 16.869738,
+    "Lifetime_Mt_avoided": 257.461735,
+    "NPV_USDm": 7653.093421,
+    "ROI_pct": 76.530934,
+    "Payback_years": 6.092475,
+    "Capital_per_t_per_year": 592.777446,
+    "Within_risk_limits": "Yes"
+   },
+   {
+    "Strategy": "Biggest emitters first",
+    "Invested_USDm": 10000.0,
+    "Mt_avoided_per_year": 16.053007,
+    "Lifetime_Mt_avoided": 363.825187,
+    "NPV_USDm": 17245.998721,
+    "ROI_pct": 172.459987,
+    "Payback_years": 4.450019,
+    "Capital_per_t_per_year": 622.936232,
+    "Within_risk_limits": "No"
+   },
+   {
+    "Strategy": "Optimised – impact",
+    "Invested_USDm": 10000.0,
+    "Mt_avoided_per_year": 25.931746,
+    "Lifetime_Mt_avoided": 341.349203,
+    "NPV_USDm": 2431.569456,
+    "ROI_pct": 24.315695,
+    "Payback_years": 6.676362,
+    "Capital_per_t_per_year": 385.627718,
+    "Within_risk_limits": "Yes"
+   },
+   {
+    "Strategy": "Optimised – return",
+    "Invested_USDm": 9999.98,
+    "Mt_avoided_per_year": 24.999946,
+    "Lifetime_Mt_avoided": 333.332717,
+    "NPV_USDm": 16644.658332,
+    "ROI_pct": 166.446916,
+    "Payback_years": 3.886544,
+    "Capital_per_t_per_year": 400.000057,
+    "Within_risk_limits": "Yes"
+   }
+  ],
+  "uplift_vs_equal_split": 1.537175,
+  "frontier": [
+   {
+    "Budget_USDm": 4000,
+    "Mt": 10.377702,
+    "Capital_per_t": 385.441781
+   },
+   {
+    "Budget_USDm": 8000,
+    "Mt": 20.755404,
+    "Capital_per_t": 385.441781
+   },
+   {
+    "Budget_USDm": 12000,
+    "Mt": 31.098853,
+    "Capital_per_t": 385.866326
+   },
+   {
+    "Budget_USDm": 16000,
+    "Mt": 41.433066,
+    "Capital_per_t": 386.165
+   },
+   {
+    "Budget_USDm": 20000,
+    "Mt": 51.257071,
+    "Capital_per_t": 390.190065
+   },
+   {
+    "Budget_USDm": 24000,
+    "Mt": 60.591285,
+    "Capital_per_t": 396.096568
+   },
+   {
+    "Budget_USDm": 28000,
+    "Mt": 69.925498,
+    "Capital_per_t": 400.426177
+   },
+   {
+    "Budget_USDm": 32000,
+    "Mt": 79.259712,
+    "Capital_per_t": 403.736012
+   },
+   {
+    "Budget_USDm": 36000,
+    "Mt": 88.581366,
+    "Capital_per_t": 406.406129
+   },
+   {
+    "Budget_USDm": 40000,
+    "Mt": 97.892691,
+    "Capital_per_t": 408.610794
+   },
+   {
+    "Budget_USDm": 44000,
+    "Mt": 107.204015,
+    "Capital_per_t": 410.432481
+   },
+   {
+    "Budget_USDm": 48000,
+    "Mt": 116.51534,
+    "Capital_per_t": 411.963008
+   },
+   {
+    "Budget_USDm": 52000,
+    "Mt": 125.826665,
+    "Capital_per_t": 413.267013
+   },
+   {
+    "Budget_USDm": 56000,
+    "Mt": 134.564684,
+    "Capital_per_t": 416.156813
+   },
+   {
+    "Budget_USDm": 60000,
+    "Mt": 143.209342,
+    "Capital_per_t": 418.96715
+   },
+   {
+    "Budget_USDm": 64000,
+    "Mt": 151.712377,
+    "Capital_per_t": 421.850948
+   },
+   {
+    "Budget_USDm": 68000,
+    "Mt": 159.746436,
+    "Capital_per_t": 425.674599
+   },
+   {
+    "Budget_USDm": 72000,
+    "Mt": 167.71381,
+    "Capital_per_t": 429.302691
+   },
+   {
+    "Budget_USDm": 76000,
+    "Mt": 175.091103,
+    "Capital_per_t": 434.059691
+   },
+   {
+    "Budget_USDm": 80000,
+    "Mt": 182.468396,
+    "Capital_per_t": 438.432034
+   }
+  ],
+  "levers": [
+   {
+    "Lever": "Today's terms",
+    "Share_to_EMDE_pct": 13.403227
+   },
+   {
+    "Lever": "Cheaper finance",
+    "Share_to_EMDE_pct": 13.403227
+   },
+   {
+    "Lever": "Full carbon value",
+    "Share_to_EMDE_pct": 57.7561
+   },
+   {
+    "Lever": "Both levers",
+    "Share_to_EMDE_pct": 61.001661
+   }
+  ],
+  "recommendations": [
+   "Commit US$ 10.0 bn across 10 countries and 4 project types, led by China (US$ 2.3 bn).",
+   "The single biggest lever is 'Rice paddy water management (AWD)' (10.0 Mt/yr avoided).",
+   "The 25 Mt/yr target is achievable within budget (25.0 Mt/yr).",
+   "The plan stays profitable at today's carbon prices but loses most of its upside – stage investments and track carbon-price policy closely.",
+   "Only 13% of the budget reaches India, Indonesia, Brazil and South Africa, although they hold top-priority markets (India – Power Industry, India – Agriculture, India – Industrial Combustion). 'Both levers' would raise this to 61% – partner with development banks and secure international carbon-credit buyers for these markets."
+  ],
+  "company_lens_default": {
+   "inputs": {
+    "COMPANY_NAME": "Illustrative manufacturer",
+    "COMPANY_COUNTRY": "India",
+    "COMPANY_SECTOR": "Industrial Combustion",
+    "COMPANY_EMISSIONS_MT": 2.0,
+    "COMPANY_CUT_PCT": 30
+   },
+   "required_rate_pct": -6.885008,
+   "national_cagr_pct": 2.740697,
+   "carbon_bill": [
+    {
+     "Scenario": "Current policies",
+     "Carbon price (US$/t)": 0,
+     "Company carbon bill (US$ m/yr)": 0.0
+    },
+    {
+     "Scenario": "Announced pledges (IEA APS)",
+     "Carbon price (US$/t)": 65,
+     "Company carbon bill (US$ m/yr)": 130.0
+    },
+    {
+     "Scenario": "Net zero (IEA NZE)",
+     "Carbon price (US$/t)": 125,
+     "Company carbon bill (US$ m/yr)": 250.0
+    }
+   ],
+   "options": [
+    {
+     "Project": "Industrial energy efficiency",
+     "Abatement_cost_per_t": 14.1632,
+     "Capex_per_tpa": 450.0
+    },
+    {
+     "Project": "Electrified process heat (heat pumps)",
+     "Abatement_cost_per_t": 95.713662,
+     "Capex_per_tpa": 900.0
+    },
+    {
+     "Project": "Clean fuel switch (biomass / hydrogen)",
+     "Abatement_cost_per_t": 200.95155,
+     "Capex_per_tpa": 1200.0
+    }
+   ]
+  }
+ }
+}

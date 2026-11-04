@@ -1,0 +1,3730 @@
+{
+ "_about": "Data behind the Part A (historical) charts. Each key names the notebook cell that draws the chart.",
+ "dataset": {
+  "rows": 1188,
+  "countries": [
+   "Australia",
+   "Brazil",
+   "Canada",
+   "China",
+   "Germany",
+   "India",
+   "Indonesia",
+   "Japan",
+   "South Africa",
+   "United Kingdom",
+   "United States"
+  ],
+  "sectors": [
+   "Agriculture",
+   "Industrial Combustion",
+   "Power Industry"
+  ],
+  "first_year": 1990,
+  "last_year": 2025,
+  "unit": "Mt CO2e (million tonnes of CO2-equivalent)",
+  "source": "EDGAR Community GHG Database (EDGAR_2026_GHG), European Commission JRC"
+ },
+ "cell3_quality_table": [
+  {
+   "Measure": "Number of observations",
+   "Result": 1188
+  },
+  {
+   "Measure": "Number of countries",
+   "Result": 11
+  },
+  {
+   "Measure": "Number of sectors",
+   "Result": 3
+  },
+  {
+   "Measure": "First year",
+   "Result": 1990
+  },
+  {
+   "Measure": "Last year",
+   "Result": 2025
+  },
+  {
+   "Measure": "Duplicate observations",
+   "Result": 0
+  },
+  {
+   "Measure": "Missing emissions values",
+   "Result": 0
+  }
+ ],
+ "cell4_sector_dashboard": {
+  "year": 2025,
+  "kpis": {
+   "leading_sector": "Power Industry",
+   "leading_value_mt": 11320.097437,
+   "leading_share_pct": 59.784207
+  },
+  "sectors": [
+   {
+    "Sector": "Power Industry",
+    "Emissions (Mt CO2e)": 11320.097437,
+    "Share (%)": 59.784207
+   },
+   {
+    "Sector": "Industrial Combustion",
+    "Emissions (Mt CO2e)": 4461.86063,
+    "Share (%)": 23.564179
+   },
+   {
+    "Sector": "Agriculture",
+    "Emissions (Mt CO2e)": 3152.971408,
+    "Share (%)": 16.651614
+   }
+  ],
+  "charts": "Donut (sector share) + ranked horizontal bar (emissions by sector)"
+ },
+ "cell5_country_comparison": {
+  "year": 2025,
+  "rows": [
+   {
+    "Country": "Australia",
+    "Sector": "Agriculture",
+    "Emissions_Mt_CO2eq": 134.01902
+   },
+   {
+    "Country": "Australia",
+    "Sector": "Industrial Combustion",
+    "Emissions_Mt_CO2eq": 38.824655
+   },
+   {
+    "Country": "Australia",
+    "Sector": "Power Industry",
+    "Emissions_Mt_CO2eq": 152.006632
+   },
+   {
+    "Country": "Brazil",
+    "Sector": "Agriculture",
+    "Emissions_Mt_CO2eq": 623.685116
+   },
+   {
+    "Country": "Brazil",
+    "Sector": "Industrial Combustion",
+    "Emissions_Mt_CO2eq": 93.71968
+   },
+   {
+    "Country": "Brazil",
+    "Sector": "Power Industry",
+    "Emissions_Mt_CO2eq": 59.12319
+   },
+   {
+    "Country": "Canada",
+    "Sector": "Agriculture",
+    "Emissions_Mt_CO2eq": 70.319207
+   },
+   {
+    "Country": "Canada",
+    "Sector": "Industrial Combustion",
+    "Emissions_Mt_CO2eq": 66.593223
+   },
+   {
+    "Country": "Canada",
+    "Sector": "Power Industry",
+    "Emissions_Mt_CO2eq": 81.423102
+   },
+   {
+    "Country": "China",
+    "Sector": "Agriculture",
+    "Emissions_Mt_CO2eq": 762.989955
+   },
+   {
+    "Country": "China",
+    "Sector": "Industrial Combustion",
+    "Emissions_Mt_CO2eq": 2675.285189
+   },
+   {
+    "Country": "China",
+    "Sector": "Power Industry",
+    "Emissions_Mt_CO2eq": 6634.098028
+   },
+   {
+    "Country": "Germany",
+    "Sector": "Agriculture",
+    "Emissions_Mt_CO2eq": 53.472931
+   },
+   {
+    "Country": "Germany",
+    "Sector": "Industrial Combustion",
+    "Emissions_Mt_CO2eq": 81.613722
+   },
+   {
+    "Country": "Germany",
+    "Sector": "Power Industry",
+    "Emissions_Mt_CO2eq": 180.164205
+   },
+   {
+    "Country": "India",
+    "Sector": "Agriculture",
+    "Emissions_Mt_CO2eq": 834.174064
+   },
+   {
+    "Country": "India",
+    "Sector": "Industrial Combustion",
+    "Emissions_Mt_CO2eq": 681.770928
+   },
+   {
+    "Country": "India",
+    "Sector": "Power Industry",
+    "Emissions_Mt_CO2eq": 1571.65284
+   },
+   {
+    "Country": "Indonesia",
+    "Sector": "Agriculture",
+    "Emissions_Mt_CO2eq": 140.711312
+   },
+   {
+    "Country": "Indonesia",
+    "Sector": "Industrial Combustion",
+    "Emissions_Mt_CO2eq": 133.505651
+   },
+   {
+    "Country": "Indonesia",
+    "Sector": "Power Industry",
+    "Emissions_Mt_CO2eq": 384.327116
+   },
+   {
+    "Country": "Japan",
+    "Sector": "Agriculture",
+    "Emissions_Mt_CO2eq": 43.70197
+   },
+   {
+    "Country": "Japan",
+    "Sector": "Industrial Combustion",
+    "Emissions_Mt_CO2eq": 161.228172
+   },
+   {
+    "Country": "Japan",
+    "Sector": "Power Industry",
+    "Emissions_Mt_CO2eq": 442.099722
+   },
+   {
+    "Country": "South Africa",
+    "Sector": "Agriculture",
+    "Emissions_Mt_CO2eq": 40.437446
+   },
+   {
+    "Country": "South Africa",
+    "Sector": "Industrial Combustion",
+    "Emissions_Mt_CO2eq": 47.152482
+   },
+   {
+    "Country": "South Africa",
+    "Sector": "Power Industry",
+    "Emissions_Mt_CO2eq": 191.219582
+   },
+   {
+    "Country": "United Kingdom",
+    "Sector": "Agriculture",
+    "Emissions_Mt_CO2eq": 51.522304
+   },
+   {
+    "Country": "United Kingdom",
+    "Sector": "Industrial Combustion",
+    "Emissions_Mt_CO2eq": 24.553564
+   },
+   {
+    "Country": "United Kingdom",
+    "Sector": "Power Industry",
+    "Emissions_Mt_CO2eq": 50.489405
+   },
+   {
+    "Country": "United States",
+    "Sector": "Agriculture",
+    "Emissions_Mt_CO2eq": 397.938081
+   },
+   {
+    "Country": "United States",
+    "Sector": "Industrial Combustion",
+    "Emissions_Mt_CO2eq": 457.613364
+   },
+   {
+    "Country": "United States",
+    "Sector": "Power Industry",
+    "Emissions_Mt_CO2eq": 1573.493615
+   }
+  ],
+  "charts": "Faceted bar chart: one panel per sector, countries on x-axis, independent y-axes"
+ },
+ "cell6_treemap": {
+  "year": 2025,
+  "rows": [
+   {
+    "Sector": "Agriculture",
+    "Country": "Australia",
+    "Emissions_Mt_CO2eq": 134.01902
+   },
+   {
+    "Sector": "Industrial Combustion",
+    "Country": "Australia",
+    "Emissions_Mt_CO2eq": 38.824655
+   },
+   {
+    "Sector": "Power Industry",
+    "Country": "Australia",
+    "Emissions_Mt_CO2eq": 152.006632
+   },
+   {
+    "Sector": "Agriculture",
+    "Country": "Brazil",
+    "Emissions_Mt_CO2eq": 623.685116
+   },
+   {
+    "Sector": "Industrial Combustion",
+    "Country": "Brazil",
+    "Emissions_Mt_CO2eq": 93.71968
+   },
+   {
+    "Sector": "Power Industry",
+    "Country": "Brazil",
+    "Emissions_Mt_CO2eq": 59.12319
+   },
+   {
+    "Sector": "Agriculture",
+    "Country": "Canada",
+    "Emissions_Mt_CO2eq": 70.319207
+   },
+   {
+    "Sector": "Industrial Combustion",
+    "Country": "Canada",
+    "Emissions_Mt_CO2eq": 66.593223
+   },
+   {
+    "Sector": "Power Industry",
+    "Country": "Canada",
+    "Emissions_Mt_CO2eq": 81.423102
+   },
+   {
+    "Sector": "Agriculture",
+    "Country": "China",
+    "Emissions_Mt_CO2eq": 762.989955
+   },
+   {
+    "Sector": "Industrial Combustion",
+    "Country": "China",
+    "Emissions_Mt_CO2eq": 2675.285189
+   },
+   {
+    "Sector": "Power Industry",
+    "Country": "China",
+    "Emissions_Mt_CO2eq": 6634.098028
+   },
+   {
+    "Sector": "Agriculture",
+    "Country": "Germany",
+    "Emissions_Mt_CO2eq": 53.472931
+   },
+   {
+    "Sector": "Industrial Combustion",
+    "Country": "Germany",
+    "Emissions_Mt_CO2eq": 81.613722
+   },
+   {
+    "Sector": "Power Industry",
+    "Country": "Germany",
+    "Emissions_Mt_CO2eq": 180.164205
+   },
+   {
+    "Sector": "Agriculture",
+    "Country": "India",
+    "Emissions_Mt_CO2eq": 834.174064
+   },
+   {
+    "Sector": "Industrial Combustion",
+    "Country": "India",
+    "Emissions_Mt_CO2eq": 681.770928
+   },
+   {
+    "Sector": "Power Industry",
+    "Country": "India",
+    "Emissions_Mt_CO2eq": 1571.65284
+   },
+   {
+    "Sector": "Agriculture",
+    "Country": "Indonesia",
+    "Emissions_Mt_CO2eq": 140.711312
+   },
+   {
+    "Sector": "Industrial Combustion",
+    "Country": "Indonesia",
+    "Emissions_Mt_CO2eq": 133.505651
+   },
+   {
+    "Sector": "Power Industry",
+    "Country": "Indonesia",
+    "Emissions_Mt_CO2eq": 384.327116
+   },
+   {
+    "Sector": "Agriculture",
+    "Country": "Japan",
+    "Emissions_Mt_CO2eq": 43.70197
+   },
+   {
+    "Sector": "Industrial Combustion",
+    "Country": "Japan",
+    "Emissions_Mt_CO2eq": 161.228172
+   },
+   {
+    "Sector": "Power Industry",
+    "Country": "Japan",
+    "Emissions_Mt_CO2eq": 442.099722
+   },
+   {
+    "Sector": "Agriculture",
+    "Country": "South Africa",
+    "Emissions_Mt_CO2eq": 40.437446
+   },
+   {
+    "Sector": "Industrial Combustion",
+    "Country": "South Africa",
+    "Emissions_Mt_CO2eq": 47.152482
+   },
+   {
+    "Sector": "Power Industry",
+    "Country": "South Africa",
+    "Emissions_Mt_CO2eq": 191.219582
+   },
+   {
+    "Sector": "Agriculture",
+    "Country": "United Kingdom",
+    "Emissions_Mt_CO2eq": 51.522304
+   },
+   {
+    "Sector": "Industrial Combustion",
+    "Country": "United Kingdom",
+    "Emissions_Mt_CO2eq": 24.553564
+   },
+   {
+    "Sector": "Power Industry",
+    "Country": "United Kingdom",
+    "Emissions_Mt_CO2eq": 50.489405
+   },
+   {
+    "Sector": "Agriculture",
+    "Country": "United States",
+    "Emissions_Mt_CO2eq": 397.938081
+   },
+   {
+    "Sector": "Industrial Combustion",
+    "Country": "United States",
+    "Emissions_Mt_CO2eq": 457.613364
+   },
+   {
+    "Sector": "Power Industry",
+    "Country": "United States",
+    "Emissions_Mt_CO2eq": 1573.493615
+   }
+  ],
+  "charts": "Treemap Sector -> Country, area & colour = emissions (YlOrRd), text = label + % of parent"
+ },
+ "cell7_rankings": {
+  "years": [
+   1990,
+   2010,
+   2025
+  ],
+  "rows": [
+   {
+    "Country": "Australia",
+    "Sector": "Agriculture",
+    "Year": 1990,
+    "Emissions_Mt_CO2eq": 122.093893,
+    "Rank": 5.0
+   },
+   {
+    "Country": "Australia",
+    "Sector": "Agriculture",
+    "Year": 2010,
+    "Emissions_Mt_CO2eq": 109.524961,
+    "Rank": 6.0
+   },
+   {
+    "Country": "Australia",
+    "Sector": "Agriculture",
+    "Year": 2025,
+    "Emissions_Mt_CO2eq": 134.01902,
+    "Rank": 6.0
+   },
+   {
+    "Country": "Australia",
+    "Sector": "Industrial Combustion",
+    "Year": 1990,
+    "Emissions_Mt_CO2eq": 43.134202,
+    "Rank": 10.0
+   },
+   {
+    "Country": "Australia",
+    "Sector": "Industrial Combustion",
+    "Year": 2010,
+    "Emissions_Mt_CO2eq": 37.345035,
+    "Rank": 11.0
+   },
+   {
+    "Country": "Australia",
+    "Sector": "Industrial Combustion",
+    "Year": 2025,
+    "Emissions_Mt_CO2eq": 38.824655,
+    "Rank": 10.0
+   },
+   {
+    "Country": "Australia",
+    "Sector": "Power Industry",
+    "Year": 1990,
+    "Emissions_Mt_CO2eq": 129.191527,
+    "Rank": 8.0
+   },
+   {
+    "Country": "Australia",
+    "Sector": "Power Industry",
+    "Year": 2010,
+    "Emissions_Mt_CO2eq": 220.21245,
+    "Rank": 7.0
+   },
+   {
+    "Country": "Australia",
+    "Sector": "Power Industry",
+    "Year": 2025,
+    "Emissions_Mt_CO2eq": 152.006632,
+    "Rank": 8.0
+   },
+   {
+    "Country": "Brazil",
+    "Sector": "Agriculture",
+    "Year": 1990,
+    "Emissions_Mt_CO2eq": 335.09832,
+    "Rank": 4.0
+   },
+   {
+    "Country": "Brazil",
+    "Sector": "Agriculture",
+    "Year": 2010,
+    "Emissions_Mt_CO2eq": 536.492657,
+    "Rank": 3.0
+   },
+   {
+    "Country": "Brazil",
+    "Sector": "Agriculture",
+    "Year": 2025,
+    "Emissions_Mt_CO2eq": 623.685116,
+    "Rank": 3.0
+   },
+   {
+    "Country": "Brazil",
+    "Sector": "Industrial Combustion",
+    "Year": 1990,
+    "Emissions_Mt_CO2eq": 49.598671,
+    "Rank": 9.0
+   },
+   {
+    "Country": "Brazil",
+    "Sector": "Industrial Combustion",
+    "Year": 2010,
+    "Emissions_Mt_CO2eq": 102.242999,
+    "Rank": 5.0
+   },
+   {
+    "Country": "Brazil",
+    "Sector": "Industrial Combustion",
+    "Year": 2025,
+    "Emissions_Mt_CO2eq": 93.71968,
+    "Rank": 6.0
+   },
+   {
+    "Country": "Brazil",
+    "Sector": "Power Industry",
+    "Year": 1990,
+    "Emissions_Mt_CO2eq": 12.853237,
+    "Rank": 11.0
+   },
+   {
+    "Country": "Brazil",
+    "Sector": "Power Industry",
+    "Year": 2010,
+    "Emissions_Mt_CO2eq": 46.539449,
+    "Rank": 11.0
+   },
+   {
+    "Country": "Brazil",
+    "Sector": "Power Industry",
+    "Year": 2025,
+    "Emissions_Mt_CO2eq": 59.12319,
+    "Rank": 10.0
+   },
+   {
+    "Country": "Canada",
+    "Sector": "Agriculture",
+    "Year": 1990,
+    "Emissions_Mt_CO2eq": 47.192364,
+    "Rank": 9.0
+   },
+   {
+    "Country": "Canada",
+    "Sector": "Agriculture",
+    "Year": 2010,
+    "Emissions_Mt_CO2eq": 58.526279,
+    "Rank": 8.0
+   },
+   {
+    "Country": "Canada",
+    "Sector": "Agriculture",
+    "Year": 2025,
+    "Emissions_Mt_CO2eq": 70.319207,
+    "Rank": 7.0
+   },
+   {
+    "Country": "Canada",
+    "Sector": "Industrial Combustion",
+    "Year": 1990,
+    "Emissions_Mt_CO2eq": 77.240877,
+    "Rank": 6.0
+   },
+   {
+    "Country": "Canada",
+    "Sector": "Industrial Combustion",
+    "Year": 2010,
+    "Emissions_Mt_CO2eq": 60.775472,
+    "Rank": 8.0
+   },
+   {
+    "Country": "Canada",
+    "Sector": "Industrial Combustion",
+    "Year": 2025,
+    "Emissions_Mt_CO2eq": 66.593223,
+    "Rank": 8.0
+   },
+   {
+    "Country": "Canada",
+    "Sector": "Power Industry",
+    "Year": 1990,
+    "Emissions_Mt_CO2eq": 97.681178,
+    "Rank": 9.0
+   },
+   {
+    "Country": "Canada",
+    "Sector": "Power Industry",
+    "Year": 2010,
+    "Emissions_Mt_CO2eq": 111.949541,
+    "Rank": 10.0
+   },
+   {
+    "Country": "Canada",
+    "Sector": "Power Industry",
+    "Year": 2025,
+    "Emissions_Mt_CO2eq": 81.423102,
+    "Rank": 9.0
+   },
+   {
+    "Country": "China",
+    "Sector": "Agriculture",
+    "Year": 1990,
+    "Emissions_Mt_CO2eq": 754.571592,
+    "Rank": 1.0
+   },
+   {
+    "Country": "China",
+    "Sector": "Agriculture",
+    "Year": 2010,
+    "Emissions_Mt_CO2eq": 763.805872,
+    "Rank": 1.0
+   },
+   {
+    "Country": "China",
+    "Sector": "Agriculture",
+    "Year": 2025,
+    "Emissions_Mt_CO2eq": 762.989955,
+    "Rank": 2.0
+   },
+   {
+    "Country": "China",
+    "Sector": "Industrial Combustion",
+    "Year": 1990,
+    "Emissions_Mt_CO2eq": 750.486305,
+    "Rank": 1.0
+   },
+   {
+    "Country": "China",
+    "Sector": "Industrial Combustion",
+    "Year": 2010,
+    "Emissions_Mt_CO2eq": 2832.71086,
+    "Rank": 1.0
+   },
+   {
+    "Country": "China",
+    "Sector": "Industrial Combustion",
+    "Year": 2025,
+    "Emissions_Mt_CO2eq": 2675.285189,
+    "Rank": 1.0
+   },
+   {
+    "Country": "China",
+    "Sector": "Power Industry",
+    "Year": 1990,
+    "Emissions_Mt_CO2eq": 642.994363,
+    "Rank": 2.0
+   },
+   {
+    "Country": "China",
+    "Sector": "Power Industry",
+    "Year": 2010,
+    "Emissions_Mt_CO2eq": 3509.943426,
+    "Rank": 1.0
+   },
+   {
+    "Country": "China",
+    "Sector": "Power Industry",
+    "Year": 2025,
+    "Emissions_Mt_CO2eq": 6634.098028,
+    "Rank": 1.0
+   },
+   {
+    "Country": "Germany",
+    "Sector": "Agriculture",
+    "Year": 1990,
+    "Emissions_Mt_CO2eq": 85.100355,
+    "Rank": 7.0
+   },
+   {
+    "Country": "Germany",
+    "Sector": "Agriculture",
+    "Year": 2010,
+    "Emissions_Mt_CO2eq": 65.442198,
+    "Rank": 7.0
+   },
+   {
+    "Country": "Germany",
+    "Sector": "Agriculture",
+    "Year": 2025,
+    "Emissions_Mt_CO2eq": 53.472931,
+    "Rank": 8.0
+   },
+   {
+    "Country": "Germany",
+    "Sector": "Industrial Combustion",
+    "Year": 1990,
+    "Emissions_Mt_CO2eq": 156.716423,
+    "Rank": 4.0
+   },
+   {
+    "Country": "Germany",
+    "Sector": "Industrial Combustion",
+    "Year": 2010,
+    "Emissions_Mt_CO2eq": 98.812146,
+    "Rank": 6.0
+   },
+   {
+    "Country": "Germany",
+    "Sector": "Industrial Combustion",
+    "Year": 2025,
+    "Emissions_Mt_CO2eq": 81.613722,
+    "Rank": 7.0
+   },
+   {
+    "Country": "Germany",
+    "Sector": "Power Industry",
+    "Year": 1990,
+    "Emissions_Mt_CO2eq": 385.772806,
+    "Rank": 4.0
+   },
+   {
+    "Country": "Germany",
+    "Sector": "Power Industry",
+    "Year": 2010,
+    "Emissions_Mt_CO2eq": 341.307241,
+    "Rank": 5.0
+   },
+   {
+    "Country": "Germany",
+    "Sector": "Power Industry",
+    "Year": 2025,
+    "Emissions_Mt_CO2eq": 180.164205,
+    "Rank": 7.0
+   },
+   {
+    "Country": "India",
+    "Sector": "Agriculture",
+    "Year": 1990,
+    "Emissions_Mt_CO2eq": 570.977498,
+    "Rank": 2.0
+   },
+   {
+    "Country": "India",
+    "Sector": "Agriculture",
+    "Year": 2010,
+    "Emissions_Mt_CO2eq": 707.249145,
+    "Rank": 2.0
+   },
+   {
+    "Country": "India",
+    "Sector": "Agriculture",
+    "Year": 2025,
+    "Emissions_Mt_CO2eq": 834.174064,
+    "Rank": 1.0
+   },
+   {
+    "Country": "India",
+    "Sector": "Industrial Combustion",
+    "Year": 1990,
+    "Emissions_Mt_CO2eq": 151.258364,
+    "Rank": 5.0
+   },
+   {
+    "Country": "India",
+    "Sector": "Industrial Combustion",
+    "Year": 2010,
+    "Emissions_Mt_CO2eq": 399.045274,
+    "Rank": 3.0
+   },
+   {
+    "Country": "India",
+    "Sector": "Industrial Combustion",
+    "Year": 2025,
+    "Emissions_Mt_CO2eq": 681.770928,
+    "Rank": 2.0
+   },
+   {
+    "Country": "India",
+    "Sector": "Power Industry",
+    "Year": 1990,
+    "Emissions_Mt_CO2eq": 217.156486,
+    "Rank": 6.0
+   },
+   {
+    "Country": "India",
+    "Sector": "Power Industry",
+    "Year": 2010,
+    "Emissions_Mt_CO2eq": 795.505857,
+    "Rank": 3.0
+   },
+   {
+    "Country": "India",
+    "Sector": "Power Industry",
+    "Year": 2025,
+    "Emissions_Mt_CO2eq": 1571.65284,
+    "Rank": 3.0
+   },
+   {
+    "Country": "Indonesia",
+    "Sector": "Agriculture",
+    "Year": 1990,
+    "Emissions_Mt_CO2eq": 104.562402,
+    "Rank": 6.0
+   },
+   {
+    "Country": "Indonesia",
+    "Sector": "Agriculture",
+    "Year": 2010,
+    "Emissions_Mt_CO2eq": 132.859818,
+    "Rank": 5.0
+   },
+   {
+    "Country": "Indonesia",
+    "Sector": "Agriculture",
+    "Year": 2025,
+    "Emissions_Mt_CO2eq": 140.711312,
+    "Rank": 5.0
+   },
+   {
+    "Country": "Indonesia",
+    "Sector": "Industrial Combustion",
+    "Year": 1990,
+    "Emissions_Mt_CO2eq": 28.53203,
+    "Rank": 11.0
+   },
+   {
+    "Country": "Indonesia",
+    "Sector": "Industrial Combustion",
+    "Year": 2010,
+    "Emissions_Mt_CO2eq": 81.808182,
+    "Rank": 7.0
+   },
+   {
+    "Country": "Indonesia",
+    "Sector": "Industrial Combustion",
+    "Year": 2025,
+    "Emissions_Mt_CO2eq": 133.505651,
+    "Rank": 5.0
+   },
+   {
+    "Country": "Indonesia",
+    "Sector": "Power Industry",
+    "Year": 1990,
+    "Emissions_Mt_CO2eq": 22.562762,
+    "Rank": 10.0
+   },
+   {
+    "Country": "Indonesia",
+    "Sector": "Power Industry",
+    "Year": 2010,
+    "Emissions_Mt_CO2eq": 126.923536,
+    "Rank": 9.0
+   },
+   {
+    "Country": "Indonesia",
+    "Sector": "Power Industry",
+    "Year": 2025,
+    "Emissions_Mt_CO2eq": 384.327116,
+    "Rank": 5.0
+   },
+   {
+    "Country": "Japan",
+    "Sector": "Agriculture",
+    "Year": 1990,
+    "Emissions_Mt_CO2eq": 46.852018,
+    "Rank": 10.0
+   },
+   {
+    "Country": "Japan",
+    "Sector": "Agriculture",
+    "Year": 2010,
+    "Emissions_Mt_CO2eq": 48.661542,
+    "Rank": 10.0
+   },
+   {
+    "Country": "Japan",
+    "Sector": "Agriculture",
+    "Year": 2025,
+    "Emissions_Mt_CO2eq": 43.70197,
+    "Rank": 10.0
+   },
+   {
+    "Country": "Japan",
+    "Sector": "Industrial Combustion",
+    "Year": 1990,
+    "Emissions_Mt_CO2eq": 260.477708,
+    "Rank": 3.0
+   },
+   {
+    "Country": "Japan",
+    "Sector": "Industrial Combustion",
+    "Year": 2010,
+    "Emissions_Mt_CO2eq": 209.982377,
+    "Rank": 4.0
+   },
+   {
+    "Country": "Japan",
+    "Sector": "Industrial Combustion",
+    "Year": 2025,
+    "Emissions_Mt_CO2eq": 161.228172,
+    "Rank": 4.0
+   },
+   {
+    "Country": "Japan",
+    "Sector": "Power Industry",
+    "Year": 1990,
+    "Emissions_Mt_CO2eq": 389.271826,
+    "Rank": 3.0
+   },
+   {
+    "Country": "Japan",
+    "Sector": "Power Industry",
+    "Year": 2010,
+    "Emissions_Mt_CO2eq": 502.273795,
+    "Rank": 4.0
+   },
+   {
+    "Country": "Japan",
+    "Sector": "Power Industry",
+    "Year": 2025,
+    "Emissions_Mt_CO2eq": 442.099722,
+    "Rank": 4.0
+   },
+   {
+    "Country": "South Africa",
+    "Sector": "Agriculture",
+    "Year": 1990,
+    "Emissions_Mt_CO2eq": 37.163146,
+    "Rank": 11.0
+   },
+   {
+    "Country": "South Africa",
+    "Sector": "Agriculture",
+    "Year": 2010,
+    "Emissions_Mt_CO2eq": 40.930768,
+    "Rank": 11.0
+   },
+   {
+    "Country": "South Africa",
+    "Sector": "Agriculture",
+    "Year": 2025,
+    "Emissions_Mt_CO2eq": 40.437446,
+    "Rank": 11.0
+   },
+   {
+    "Country": "South Africa",
+    "Sector": "Industrial Combustion",
+    "Year": 1990,
+    "Emissions_Mt_CO2eq": 54.677416,
+    "Rank": 8.0
+   },
+   {
+    "Country": "South Africa",
+    "Sector": "Industrial Combustion",
+    "Year": 2010,
+    "Emissions_Mt_CO2eq": 51.989869,
+    "Rank": 9.0
+   },
+   {
+    "Country": "South Africa",
+    "Sector": "Industrial Combustion",
+    "Year": 2025,
+    "Emissions_Mt_CO2eq": 47.152482,
+    "Rank": 9.0
+   },
+   {
+    "Country": "South Africa",
+    "Sector": "Power Industry",
+    "Year": 1990,
+    "Emissions_Mt_CO2eq": 144.04612,
+    "Rank": 7.0
+   },
+   {
+    "Country": "South Africa",
+    "Sector": "Power Industry",
+    "Year": 2010,
+    "Emissions_Mt_CO2eq": 243.776056,
+    "Rank": 6.0
+   },
+   {
+    "Country": "South Africa",
+    "Sector": "Power Industry",
+    "Year": 2025,
+    "Emissions_Mt_CO2eq": 191.219582,
+    "Rank": 6.0
+   },
+   {
+    "Country": "United Kingdom",
+    "Sector": "Agriculture",
+    "Year": 1990,
+    "Emissions_Mt_CO2eq": 66.5332,
+    "Rank": 8.0
+   },
+   {
+    "Country": "United Kingdom",
+    "Sector": "Agriculture",
+    "Year": 2010,
+    "Emissions_Mt_CO2eq": 54.367883,
+    "Rank": 9.0
+   },
+   {
+    "Country": "United Kingdom",
+    "Sector": "Agriculture",
+    "Year": 2025,
+    "Emissions_Mt_CO2eq": 51.522304,
+    "Rank": 9.0
+   },
+   {
+    "Country": "United Kingdom",
+    "Sector": "Industrial Combustion",
+    "Year": 1990,
+    "Emissions_Mt_CO2eq": 77.194166,
+    "Rank": 7.0
+   },
+   {
+    "Country": "United Kingdom",
+    "Sector": "Industrial Combustion",
+    "Year": 2010,
+    "Emissions_Mt_CO2eq": 45.094503,
+    "Rank": 10.0
+   },
+   {
+    "Country": "United Kingdom",
+    "Sector": "Industrial Combustion",
+    "Year": 2025,
+    "Emissions_Mt_CO2eq": 24.553564,
+    "Rank": 11.0
+   },
+   {
+    "Country": "United Kingdom",
+    "Sector": "Power Industry",
+    "Year": 1990,
+    "Emissions_Mt_CO2eq": 220.324893,
+    "Rank": 5.0
+   },
+   {
+    "Country": "United Kingdom",
+    "Sector": "Power Industry",
+    "Year": 2010,
+    "Emissions_Mt_CO2eq": 178.412969,
+    "Rank": 8.0
+   },
+   {
+    "Country": "United Kingdom",
+    "Sector": "Power Industry",
+    "Year": 2025,
+    "Emissions_Mt_CO2eq": 50.489405,
+    "Rank": 11.0
+   },
+   {
+    "Country": "United States",
+    "Sector": "Agriculture",
+    "Year": 1990,
+    "Emissions_Mt_CO2eq": 362.090956,
+    "Rank": 3.0
+   },
+   {
+    "Country": "United States",
+    "Sector": "Agriculture",
+    "Year": 2010,
+    "Emissions_Mt_CO2eq": 397.088661,
+    "Rank": 4.0
+   },
+   {
+    "Country": "United States",
+    "Sector": "Agriculture",
+    "Year": 2025,
+    "Emissions_Mt_CO2eq": 397.938081,
+    "Rank": 4.0
+   },
+   {
+    "Country": "United States",
+    "Sector": "Industrial Combustion",
+    "Year": 1990,
+    "Emissions_Mt_CO2eq": 606.96614,
+    "Rank": 2.0
+   },
+   {
+    "Country": "United States",
+    "Sector": "Industrial Combustion",
+    "Year": 2010,
+    "Emissions_Mt_CO2eq": 469.982361,
+    "Rank": 2.0
+   },
+   {
+    "Country": "United States",
+    "Sector": "Industrial Combustion",
+    "Year": 2025,
+    "Emissions_Mt_CO2eq": 457.613364,
+    "Rank": 3.0
+   },
+   {
+    "Country": "United States",
+    "Sector": "Power Industry",
+    "Year": 1990,
+    "Emissions_Mt_CO2eq": 1917.458358,
+    "Rank": 1.0
+   },
+   {
+    "Country": "United States",
+    "Sector": "Power Industry",
+    "Year": 2010,
+    "Emissions_Mt_CO2eq": 2361.816176,
+    "Rank": 2.0
+   },
+   {
+    "Country": "United States",
+    "Sector": "Power Industry",
+    "Year": 2025,
+    "Emissions_Mt_CO2eq": 1573.493615,
+    "Rank": 2.0
+   }
+  ],
+  "charts": "Bump chart per sector, rank 1 at top, country labels at 2025"
+ },
+ "cell8_power_change_1990_2025": {
+  "rows": [
+   {
+    "Country": "United States",
+    "Emissions_1990": 1917.458358,
+    "Emissions_2025": 1573.493615,
+    "Change": -343.964744
+   },
+   {
+    "Country": "Germany",
+    "Emissions_1990": 385.772806,
+    "Emissions_2025": 180.164205,
+    "Change": -205.6086
+   },
+   {
+    "Country": "United Kingdom",
+    "Emissions_1990": 220.324893,
+    "Emissions_2025": 50.489405,
+    "Change": -169.835488
+   },
+   {
+    "Country": "Canada",
+    "Emissions_1990": 97.681178,
+    "Emissions_2025": 81.423102,
+    "Change": -16.258075
+   },
+   {
+    "Country": "Australia",
+    "Emissions_1990": 129.191527,
+    "Emissions_2025": 152.006632,
+    "Change": 22.815105
+   },
+   {
+    "Country": "Brazil",
+    "Emissions_1990": 12.853237,
+    "Emissions_2025": 59.12319,
+    "Change": 46.269953
+   },
+   {
+    "Country": "South Africa",
+    "Emissions_1990": 144.04612,
+    "Emissions_2025": 191.219582,
+    "Change": 47.173462
+   },
+   {
+    "Country": "Japan",
+    "Emissions_1990": 389.271826,
+    "Emissions_2025": 442.099722,
+    "Change": 52.827897
+   },
+   {
+    "Country": "Indonesia",
+    "Emissions_1990": 22.562762,
+    "Emissions_2025": 384.327116,
+    "Change": 361.764353
+   },
+   {
+    "Country": "India",
+    "Emissions_1990": 217.156486,
+    "Emissions_2025": 1571.65284,
+    "Change": 1354.496354
+   },
+   {
+    "Country": "China",
+    "Emissions_1990": 642.994363,
+    "Emissions_2025": 6634.098028,
+    "Change": 5991.103665
+   }
+  ],
+  "charts": "Diverging horizontal bars sorted by change; red = increase, teal = decrease"
+ },
+ "cell9_sector_trends": {
+  "rows": [
+   {
+    "Sector": "Agriculture",
+    "Year": 1990,
+    "Emissions_Mt_CO2eq": 2532.235744
+   },
+   {
+    "Sector": "Agriculture",
+    "Year": 1991,
+    "Emissions_Mt_CO2eq": 2548.153476
+   },
+   {
+    "Sector": "Agriculture",
+    "Year": 1992,
+    "Emissions_Mt_CO2eq": 2574.869628
+   },
+   {
+    "Sector": "Agriculture",
+    "Year": 1993,
+    "Emissions_Mt_CO2eq": 2561.276012
+   },
+   {
+    "Sector": "Agriculture",
+    "Year": 1994,
+    "Emissions_Mt_CO2eq": 2611.324398
+   },
+   {
+    "Sector": "Agriculture",
+    "Year": 1995,
+    "Emissions_Mt_CO2eq": 2693.435039
+   },
+   {
+    "Sector": "Agriculture",
+    "Year": 1996,
+    "Emissions_Mt_CO2eq": 2731.944499
+   },
+   {
+    "Sector": "Agriculture",
+    "Year": 1997,
+    "Emissions_Mt_CO2eq": 2661.356793
+   },
+   {
+    "Sector": "Agriculture",
+    "Year": 1998,
+    "Emissions_Mt_CO2eq": 2698.756459
+   },
+   {
+    "Sector": "Agriculture",
+    "Year": 1999,
+    "Emissions_Mt_CO2eq": 2727.641616
+   },
+   {
+    "Sector": "Agriculture",
+    "Year": 2000,
+    "Emissions_Mt_CO2eq": 2715.621028
+   },
+   {
+    "Sector": "Agriculture",
+    "Year": 2001,
+    "Emissions_Mt_CO2eq": 2711.325283
+   },
+   {
+    "Sector": "Agriculture",
+    "Year": 2002,
+    "Emissions_Mt_CO2eq": 2733.506065
+   },
+   {
+    "Sector": "Agriculture",
+    "Year": 2003,
+    "Emissions_Mt_CO2eq": 2738.93126
+   },
+   {
+    "Sector": "Agriculture",
+    "Year": 2004,
+    "Emissions_Mt_CO2eq": 2814.896404
+   },
+   {
+    "Sector": "Agriculture",
+    "Year": 2005,
+    "Emissions_Mt_CO2eq": 2827.651031
+   },
+   {
+    "Sector": "Agriculture",
+    "Year": 2006,
+    "Emissions_Mt_CO2eq": 2865.53651
+   },
+   {
+    "Sector": "Agriculture",
+    "Year": 2007,
+    "Emissions_Mt_CO2eq": 2861.260076
+   },
+   {
+    "Sector": "Agriculture",
+    "Year": 2008,
+    "Emissions_Mt_CO2eq": 2875.442933
+   },
+   {
+    "Sector": "Agriculture",
+    "Year": 2009,
+    "Emissions_Mt_CO2eq": 2907.566289
+   },
+   {
+    "Sector": "Agriculture",
+    "Year": 2010,
+    "Emissions_Mt_CO2eq": 2914.949784
+   },
+   {
+    "Sector": "Agriculture",
+    "Year": 2011,
+    "Emissions_Mt_CO2eq": 2964.549831
+   },
+   {
+    "Sector": "Agriculture",
+    "Year": 2012,
+    "Emissions_Mt_CO2eq": 2964.657567
+   },
+   {
+    "Sector": "Agriculture",
+    "Year": 2013,
+    "Emissions_Mt_CO2eq": 2970.885456
+   },
+   {
+    "Sector": "Agriculture",
+    "Year": 2014,
+    "Emissions_Mt_CO2eq": 2970.10853
+   },
+   {
+    "Sector": "Agriculture",
+    "Year": 2015,
+    "Emissions_Mt_CO2eq": 2994.905869
+   },
+   {
+    "Sector": "Agriculture",
+    "Year": 2016,
+    "Emissions_Mt_CO2eq": 2986.953708
+   },
+   {
+    "Sector": "Agriculture",
+    "Year": 2017,
+    "Emissions_Mt_CO2eq": 2972.25359
+   },
+   {
+    "Sector": "Agriculture",
+    "Year": 2018,
+    "Emissions_Mt_CO2eq": 2981.911794
+   },
+   {
+    "Sector": "Agriculture",
+    "Year": 2019,
+    "Emissions_Mt_CO2eq": 2981.392168
+   },
+   {
+    "Sector": "Agriculture",
+    "Year": 2020,
+    "Emissions_Mt_CO2eq": 3027.84643
+   },
+   {
+    "Sector": "Agriculture",
+    "Year": 2021,
+    "Emissions_Mt_CO2eq": 3053.338442
+   },
+   {
+    "Sector": "Agriculture",
+    "Year": 2022,
+    "Emissions_Mt_CO2eq": 3098.839428
+   },
+   {
+    "Sector": "Agriculture",
+    "Year": 2023,
+    "Emissions_Mt_CO2eq": 3154.016873
+   },
+   {
+    "Sector": "Agriculture",
+    "Year": 2024,
+    "Emissions_Mt_CO2eq": 3171.187454
+   },
+   {
+    "Sector": "Agriculture",
+    "Year": 2025,
+    "Emissions_Mt_CO2eq": 3152.971408
+   },
+   {
+    "Sector": "Industrial Combustion",
+    "Year": 1990,
+    "Emissions_Mt_CO2eq": 2256.282301
+   },
+   {
+    "Sector": "Industrial Combustion",
+    "Year": 1991,
+    "Emissions_Mt_CO2eq": 2230.305248
+   },
+   {
+    "Sector": "Industrial Combustion",
+    "Year": 1992,
+    "Emissions_Mt_CO2eq": 2187.242697
+   },
+   {
+    "Sector": "Industrial Combustion",
+    "Year": 1993,
+    "Emissions_Mt_CO2eq": 2244.816854
+   },
+   {
+    "Sector": "Industrial Combustion",
+    "Year": 1994,
+    "Emissions_Mt_CO2eq": 2317.2164
+   },
+   {
+    "Sector": "Industrial Combustion",
+    "Year": 1995,
+    "Emissions_Mt_CO2eq": 2445.030964
+   },
+   {
+    "Sector": "Industrial Combustion",
+    "Year": 1996,
+    "Emissions_Mt_CO2eq": 2347.667766
+   },
+   {
+    "Sector": "Industrial Combustion",
+    "Year": 1997,
+    "Emissions_Mt_CO2eq": 2379.594194
+   },
+   {
+    "Sector": "Industrial Combustion",
+    "Year": 1998,
+    "Emissions_Mt_CO2eq": 2428.587027
+   },
+   {
+    "Sector": "Industrial Combustion",
+    "Year": 1999,
+    "Emissions_Mt_CO2eq": 2278.532389
+   },
+   {
+    "Sector": "Industrial Combustion",
+    "Year": 2000,
+    "Emissions_Mt_CO2eq": 2379.125032
+   },
+   {
+    "Sector": "Industrial Combustion",
+    "Year": 2001,
+    "Emissions_Mt_CO2eq": 2391.221619
+   },
+   {
+    "Sector": "Industrial Combustion",
+    "Year": 2002,
+    "Emissions_Mt_CO2eq": 2388.36121
+   },
+   {
+    "Sector": "Industrial Combustion",
+    "Year": 2003,
+    "Emissions_Mt_CO2eq": 2540.687482
+   },
+   {
+    "Sector": "Industrial Combustion",
+    "Year": 2004,
+    "Emissions_Mt_CO2eq": 2947.987235
+   },
+   {
+    "Sector": "Industrial Combustion",
+    "Year": 2005,
+    "Emissions_Mt_CO2eq": 3356.319004
+   },
+   {
+    "Sector": "Industrial Combustion",
+    "Year": 2006,
+    "Emissions_Mt_CO2eq": 3569.695097
+   },
+   {
+    "Sector": "Industrial Combustion",
+    "Year": 2007,
+    "Emissions_Mt_CO2eq": 3788.600618
+   },
+   {
+    "Sector": "Industrial Combustion",
+    "Year": 2008,
+    "Emissions_Mt_CO2eq": 3893.919288
+   },
+   {
+    "Sector": "Industrial Combustion",
+    "Year": 2009,
+    "Emissions_Mt_CO2eq": 4021.690358
+   },
+   {
+    "Sector": "Industrial Combustion",
+    "Year": 2010,
+    "Emissions_Mt_CO2eq": 4389.789078
+   },
+   {
+    "Sector": "Industrial Combustion",
+    "Year": 2011,
+    "Emissions_Mt_CO2eq": 4586.240059
+   },
+   {
+    "Sector": "Industrial Combustion",
+    "Year": 2012,
+    "Emissions_Mt_CO2eq": 4617.787089
+   },
+   {
+    "Sector": "Industrial Combustion",
+    "Year": 2013,
+    "Emissions_Mt_CO2eq": 4665.575537
+   },
+   {
+    "Sector": "Industrial Combustion",
+    "Year": 2014,
+    "Emissions_Mt_CO2eq": 4716.014519
+   },
+   {
+    "Sector": "Industrial Combustion",
+    "Year": 2015,
+    "Emissions_Mt_CO2eq": 4627.024987
+   },
+   {
+    "Sector": "Industrial Combustion",
+    "Year": 2016,
+    "Emissions_Mt_CO2eq": 4473.859315
+   },
+   {
+    "Sector": "Industrial Combustion",
+    "Year": 2017,
+    "Emissions_Mt_CO2eq": 4342.796865
+   },
+   {
+    "Sector": "Industrial Combustion",
+    "Year": 2018,
+    "Emissions_Mt_CO2eq": 4452.320167
+   },
+   {
+    "Sector": "Industrial Combustion",
+    "Year": 2019,
+    "Emissions_Mt_CO2eq": 4399.349575
+   },
+   {
+    "Sector": "Industrial Combustion",
+    "Year": 2020,
+    "Emissions_Mt_CO2eq": 4300.048557
+   },
+   {
+    "Sector": "Industrial Combustion",
+    "Year": 2021,
+    "Emissions_Mt_CO2eq": 4345.224995
+   },
+   {
+    "Sector": "Industrial Combustion",
+    "Year": 2022,
+    "Emissions_Mt_CO2eq": 4384.392618
+   },
+   {
+    "Sector": "Industrial Combustion",
+    "Year": 2023,
+    "Emissions_Mt_CO2eq": 4460.230849
+   },
+   {
+    "Sector": "Industrial Combustion",
+    "Year": 2024,
+    "Emissions_Mt_CO2eq": 4436.635124
+   },
+   {
+    "Sector": "Industrial Combustion",
+    "Year": 2025,
+    "Emissions_Mt_CO2eq": 4461.86063
+   },
+   {
+    "Sector": "Power Industry",
+    "Year": 1990,
+    "Emissions_Mt_CO2eq": 4179.313555
+   },
+   {
+    "Sector": "Power Industry",
+    "Year": 1991,
+    "Emissions_Mt_CO2eq": 4304.820643
+   },
+   {
+    "Sector": "Power Industry",
+    "Year": 1992,
+    "Emissions_Mt_CO2eq": 4494.324332
+   },
+   {
+    "Sector": "Power Industry",
+    "Year": 1993,
+    "Emissions_Mt_CO2eq": 4648.149731
+   },
+   {
+    "Sector": "Power Industry",
+    "Year": 1994,
+    "Emissions_Mt_CO2eq": 4806.546677
+   },
+   {
+    "Sector": "Power Industry",
+    "Year": 1995,
+    "Emissions_Mt_CO2eq": 5008.902798
+   },
+   {
+    "Sector": "Power Industry",
+    "Year": 1996,
+    "Emissions_Mt_CO2eq": 5299.883182
+   },
+   {
+    "Sector": "Power Industry",
+    "Year": 1997,
+    "Emissions_Mt_CO2eq": 5537.532981
+   },
+   {
+    "Sector": "Power Industry",
+    "Year": 1998,
+    "Emissions_Mt_CO2eq": 5704.618412
+   },
+   {
+    "Sector": "Power Industry",
+    "Year": 1999,
+    "Emissions_Mt_CO2eq": 5776.005204
+   },
+   {
+    "Sector": "Power Industry",
+    "Year": 2000,
+    "Emissions_Mt_CO2eq": 6018.234305
+   },
+   {
+    "Sector": "Power Industry",
+    "Year": 2001,
+    "Emissions_Mt_CO2eq": 6159.743144
+   },
+   {
+    "Sector": "Power Industry",
+    "Year": 2002,
+    "Emissions_Mt_CO2eq": 6218.362314
+   },
+   {
+    "Sector": "Power Industry",
+    "Year": 2003,
+    "Emissions_Mt_CO2eq": 6641.237466
+   },
+   {
+    "Sector": "Power Industry",
+    "Year": 2004,
+    "Emissions_Mt_CO2eq": 6947.532926
+   },
+   {
+    "Sector": "Power Industry",
+    "Year": 2005,
+    "Emissions_Mt_CO2eq": 7202.280144
+   },
+   {
+    "Sector": "Power Industry",
+    "Year": 2006,
+    "Emissions_Mt_CO2eq": 7487.5522
+   },
+   {
+    "Sector": "Power Industry",
+    "Year": 2007,
+    "Emissions_Mt_CO2eq": 7956.503338
+   },
+   {
+    "Sector": "Power Industry",
+    "Year": 2008,
+    "Emissions_Mt_CO2eq": 7934.609256
+   },
+   {
+    "Sector": "Power Industry",
+    "Year": 2009,
+    "Emissions_Mt_CO2eq": 7855.619596
+   },
+   {
+    "Sector": "Power Industry",
+    "Year": 2010,
+    "Emissions_Mt_CO2eq": 8438.660494
+   },
+   {
+    "Sector": "Power Industry",
+    "Year": 2011,
+    "Emissions_Mt_CO2eq": 8891.3265
+   },
+   {
+    "Sector": "Power Industry",
+    "Year": 2012,
+    "Emissions_Mt_CO2eq": 9105.148945
+   },
+   {
+    "Sector": "Power Industry",
+    "Year": 2013,
+    "Emissions_Mt_CO2eq": 9440.385697
+   },
+   {
+    "Sector": "Power Industry",
+    "Year": 2014,
+    "Emissions_Mt_CO2eq": 9559.380378
+   },
+   {
+    "Sector": "Power Industry",
+    "Year": 2015,
+    "Emissions_Mt_CO2eq": 9219.344335
+   },
+   {
+    "Sector": "Power Industry",
+    "Year": 2016,
+    "Emissions_Mt_CO2eq": 9230.973472
+   },
+   {
+    "Sector": "Power Industry",
+    "Year": 2017,
+    "Emissions_Mt_CO2eq": 9474.947711
+   },
+   {
+    "Sector": "Power Industry",
+    "Year": 2018,
+    "Emissions_Mt_CO2eq": 9886.650213
+   },
+   {
+    "Sector": "Power Industry",
+    "Year": 2019,
+    "Emissions_Mt_CO2eq": 9858.15817
+   },
+   {
+    "Sector": "Power Industry",
+    "Year": 2020,
+    "Emissions_Mt_CO2eq": 9669.0231
+   },
+   {
+    "Sector": "Power Industry",
+    "Year": 2021,
+    "Emissions_Mt_CO2eq": 10529.123029
+   },
+   {
+    "Sector": "Power Industry",
+    "Year": 2022,
+    "Emissions_Mt_CO2eq": 10715.828876
+   },
+   {
+    "Sector": "Power Industry",
+    "Year": 2023,
+    "Emissions_Mt_CO2eq": 11076.355235
+   },
+   {
+    "Sector": "Power Industry",
+    "Year": 2024,
+    "Emissions_Mt_CO2eq": 11390.473405
+   },
+   {
+    "Sector": "Power Industry",
+    "Year": 2025,
+    "Emissions_Mt_CO2eq": 11320.097437
+   }
+  ],
+  "charts": "Small multiples: one line + area per sector, 1990–2025"
+ },
+ "cell10_power_race": {
+  "rows": [
+   {
+    "Year": 1990,
+    "Country": "Australia",
+    "Emissions_Mt_CO2eq": 129.191527
+   },
+   {
+    "Year": 1990,
+    "Country": "Brazil",
+    "Emissions_Mt_CO2eq": 12.853237
+   },
+   {
+    "Year": 1990,
+    "Country": "Canada",
+    "Emissions_Mt_CO2eq": 97.681178
+   },
+   {
+    "Year": 1990,
+    "Country": "China",
+    "Emissions_Mt_CO2eq": 642.994363
+   },
+   {
+    "Year": 1990,
+    "Country": "Germany",
+    "Emissions_Mt_CO2eq": 385.772806
+   },
+   {
+    "Year": 1990,
+    "Country": "India",
+    "Emissions_Mt_CO2eq": 217.156486
+   },
+   {
+    "Year": 1990,
+    "Country": "Indonesia",
+    "Emissions_Mt_CO2eq": 22.562762
+   },
+   {
+    "Year": 1990,
+    "Country": "Japan",
+    "Emissions_Mt_CO2eq": 389.271826
+   },
+   {
+    "Year": 1990,
+    "Country": "South Africa",
+    "Emissions_Mt_CO2eq": 144.04612
+   },
+   {
+    "Year": 1990,
+    "Country": "United Kingdom",
+    "Emissions_Mt_CO2eq": 220.324893
+   },
+   {
+    "Year": 1990,
+    "Country": "United States",
+    "Emissions_Mt_CO2eq": 1917.458358
+   },
+   {
+    "Year": 1991,
+    "Country": "Australia",
+    "Emissions_Mt_CO2eq": 131.685709
+   },
+   {
+    "Year": 1991,
+    "Country": "Brazil",
+    "Emissions_Mt_CO2eq": 14.137148
+   },
+   {
+    "Year": 1991,
+    "Country": "Canada",
+    "Emissions_Mt_CO2eq": 99.156802
+   },
+   {
+    "Year": 1991,
+    "Country": "China",
+    "Emissions_Mt_CO2eq": 708.18611
+   },
+   {
+    "Year": 1991,
+    "Country": "Germany",
+    "Emissions_Mt_CO2eq": 382.15522
+   },
+   {
+    "Year": 1991,
+    "Country": "India",
+    "Emissions_Mt_CO2eq": 243.694815
+   },
+   {
+    "Year": 1991,
+    "Country": "Indonesia",
+    "Emissions_Mt_CO2eq": 25.096015
+   },
+   {
+    "Year": 1991,
+    "Country": "Japan",
+    "Emissions_Mt_CO2eq": 390.391563
+   },
+   {
+    "Year": 1991,
+    "Country": "South Africa",
+    "Emissions_Mt_CO2eq": 143.583163
+   },
+   {
+    "Year": 1991,
+    "Country": "United Kingdom",
+    "Emissions_Mt_CO2eq": 217.679685
+   },
+   {
+    "Year": 1991,
+    "Country": "United States",
+    "Emissions_Mt_CO2eq": 1949.054413
+   },
+   {
+    "Year": 1992,
+    "Country": "Australia",
+    "Emissions_Mt_CO2eq": 134.421146
+   },
+   {
+    "Year": 1992,
+    "Country": "Brazil",
+    "Emissions_Mt_CO2eq": 15.348346
+   },
+   {
+    "Year": 1992,
+    "Country": "Canada",
+    "Emissions_Mt_CO2eq": 105.797885
+   },
+   {
+    "Year": 1992,
+    "Country": "China",
+    "Emissions_Mt_CO2eq": 784.829785
+   },
+   {
+    "Year": 1992,
+    "Country": "Germany",
+    "Emissions_Mt_CO2eq": 366.899617
+   },
+   {
+    "Year": 1992,
+    "Country": "India",
+    "Emissions_Mt_CO2eq": 263.589022
+   },
+   {
+    "Year": 1992,
+    "Country": "Indonesia",
+    "Emissions_Mt_CO2eq": 25.484898
+   },
+   {
+    "Year": 1992,
+    "Country": "Japan",
+    "Emissions_Mt_CO2eq": 395.72062
+   },
+   {
+    "Year": 1992,
+    "Country": "South Africa",
+    "Emissions_Mt_CO2eq": 145.89788
+   },
+   {
+    "Year": 1992,
+    "Country": "United Kingdom",
+    "Emissions_Mt_CO2eq": 214.525472
+   },
+   {
+    "Year": 1992,
+    "Country": "United States",
+    "Emissions_Mt_CO2eq": 2041.80966
+   },
+   {
+    "Year": 1993,
+    "Country": "Australia",
+    "Emissions_Mt_CO2eq": 135.322016
+   },
+   {
+    "Year": 1993,
+    "Country": "Brazil",
+    "Emissions_Mt_CO2eq": 14.559525
+   },
+   {
+    "Year": 1993,
+    "Country": "Canada",
+    "Emissions_Mt_CO2eq": 96.279558
+   },
+   {
+    "Year": 1993,
+    "Country": "China",
+    "Emissions_Mt_CO2eq": 895.387158
+   },
+   {
+    "Year": 1993,
+    "Country": "Germany",
+    "Emissions_Mt_CO2eq": 356.879679
+   },
+   {
+    "Year": 1993,
+    "Country": "India",
+    "Emissions_Mt_CO2eq": 291.239763
+   },
+   {
+    "Year": 1993,
+    "Country": "Indonesia",
+    "Emissions_Mt_CO2eq": 31.874835
+   },
+   {
+    "Year": 1993,
+    "Country": "Japan",
+    "Emissions_Mt_CO2eq": 378.203695
+   },
+   {
+    "Year": 1993,
+    "Country": "South Africa",
+    "Emissions_Mt_CO2eq": 156.29111
+   },
+   {
+    "Year": 1993,
+    "Country": "United Kingdom",
+    "Emissions_Mt_CO2eq": 191.237433
+   },
+   {
+    "Year": 1993,
+    "Country": "United States",
+    "Emissions_Mt_CO2eq": 2100.874959
+   },
+   {
+    "Year": 1994,
+    "Country": "Australia",
+    "Emissions_Mt_CO2eq": 137.540435
+   },
+   {
+    "Year": 1994,
+    "Country": "Brazil",
+    "Emissions_Mt_CO2eq": 13.824524
+   },
+   {
+    "Year": 1994,
+    "Country": "Canada",
+    "Emissions_Mt_CO2eq": 98.860136
+   },
+   {
+    "Year": 1994,
+    "Country": "China",
+    "Emissions_Mt_CO2eq": 971.765336
+   },
+   {
+    "Year": 1994,
+    "Country": "Germany",
+    "Emissions_Mt_CO2eq": 356.509319
+   },
+   {
+    "Year": 1994,
+    "Country": "India",
+    "Emissions_Mt_CO2eq": 303.606417
+   },
+   {
+    "Year": 1994,
+    "Country": "Indonesia",
+    "Emissions_Mt_CO2eq": 31.959496
+   },
+   {
+    "Year": 1994,
+    "Country": "Japan",
+    "Emissions_Mt_CO2eq": 418.646485
+   },
+   {
+    "Year": 1994,
+    "Country": "South Africa",
+    "Emissions_Mt_CO2eq": 160.099043
+   },
+   {
+    "Year": 1994,
+    "Country": "United Kingdom",
+    "Emissions_Mt_CO2eq": 182.810626
+   },
+   {
+    "Year": 1994,
+    "Country": "United States",
+    "Emissions_Mt_CO2eq": 2130.92486
+   },
+   {
+    "Year": 1995,
+    "Country": "Australia",
+    "Emissions_Mt_CO2eq": 143.185936
+   },
+   {
+    "Year": 1995,
+    "Country": "Brazil",
+    "Emissions_Mt_CO2eq": 15.806176
+   },
+   {
+    "Year": 1995,
+    "Country": "Canada",
+    "Emissions_Mt_CO2eq": 102.650373
+   },
+   {
+    "Year": 1995,
+    "Country": "China",
+    "Emissions_Mt_CO2eq": 1065.414552
+   },
+   {
+    "Year": 1995,
+    "Country": "Germany",
+    "Emissions_Mt_CO2eq": 353.426262
+   },
+   {
+    "Year": 1995,
+    "Country": "India",
+    "Emissions_Mt_CO2eq": 348.091892
+   },
+   {
+    "Year": 1995,
+    "Country": "Indonesia",
+    "Emissions_Mt_CO2eq": 35.602891
+   },
+   {
+    "Year": 1995,
+    "Country": "Japan",
+    "Emissions_Mt_CO2eq": 407.514188
+   },
+   {
+    "Year": 1995,
+    "Country": "South Africa",
+    "Emissions_Mt_CO2eq": 167.843091
+   },
+   {
+    "Year": 1995,
+    "Country": "United Kingdom",
+    "Emissions_Mt_CO2eq": 179.489975
+   },
+   {
+    "Year": 1995,
+    "Country": "United States",
+    "Emissions_Mt_CO2eq": 2189.877462
+   },
+   {
+    "Year": 1996,
+    "Country": "Australia",
+    "Emissions_Mt_CO2eq": 149.371189
+   },
+   {
+    "Year": 1996,
+    "Country": "Brazil",
+    "Emissions_Mt_CO2eq": 17.228815
+   },
+   {
+    "Year": 1996,
+    "Country": "Canada",
+    "Emissions_Mt_CO2eq": 101.405301
+   },
+   {
+    "Year": 1996,
+    "Country": "China",
+    "Emissions_Mt_CO2eq": 1216.39749
+   },
+   {
+    "Year": 1996,
+    "Country": "Germany",
+    "Emissions_Mt_CO2eq": 364.743339
+   },
+   {
+    "Year": 1996,
+    "Country": "India",
+    "Emissions_Mt_CO2eq": 370.942723
+   },
+   {
+    "Year": 1996,
+    "Country": "Indonesia",
+    "Emissions_Mt_CO2eq": 41.871735
+   },
+   {
+    "Year": 1996,
+    "Country": "Japan",
+    "Emissions_Mt_CO2eq": 413.141428
+   },
+   {
+    "Year": 1996,
+    "Country": "South Africa",
+    "Emissions_Mt_CO2eq": 175.927502
+   },
+   {
+    "Year": 1996,
+    "Country": "United Kingdom",
+    "Emissions_Mt_CO2eq": 184.195305
+   },
+   {
+    "Year": 1996,
+    "Country": "United States",
+    "Emissions_Mt_CO2eq": 2264.658356
+   },
+   {
+    "Year": 1997,
+    "Country": "Australia",
+    "Emissions_Mt_CO2eq": 154.325539
+   },
+   {
+    "Year": 1997,
+    "Country": "Brazil",
+    "Emissions_Mt_CO2eq": 19.885992
+   },
+   {
+    "Year": 1997,
+    "Country": "Canada",
+    "Emissions_Mt_CO2eq": 112.655873
+   },
+   {
+    "Year": 1997,
+    "Country": "China",
+    "Emissions_Mt_CO2eq": 1196.975471
+   },
+   {
+    "Year": 1997,
+    "Country": "Germany",
+    "Emissions_Mt_CO2eq": 350.729515
+   },
+   {
+    "Year": 1997,
+    "Country": "India",
+    "Emissions_Mt_CO2eq": 383.575924
+   },
+   {
+    "Year": 1997,
+    "Country": "Indonesia",
+    "Emissions_Mt_CO2eq": 50.659688
+   },
+   {
+    "Year": 1997,
+    "Country": "Japan",
+    "Emissions_Mt_CO2eq": 406.280452
+   },
+   {
+    "Year": 1997,
+    "Country": "South Africa",
+    "Emissions_Mt_CO2eq": 185.079769
+   },
+   {
+    "Year": 1997,
+    "Country": "United Kingdom",
+    "Emissions_Mt_CO2eq": 171.843605
+   },
+   {
+    "Year": 1997,
+    "Country": "United States",
+    "Emissions_Mt_CO2eq": 2505.521152
+   },
+   {
+    "Year": 1998,
+    "Country": "Australia",
+    "Emissions_Mt_CO2eq": 172.332348
+   },
+   {
+    "Year": 1998,
+    "Country": "Brazil",
+    "Emissions_Mt_CO2eq": 20.759178
+   },
+   {
+    "Year": 1998,
+    "Country": "Canada",
+    "Emissions_Mt_CO2eq": 125.829303
+   },
+   {
+    "Year": 1998,
+    "Country": "China",
+    "Emissions_Mt_CO2eq": 1268.158141
+   },
+   {
+    "Year": 1998,
+    "Country": "Germany",
+    "Emissions_Mt_CO2eq": 349.157106
+   },
+   {
+    "Year": 1998,
+    "Country": "India",
+    "Emissions_Mt_CO2eq": 399.069261
+   },
+   {
+    "Year": 1998,
+    "Country": "Indonesia",
+    "Emissions_Mt_CO2eq": 50.513831
+   },
+   {
+    "Year": 1998,
+    "Country": "Japan",
+    "Emissions_Mt_CO2eq": 390.277345
+   },
+   {
+    "Year": 1998,
+    "Country": "South Africa",
+    "Emissions_Mt_CO2eq": 192.872616
+   },
+   {
+    "Year": 1998,
+    "Country": "United Kingdom",
+    "Emissions_Mt_CO2eq": 175.833768
+   },
+   {
+    "Year": 1998,
+    "Country": "United States",
+    "Emissions_Mt_CO2eq": 2559.815516
+   },
+   {
+    "Year": 1999,
+    "Country": "Australia",
+    "Emissions_Mt_CO2eq": 176.855037
+   },
+   {
+    "Year": 1999,
+    "Country": "Brazil",
+    "Emissions_Mt_CO2eq": 28.497231
+   },
+   {
+    "Year": 1999,
+    "Country": "Canada",
+    "Emissions_Mt_CO2eq": 124.548982
+   },
+   {
+    "Year": 1999,
+    "Country": "China",
+    "Emissions_Mt_CO2eq": 1304.474351
+   },
+   {
+    "Year": 1999,
+    "Country": "Germany",
+    "Emissions_Mt_CO2eq": 336.630921
+   },
+   {
+    "Year": 1999,
+    "Country": "India",
+    "Emissions_Mt_CO2eq": 434.467866
+   },
+   {
+    "Year": 1999,
+    "Country": "Indonesia",
+    "Emissions_Mt_CO2eq": 57.112711
+   },
+   {
+    "Year": 1999,
+    "Country": "Japan",
+    "Emissions_Mt_CO2eq": 415.888096
+   },
+   {
+    "Year": 1999,
+    "Country": "South Africa",
+    "Emissions_Mt_CO2eq": 182.715182
+   },
+   {
+    "Year": 1999,
+    "Country": "United Kingdom",
+    "Emissions_Mt_CO2eq": 176.853681
+   },
+   {
+    "Year": 1999,
+    "Country": "United States",
+    "Emissions_Mt_CO2eq": 2537.961146
+   },
+   {
+    "Year": 2000,
+    "Country": "Australia",
+    "Emissions_Mt_CO2eq": 179.610021
+   },
+   {
+    "Year": 2000,
+    "Country": "Brazil",
+    "Emissions_Mt_CO2eq": 31.742017
+   },
+   {
+    "Year": 2000,
+    "Country": "Canada",
+    "Emissions_Mt_CO2eq": 136.25879
+   },
+   {
+    "Year": 2000,
+    "Country": "China",
+    "Emissions_Mt_CO2eq": 1437.548095
+   },
+   {
+    "Year": 2000,
+    "Country": "Germany",
+    "Emissions_Mt_CO2eq": 341.912686
+   },
+   {
+    "Year": 2000,
+    "Country": "India",
+    "Emissions_Mt_CO2eq": 462.925145
+   },
+   {
+    "Year": 2000,
+    "Country": "Indonesia",
+    "Emissions_Mt_CO2eq": 56.107094
+   },
+   {
+    "Year": 2000,
+    "Country": "Japan",
+    "Emissions_Mt_CO2eq": 427.26117
+   },
+   {
+    "Year": 2000,
+    "Country": "South Africa",
+    "Emissions_Mt_CO2eq": 190.180334
+   },
+   {
+    "Year": 2000,
+    "Country": "United Kingdom",
+    "Emissions_Mt_CO2eq": 189.507092
+   },
+   {
+    "Year": 2000,
+    "Country": "United States",
+    "Emissions_Mt_CO2eq": 2565.181861
+   },
+   {
+    "Year": 2001,
+    "Country": "Australia",
+    "Emissions_Mt_CO2eq": 187.49027
+   },
+   {
+    "Year": 2001,
+    "Country": "Brazil",
+    "Emissions_Mt_CO2eq": 35.74913
+   },
+   {
+    "Year": 2001,
+    "Country": "Canada",
+    "Emissions_Mt_CO2eq": 138.55962
+   },
+   {
+    "Year": 2001,
+    "Country": "China",
+    "Emissions_Mt_CO2eq": 1517.548872
+   },
+   {
+    "Year": 2001,
+    "Country": "Germany",
+    "Emissions_Mt_CO2eq": 355.226272
+   },
+   {
+    "Year": 2001,
+    "Country": "India",
+    "Emissions_Mt_CO2eq": 475.80975
+   },
+   {
+    "Year": 2001,
+    "Country": "Indonesia",
+    "Emissions_Mt_CO2eq": 70.376413
+   },
+   {
+    "Year": 2001,
+    "Country": "Japan",
+    "Emissions_Mt_CO2eq": 421.090438
+   },
+   {
+    "Year": 2001,
+    "Country": "South Africa",
+    "Emissions_Mt_CO2eq": 176.814462
+   },
+   {
+    "Year": 2001,
+    "Country": "United Kingdom",
+    "Emissions_Mt_CO2eq": 198.239948
+   },
+   {
+    "Year": 2001,
+    "Country": "United States",
+    "Emissions_Mt_CO2eq": 2582.837969
+   },
+   {
+    "Year": 2002,
+    "Country": "Australia",
+    "Emissions_Mt_CO2eq": 203.882515
+   },
+   {
+    "Year": 2002,
+    "Country": "Brazil",
+    "Emissions_Mt_CO2eq": 30.715483
+   },
+   {
+    "Year": 2002,
+    "Country": "Canada",
+    "Emissions_Mt_CO2eq": 132.639497
+   },
+   {
+    "Year": 2002,
+    "Country": "China",
+    "Emissions_Mt_CO2eq": 1698.711427
+   },
+   {
+    "Year": 2002,
+    "Country": "Germany",
+    "Emissions_Mt_CO2eq": 355.387598
+   },
+   {
+    "Year": 2002,
+    "Country": "India",
+    "Emissions_Mt_CO2eq": 483.399351
+   },
+   {
+    "Year": 2002,
+    "Country": "Indonesia",
+    "Emissions_Mt_CO2eq": 74.760818
+   },
+   {
+    "Year": 2002,
+    "Country": "Japan",
+    "Emissions_Mt_CO2eq": 450.670008
+   },
+   {
+    "Year": 2002,
+    "Country": "South Africa",
+    "Emissions_Mt_CO2eq": 181.104946
+   },
+   {
+    "Year": 2002,
+    "Country": "United Kingdom",
+    "Emissions_Mt_CO2eq": 192.443738
+   },
+   {
+    "Year": 2002,
+    "Country": "United States",
+    "Emissions_Mt_CO2eq": 2414.646932
+   },
+   {
+    "Year": 2003,
+    "Country": "Australia",
+    "Emissions_Mt_CO2eq": 188.582557
+   },
+   {
+    "Year": 2003,
+    "Country": "Brazil",
+    "Emissions_Mt_CO2eq": 29.741414
+   },
+   {
+    "Year": 2003,
+    "Country": "Canada",
+    "Emissions_Mt_CO2eq": 138.443595
+   },
+   {
+    "Year": 2003,
+    "Country": "China",
+    "Emissions_Mt_CO2eq": 2014.352993
+   },
+   {
+    "Year": 2003,
+    "Country": "Germany",
+    "Emissions_Mt_CO2eq": 365.626236
+   },
+   {
+    "Year": 2003,
+    "Country": "India",
+    "Emissions_Mt_CO2eq": 505.804599
+   },
+   {
+    "Year": 2003,
+    "Country": "Indonesia",
+    "Emissions_Mt_CO2eq": 83.552791
+   },
+   {
+    "Year": 2003,
+    "Country": "Japan",
+    "Emissions_Mt_CO2eq": 469.491407
+   },
+   {
+    "Year": 2003,
+    "Country": "South Africa",
+    "Emissions_Mt_CO2eq": 201.186302
+   },
+   {
+    "Year": 2003,
+    "Country": "United Kingdom",
+    "Emissions_Mt_CO2eq": 204.075734
+   },
+   {
+    "Year": 2003,
+    "Country": "United States",
+    "Emissions_Mt_CO2eq": 2440.379839
+   },
+   {
+    "Year": 2004,
+    "Country": "Australia",
+    "Emissions_Mt_CO2eq": 197.861888
+   },
+   {
+    "Year": 2004,
+    "Country": "Brazil",
+    "Emissions_Mt_CO2eq": 34.27788
+   },
+   {
+    "Year": 2004,
+    "Country": "Canada",
+    "Emissions_Mt_CO2eq": 130.58037
+   },
+   {
+    "Year": 2004,
+    "Country": "China",
+    "Emissions_Mt_CO2eq": 2225.671952
+   },
+   {
+    "Year": 2004,
+    "Country": "Germany",
+    "Emissions_Mt_CO2eq": 359.178105
+   },
+   {
+    "Year": 2004,
+    "Country": "India",
+    "Emissions_Mt_CO2eq": 552.956092
+   },
+   {
+    "Year": 2004,
+    "Country": "Indonesia",
+    "Emissions_Mt_CO2eq": 86.648115
+   },
+   {
+    "Year": 2004,
+    "Country": "Japan",
+    "Emissions_Mt_CO2eq": 463.780319
+   },
+   {
+    "Year": 2004,
+    "Country": "South Africa",
+    "Emissions_Mt_CO2eq": 215.066255
+   },
+   {
+    "Year": 2004,
+    "Country": "United Kingdom",
+    "Emissions_Mt_CO2eq": 202.791216
+   },
+   {
+    "Year": 2004,
+    "Country": "United States",
+    "Emissions_Mt_CO2eq": 2478.720736
+   },
+   {
+    "Year": 2005,
+    "Country": "Australia",
+    "Emissions_Mt_CO2eq": 201.405296
+   },
+   {
+    "Year": 2005,
+    "Country": "Brazil",
+    "Emissions_Mt_CO2eq": 35.060915
+   },
+   {
+    "Year": 2005,
+    "Country": "Canada",
+    "Emissions_Mt_CO2eq": 126.178032
+   },
+   {
+    "Year": 2005,
+    "Country": "China",
+    "Emissions_Mt_CO2eq": 2397.113726
+   },
+   {
+    "Year": 2005,
+    "Country": "Germany",
+    "Emissions_Mt_CO2eq": 354.358581
+   },
+   {
+    "Year": 2005,
+    "Country": "India",
+    "Emissions_Mt_CO2eq": 566.487516
+   },
+   {
+    "Year": 2005,
+    "Country": "Indonesia",
+    "Emissions_Mt_CO2eq": 93.266232
+   },
+   {
+    "Year": 2005,
+    "Country": "Japan",
+    "Emissions_Mt_CO2eq": 473.126873
+   },
+   {
+    "Year": 2005,
+    "Country": "South Africa",
+    "Emissions_Mt_CO2eq": 211.14493
+   },
+   {
+    "Year": 2005,
+    "Country": "United Kingdom",
+    "Emissions_Mt_CO2eq": 204.588872
+   },
+   {
+    "Year": 2005,
+    "Country": "United States",
+    "Emissions_Mt_CO2eq": 2539.549171
+   },
+   {
+    "Year": 2006,
+    "Country": "Australia",
+    "Emissions_Mt_CO2eq": 204.938015
+   },
+   {
+    "Year": 2006,
+    "Country": "Brazil",
+    "Emissions_Mt_CO2eq": 35.138887
+   },
+   {
+    "Year": 2006,
+    "Country": "Canada",
+    "Emissions_Mt_CO2eq": 124.337094
+   },
+   {
+    "Year": 2006,
+    "Country": "China",
+    "Emissions_Mt_CO2eq": 2712.476704
+   },
+   {
+    "Year": 2006,
+    "Country": "Germany",
+    "Emissions_Mt_CO2eq": 358.274102
+   },
+   {
+    "Year": 2006,
+    "Country": "India",
+    "Emissions_Mt_CO2eq": 602.863565
+   },
+   {
+    "Year": 2006,
+    "Country": "Indonesia",
+    "Emissions_Mt_CO2eq": 99.844661
+   },
+   {
+    "Year": 2006,
+    "Country": "Japan",
+    "Emissions_Mt_CO2eq": 461.600383
+   },
+   {
+    "Year": 2006,
+    "Country": "South Africa",
+    "Emissions_Mt_CO2eq": 213.712737
+   },
+   {
+    "Year": 2006,
+    "Country": "United Kingdom",
+    "Emissions_Mt_CO2eq": 212.919103
+   },
+   {
+    "Year": 2006,
+    "Country": "United States",
+    "Emissions_Mt_CO2eq": 2461.446948
+   },
+   {
+    "Year": 2007,
+    "Country": "Australia",
+    "Emissions_Mt_CO2eq": 211.329925
+   },
+   {
+    "Year": 2007,
+    "Country": "Brazil",
+    "Emissions_Mt_CO2eq": 33.364282
+   },
+   {
+    "Year": 2007,
+    "Country": "Canada",
+    "Emissions_Mt_CO2eq": 134.056385
+   },
+   {
+    "Year": 2007,
+    "Country": "China",
+    "Emissions_Mt_CO2eq": 2960.92073
+   },
+   {
+    "Year": 2007,
+    "Country": "Germany",
+    "Emissions_Mt_CO2eq": 371.4669
+   },
+   {
+    "Year": 2007,
+    "Country": "India",
+    "Emissions_Mt_CO2eq": 666.134656
+   },
+   {
+    "Year": 2007,
+    "Country": "Indonesia",
+    "Emissions_Mt_CO2eq": 111.315386
+   },
+   {
+    "Year": 2007,
+    "Country": "Japan",
+    "Emissions_Mt_CO2eq": 511.313975
+   },
+   {
+    "Year": 2007,
+    "Country": "South Africa",
+    "Emissions_Mt_CO2eq": 220.766817
+   },
+   {
+    "Year": 2007,
+    "Country": "United Kingdom",
+    "Emissions_Mt_CO2eq": 209.325134
+   },
+   {
+    "Year": 2007,
+    "Country": "United States",
+    "Emissions_Mt_CO2eq": 2526.509146
+   },
+   {
+    "Year": 2008,
+    "Country": "Australia",
+    "Emissions_Mt_CO2eq": 211.354459
+   },
+   {
+    "Year": 2008,
+    "Country": "Brazil",
+    "Emissions_Mt_CO2eq": 43.083382
+   },
+   {
+    "Year": 2008,
+    "Country": "Canada",
+    "Emissions_Mt_CO2eq": 122.898062
+   },
+   {
+    "Year": 2008,
+    "Country": "China",
+    "Emissions_Mt_CO2eq": 2990.838993
+   },
+   {
+    "Year": 2008,
+    "Country": "Germany",
+    "Emissions_Mt_CO2eq": 350.163743
+   },
+   {
+    "Year": 2008,
+    "Country": "India",
+    "Emissions_Mt_CO2eq": 693.869352
+   },
+   {
+    "Year": 2008,
+    "Country": "Indonesia",
+    "Emissions_Mt_CO2eq": 125.181888
+   },
+   {
+    "Year": 2008,
+    "Country": "Japan",
+    "Emissions_Mt_CO2eq": 488.846999
+   },
+   {
+    "Year": 2008,
+    "Country": "South Africa",
+    "Emissions_Mt_CO2eq": 248.133352
+   },
+   {
+    "Year": 2008,
+    "Country": "United Kingdom",
+    "Emissions_Mt_CO2eq": 198.455944
+   },
+   {
+    "Year": 2008,
+    "Country": "United States",
+    "Emissions_Mt_CO2eq": 2461.783081
+   },
+   {
+    "Year": 2009,
+    "Country": "Australia",
+    "Emissions_Mt_CO2eq": 221.762487
+   },
+   {
+    "Year": 2009,
+    "Country": "Brazil",
+    "Emissions_Mt_CO2eq": 31.013466
+   },
+   {
+    "Year": 2009,
+    "Country": "Canada",
+    "Emissions_Mt_CO2eq": 109.269648
+   },
+   {
+    "Year": 2009,
+    "Country": "China",
+    "Emissions_Mt_CO2eq": 3173.393054
+   },
+   {
+    "Year": 2009,
+    "Country": "Germany",
+    "Emissions_Mt_CO2eq": 323.167641
+   },
+   {
+    "Year": 2009,
+    "Country": "India",
+    "Emissions_Mt_CO2eq": 767.097999
+   },
+   {
+    "Year": 2009,
+    "Country": "Indonesia",
+    "Emissions_Mt_CO2eq": 124.636261
+   },
+   {
+    "Year": 2009,
+    "Country": "Japan",
+    "Emissions_Mt_CO2eq": 460.393484
+   },
+   {
+    "Year": 2009,
+    "Country": "South Africa",
+    "Emissions_Mt_CO2eq": 229.045272
+   },
+   {
+    "Year": 2009,
+    "Country": "United Kingdom",
+    "Emissions_Mt_CO2eq": 173.416321
+   },
+   {
+    "Year": 2009,
+    "Country": "United States",
+    "Emissions_Mt_CO2eq": 2242.423963
+   },
+   {
+    "Year": 2010,
+    "Country": "Australia",
+    "Emissions_Mt_CO2eq": 220.21245
+   },
+   {
+    "Year": 2010,
+    "Country": "Brazil",
+    "Emissions_Mt_CO2eq": 46.539449
+   },
+   {
+    "Year": 2010,
+    "Country": "Canada",
+    "Emissions_Mt_CO2eq": 111.949541
+   },
+   {
+    "Year": 2010,
+    "Country": "China",
+    "Emissions_Mt_CO2eq": 3509.943426
+   },
+   {
+    "Year": 2010,
+    "Country": "Germany",
+    "Emissions_Mt_CO2eq": 341.307241
+   },
+   {
+    "Year": 2010,
+    "Country": "India",
+    "Emissions_Mt_CO2eq": 795.505857
+   },
+   {
+    "Year": 2010,
+    "Country": "Indonesia",
+    "Emissions_Mt_CO2eq": 126.923536
+   },
+   {
+    "Year": 2010,
+    "Country": "Japan",
+    "Emissions_Mt_CO2eq": 502.273795
+   },
+   {
+    "Year": 2010,
+    "Country": "South Africa",
+    "Emissions_Mt_CO2eq": 243.776056
+   },
+   {
+    "Year": 2010,
+    "Country": "United Kingdom",
+    "Emissions_Mt_CO2eq": 178.412969
+   },
+   {
+    "Year": 2010,
+    "Country": "United States",
+    "Emissions_Mt_CO2eq": 2361.816176
+   },
+   {
+    "Year": 2011,
+    "Country": "Australia",
+    "Emissions_Mt_CO2eq": 211.889509
+   },
+   {
+    "Year": 2011,
+    "Country": "Brazil",
+    "Emissions_Mt_CO2eq": 37.760502
+   },
+   {
+    "Year": 2011,
+    "Country": "Canada",
+    "Emissions_Mt_CO2eq": 108.319231
+   },
+   {
+    "Year": 2011,
+    "Country": "China",
+    "Emissions_Mt_CO2eq": 3990.380793
+   },
+   {
+    "Year": 2011,
+    "Country": "Germany",
+    "Emissions_Mt_CO2eq": 334.146116
+   },
+   {
+    "Year": 2011,
+    "Country": "India",
+    "Emissions_Mt_CO2eq": 831.815714
+   },
+   {
+    "Year": 2011,
+    "Country": "Indonesia",
+    "Emissions_Mt_CO2eq": 154.383501
+   },
+   {
+    "Year": 2011,
+    "Country": "Japan",
+    "Emissions_Mt_CO2eq": 562.595181
+   },
+   {
+    "Year": 2011,
+    "Country": "South Africa",
+    "Emissions_Mt_CO2eq": 231.650487
+   },
+   {
+    "Year": 2011,
+    "Country": "United Kingdom",
+    "Emissions_Mt_CO2eq": 167.420329
+   },
+   {
+    "Year": 2011,
+    "Country": "United States",
+    "Emissions_Mt_CO2eq": 2260.965137
+   },
+   {
+    "Year": 2012,
+    "Country": "Australia",
+    "Emissions_Mt_CO2eq": 211.642019
+   },
+   {
+    "Year": 2012,
+    "Country": "Brazil",
+    "Emissions_Mt_CO2eq": 56.66152
+   },
+   {
+    "Year": 2012,
+    "Country": "Canada",
+    "Emissions_Mt_CO2eq": 103.337722
+   },
+   {
+    "Year": 2012,
+    "Country": "China",
+    "Emissions_Mt_CO2eq": 4112.771289
+   },
+   {
+    "Year": 2012,
+    "Country": "Germany",
+    "Emissions_Mt_CO2eq": 344.930382
+   },
+   {
+    "Year": 2012,
+    "Country": "India",
+    "Emissions_Mt_CO2eq": 960.877558
+   },
+   {
+    "Year": 2012,
+    "Country": "Indonesia",
+    "Emissions_Mt_CO2eq": 151.316812
+   },
+   {
+    "Year": 2012,
+    "Country": "Japan",
+    "Emissions_Mt_CO2eq": 612.718402
+   },
+   {
+    "Year": 2012,
+    "Country": "South Africa",
+    "Emissions_Mt_CO2eq": 238.193182
+   },
+   {
+    "Year": 2012,
+    "Country": "United Kingdom",
+    "Emissions_Mt_CO2eq": 182.259175
+   },
+   {
+    "Year": 2012,
+    "Country": "United States",
+    "Emissions_Mt_CO2eq": 2130.440884
+   },
+   {
+    "Year": 2013,
+    "Country": "Australia",
+    "Emissions_Mt_CO2eq": 200.751421
+   },
+   {
+    "Year": 2013,
+    "Country": "Brazil",
+    "Emissions_Mt_CO2eq": 79.953539
+   },
+   {
+    "Year": 2013,
+    "Country": "Canada",
+    "Emissions_Mt_CO2eq": 102.180576
+   },
+   {
+    "Year": 2013,
+    "Country": "China",
+    "Emissions_Mt_CO2eq": 4385.67002
+   },
+   {
+    "Year": 2013,
+    "Country": "Germany",
+    "Emissions_Mt_CO2eq": 349.679928
+   },
+   {
+    "Year": 2013,
+    "Country": "India",
+    "Emissions_Mt_CO2eq": 982.61452
+   },
+   {
+    "Year": 2013,
+    "Country": "Indonesia",
+    "Emissions_Mt_CO2eq": 163.282093
+   },
+   {
+    "Year": 2013,
+    "Country": "Japan",
+    "Emissions_Mt_CO2eq": 622.787125
+   },
+   {
+    "Year": 2013,
+    "Country": "South Africa",
+    "Emissions_Mt_CO2eq": 242.066489
+   },
+   {
+    "Year": 2013,
+    "Country": "United Kingdom",
+    "Emissions_Mt_CO2eq": 168.919863
+   },
+   {
+    "Year": 2013,
+    "Country": "United States",
+    "Emissions_Mt_CO2eq": 2142.480123
+   },
+   {
+    "Year": 2014,
+    "Country": "Australia",
+    "Emissions_Mt_CO2eq": 191.212003
+   },
+   {
+    "Year": 2014,
+    "Country": "Brazil",
+    "Emissions_Mt_CO2eq": 101.161117
+   },
+   {
+    "Year": 2014,
+    "Country": "Canada",
+    "Emissions_Mt_CO2eq": 101.576881
+   },
+   {
+    "Year": 2014,
+    "Country": "China",
+    "Emissions_Mt_CO2eq": 4429.048145
+   },
+   {
+    "Year": 2014,
+    "Country": "Germany",
+    "Emissions_Mt_CO2eq": 330.60468
+   },
+   {
+    "Year": 2014,
+    "Country": "India",
+    "Emissions_Mt_CO2eq": 1101.298487
+   },
+   {
+    "Year": 2014,
+    "Country": "Indonesia",
+    "Emissions_Mt_CO2eq": 173.598299
+   },
+   {
+    "Year": 2014,
+    "Country": "Japan",
+    "Emissions_Mt_CO2eq": 592.760327
+   },
+   {
+    "Year": 2014,
+    "Country": "South Africa",
+    "Emissions_Mt_CO2eq": 253.683079
+   },
+   {
+    "Year": 2014,
+    "Country": "United Kingdom",
+    "Emissions_Mt_CO2eq": 144.524186
+   },
+   {
+    "Year": 2014,
+    "Country": "United States",
+    "Emissions_Mt_CO2eq": 2139.913173
+   },
+   {
+    "Year": 2015,
+    "Country": "Australia",
+    "Emissions_Mt_CO2eq": 199.762808
+   },
+   {
+    "Year": 2015,
+    "Country": "Brazil",
+    "Emissions_Mt_CO2eq": 97.173262
+   },
+   {
+    "Year": 2015,
+    "Country": "Canada",
+    "Emissions_Mt_CO2eq": 99.016681
+   },
+   {
+    "Year": 2015,
+    "Country": "China",
+    "Emissions_Mt_CO2eq": 4305.242349
+   },
+   {
+    "Year": 2015,
+    "Country": "Germany",
+    "Emissions_Mt_CO2eq": 325.805613
+   },
+   {
+    "Year": 2015,
+    "Country": "India",
+    "Emissions_Mt_CO2eq": 1088.098332
+   },
+   {
+    "Year": 2015,
+    "Country": "Indonesia",
+    "Emissions_Mt_CO2eq": 183.881107
+   },
+   {
+    "Year": 2015,
+    "Country": "Japan",
+    "Emissions_Mt_CO2eq": 566.917597
+   },
+   {
+    "Year": 2015,
+    "Country": "South Africa",
+    "Emissions_Mt_CO2eq": 233.661024
+   },
+   {
+    "Year": 2015,
+    "Country": "United Kingdom",
+    "Emissions_Mt_CO2eq": 122.379066
+   },
+   {
+    "Year": 2015,
+    "Country": "United States",
+    "Emissions_Mt_CO2eq": 1997.406495
+   },
+   {
+    "Year": 2016,
+    "Country": "Australia",
+    "Emissions_Mt_CO2eq": 204.056149
+   },
+   {
+    "Year": 2016,
+    "Country": "Brazil",
+    "Emissions_Mt_CO2eq": 75.12952
+   },
+   {
+    "Year": 2016,
+    "Country": "Canada",
+    "Emissions_Mt_CO2eq": 97.633025
+   },
+   {
+    "Year": 2016,
+    "Country": "China",
+    "Emissions_Mt_CO2eq": 4450.406868
+   },
+   {
+    "Year": 2016,
+    "Country": "Germany",
+    "Emissions_Mt_CO2eq": 324.786913
+   },
+   {
+    "Year": 2016,
+    "Country": "India",
+    "Emissions_Mt_CO2eq": 1075.888831
+   },
+   {
+    "Year": 2016,
+    "Country": "Indonesia",
+    "Emissions_Mt_CO2eq": 195.257803
+   },
+   {
+    "Year": 2016,
+    "Country": "Japan",
+    "Emissions_Mt_CO2eq": 566.31584
+   },
+   {
+    "Year": 2016,
+    "Country": "South Africa",
+    "Emissions_Mt_CO2eq": 236.542091
+   },
+   {
+    "Year": 2016,
+    "Country": "United Kingdom",
+    "Emissions_Mt_CO2eq": 99.073435
+   },
+   {
+    "Year": 2016,
+    "Country": "United States",
+    "Emissions_Mt_CO2eq": 1905.882997
+   },
+   {
+    "Year": 2017,
+    "Country": "Australia",
+    "Emissions_Mt_CO2eq": 199.883048
+   },
+   {
+    "Year": 2017,
+    "Country": "Brazil",
+    "Emissions_Mt_CO2eq": 75.611453
+   },
+   {
+    "Year": 2017,
+    "Country": "Canada",
+    "Emissions_Mt_CO2eq": 94.787947
+   },
+   {
+    "Year": 2017,
+    "Country": "China",
+    "Emissions_Mt_CO2eq": 4749.306292
+   },
+   {
+    "Year": 2017,
+    "Country": "Germany",
+    "Emissions_Mt_CO2eq": 306.712138
+   },
+   {
+    "Year": 2017,
+    "Country": "India",
+    "Emissions_Mt_CO2eq": 1133.438816
+   },
+   {
+    "Year": 2017,
+    "Country": "Indonesia",
+    "Emissions_Mt_CO2eq": 214.447409
+   },
+   {
+    "Year": 2017,
+    "Country": "Japan",
+    "Emissions_Mt_CO2eq": 551.781948
+   },
+   {
+    "Year": 2017,
+    "Country": "South Africa",
+    "Emissions_Mt_CO2eq": 225.742169
+   },
+   {
+    "Year": 2017,
+    "Country": "United Kingdom",
+    "Emissions_Mt_CO2eq": 88.804294
+   },
+   {
+    "Year": 2017,
+    "Country": "United States",
+    "Emissions_Mt_CO2eq": 1834.432197
+   },
+   {
+    "Year": 2018,
+    "Country": "Australia",
+    "Emissions_Mt_CO2eq": 192.24664
+   },
+   {
+    "Year": 2018,
+    "Country": "Brazil",
+    "Emissions_Mt_CO2eq": 66.998388
+   },
+   {
+    "Year": 2018,
+    "Country": "Canada",
+    "Emissions_Mt_CO2eq": 87.595171
+   },
+   {
+    "Year": 2018,
+    "Country": "China",
+    "Emissions_Mt_CO2eq": 5118.682134
+   },
+   {
+    "Year": 2018,
+    "Country": "Germany",
+    "Emissions_Mt_CO2eq": 289.829565
+   },
+   {
+    "Year": 2018,
+    "Country": "India",
+    "Emissions_Mt_CO2eq": 1191.994853
+   },
+   {
+    "Year": 2018,
+    "Country": "Indonesia",
+    "Emissions_Mt_CO2eq": 243.480043
+   },
+   {
+    "Year": 2018,
+    "Country": "Japan",
+    "Emissions_Mt_CO2eq": 522.192975
+   },
+   {
+    "Year": 2018,
+    "Country": "South Africa",
+    "Emissions_Mt_CO2eq": 234.47119
+   },
+   {
+    "Year": 2018,
+    "Country": "United Kingdom",
+    "Emissions_Mt_CO2eq": 81.922275
+   },
+   {
+    "Year": 2018,
+    "Country": "United States",
+    "Emissions_Mt_CO2eq": 1857.23698
+   },
+   {
+    "Year": 2019,
+    "Country": "Australia",
+    "Emissions_Mt_CO2eq": 187.911049
+   },
+   {
+    "Year": 2019,
+    "Country": "Brazil",
+    "Emissions_Mt_CO2eq": 69.094278
+   },
+   {
+    "Year": 2019,
+    "Country": "Canada",
+    "Emissions_Mt_CO2eq": 85.512891
+   },
+   {
+    "Year": 2019,
+    "Country": "China",
+    "Emissions_Mt_CO2eq": 5290.215435
+   },
+   {
+    "Year": 2019,
+    "Country": "Germany",
+    "Emissions_Mt_CO2eq": 241.286893
+   },
+   {
+    "Year": 2019,
+    "Country": "India",
+    "Emissions_Mt_CO2eq": 1196.419357
+   },
+   {
+    "Year": 2019,
+    "Country": "Indonesia",
+    "Emissions_Mt_CO2eq": 253.020638
+   },
+   {
+    "Year": 2019,
+    "Country": "Japan",
+    "Emissions_Mt_CO2eq": 498.25029
+   },
+   {
+    "Year": 2019,
+    "Country": "South Africa",
+    "Emissions_Mt_CO2eq": 254.952889
+   },
+   {
+    "Year": 2019,
+    "Country": "United Kingdom",
+    "Emissions_Mt_CO2eq": 72.045158
+   },
+   {
+    "Year": 2019,
+    "Country": "United States",
+    "Emissions_Mt_CO2eq": 1709.449293
+   },
+   {
+    "Year": 2020,
+    "Country": "Australia",
+    "Emissions_Mt_CO2eq": 180.401473
+   },
+   {
+    "Year": 2020,
+    "Country": "Brazil",
+    "Emissions_Mt_CO2eq": 63.77305
+   },
+   {
+    "Year": 2020,
+    "Country": "Canada",
+    "Emissions_Mt_CO2eq": 78.618127
+   },
+   {
+    "Year": 2020,
+    "Country": "China",
+    "Emissions_Mt_CO2eq": 5431.135776
+   },
+   {
+    "Year": 2020,
+    "Country": "Germany",
+    "Emissions_Mt_CO2eq": 205.899705
+   },
+   {
+    "Year": 2020,
+    "Country": "India",
+    "Emissions_Mt_CO2eq": 1110.740771
+   },
+   {
+    "Year": 2020,
+    "Country": "Indonesia",
+    "Emissions_Mt_CO2eq": 268.094574
+   },
+   {
+    "Year": 2020,
+    "Country": "Japan",
+    "Emissions_Mt_CO2eq": 483.797142
+   },
+   {
+    "Year": 2020,
+    "Country": "South Africa",
+    "Emissions_Mt_CO2eq": 249.517093
+   },
+   {
+    "Year": 2020,
+    "Country": "United Kingdom",
+    "Emissions_Mt_CO2eq": 63.483181
+   },
+   {
+    "Year": 2020,
+    "Country": "United States",
+    "Emissions_Mt_CO2eq": 1533.562208
+   },
+   {
+    "Year": 2021,
+    "Country": "Australia",
+    "Emissions_Mt_CO2eq": 172.670742
+   },
+   {
+    "Year": 2021,
+    "Country": "Brazil",
+    "Emissions_Mt_CO2eq": 89.318805
+   },
+   {
+    "Year": 2021,
+    "Country": "Canada",
+    "Emissions_Mt_CO2eq": 77.4224
+   },
+   {
+    "Year": 2021,
+    "Country": "China",
+    "Emissions_Mt_CO2eq": 6005.479033
+   },
+   {
+    "Year": 2021,
+    "Country": "Germany",
+    "Emissions_Mt_CO2eq": 235.752303
+   },
+   {
+    "Year": 2021,
+    "Country": "India",
+    "Emissions_Mt_CO2eq": 1214.278427
+   },
+   {
+    "Year": 2021,
+    "Country": "Indonesia",
+    "Emissions_Mt_CO2eq": 297.661213
+   },
+   {
+    "Year": 2021,
+    "Country": "Japan",
+    "Emissions_Mt_CO2eq": 494.577948
+   },
+   {
+    "Year": 2021,
+    "Country": "South Africa",
+    "Emissions_Mt_CO2eq": 236.616664
+   },
+   {
+    "Year": 2021,
+    "Country": "United Kingdom",
+    "Emissions_Mt_CO2eq": 68.636323
+   },
+   {
+    "Year": 2021,
+    "Country": "United States",
+    "Emissions_Mt_CO2eq": 1636.709171
+   },
+   {
+    "Year": 2022,
+    "Country": "Australia",
+    "Emissions_Mt_CO2eq": 165.275634
+   },
+   {
+    "Year": 2022,
+    "Country": "Brazil",
+    "Emissions_Mt_CO2eq": 51.5768
+   },
+   {
+    "Year": 2022,
+    "Country": "Canada",
+    "Emissions_Mt_CO2eq": 74.855945
+   },
+   {
+    "Year": 2022,
+    "Country": "China",
+    "Emissions_Mt_CO2eq": 6135.641278
+   },
+   {
+    "Year": 2022,
+    "Country": "Germany",
+    "Emissions_Mt_CO2eq": 240.604676
+   },
+   {
+    "Year": 2022,
+    "Country": "India",
+    "Emissions_Mt_CO2eq": 1352.801375
+   },
+   {
+    "Year": 2022,
+    "Country": "Indonesia",
+    "Emissions_Mt_CO2eq": 323.227269
+   },
+   {
+    "Year": 2022,
+    "Country": "Japan",
+    "Emissions_Mt_CO2eq": 479.59678
+   },
+   {
+    "Year": 2022,
+    "Country": "South Africa",
+    "Emissions_Mt_CO2eq": 205.01514
+   },
+   {
+    "Year": 2022,
+    "Country": "United Kingdom",
+    "Emissions_Mt_CO2eq": 68.394142
+   },
+   {
+    "Year": 2022,
+    "Country": "United States",
+    "Emissions_Mt_CO2eq": 1618.839836
+   },
+   {
+    "Year": 2023,
+    "Country": "Australia",
+    "Emissions_Mt_CO2eq": 160.388083
+   },
+   {
+    "Year": 2023,
+    "Country": "Brazil",
+    "Emissions_Mt_CO2eq": 47.443576
+   },
+   {
+    "Year": 2023,
+    "Country": "Canada",
+    "Emissions_Mt_CO2eq": 77.042368
+   },
+   {
+    "Year": 2023,
+    "Country": "China",
+    "Emissions_Mt_CO2eq": 6554.485135
+   },
+   {
+    "Year": 2023,
+    "Country": "Germany",
+    "Emissions_Mt_CO2eq": 195.826487
+   },
+   {
+    "Year": 2023,
+    "Country": "India",
+    "Emissions_Mt_CO2eq": 1510.20287
+   },
+   {
+    "Year": 2023,
+    "Country": "Indonesia",
+    "Emissions_Mt_CO2eq": 329.112434
+   },
+   {
+    "Year": 2023,
+    "Country": "Japan",
+    "Emissions_Mt_CO2eq": 449.63669
+   },
+   {
+    "Year": 2023,
+    "Country": "South Africa",
+    "Emissions_Mt_CO2eq": 196.981376
+   },
+   {
+    "Year": 2023,
+    "Country": "United Kingdom",
+    "Emissions_Mt_CO2eq": 56.76936
+   },
+   {
+    "Year": 2023,
+    "Country": "United States",
+    "Emissions_Mt_CO2eq": 1498.466857
+   },
+   {
+    "Year": 2024,
+    "Country": "Australia",
+    "Emissions_Mt_CO2eq": 160.011506
+   },
+   {
+    "Year": 2024,
+    "Country": "Brazil",
+    "Emissions_Mt_CO2eq": 52.918943
+   },
+   {
+    "Year": 2024,
+    "Country": "Canada",
+    "Emissions_Mt_CO2eq": 76.06869
+   },
+   {
+    "Year": 2024,
+    "Country": "China",
+    "Emissions_Mt_CO2eq": 6715.919906
+   },
+   {
+    "Year": 2024,
+    "Country": "Germany",
+    "Emissions_Mt_CO2eq": 180.247925
+   },
+   {
+    "Year": 2024,
+    "Country": "India",
+    "Emissions_Mt_CO2eq": 1627.565014
+   },
+   {
+    "Year": 2024,
+    "Country": "Indonesia",
+    "Emissions_Mt_CO2eq": 375.600296
+   },
+   {
+    "Year": 2024,
+    "Country": "Japan",
+    "Emissions_Mt_CO2eq": 446.275249
+   },
+   {
+    "Year": 2024,
+    "Country": "South Africa",
+    "Emissions_Mt_CO2eq": 200.791774
+   },
+   {
+    "Year": 2024,
+    "Country": "United Kingdom",
+    "Emissions_Mt_CO2eq": 48.774329
+   },
+   {
+    "Year": 2024,
+    "Country": "United States",
+    "Emissions_Mt_CO2eq": 1506.299773
+   },
+   {
+    "Year": 2025,
+    "Country": "Australia",
+    "Emissions_Mt_CO2eq": 152.006632
+   },
+   {
+    "Year": 2025,
+    "Country": "Brazil",
+    "Emissions_Mt_CO2eq": 59.12319
+   },
+   {
+    "Year": 2025,
+    "Country": "Canada",
+    "Emissions_Mt_CO2eq": 81.423102
+   },
+   {
+    "Year": 2025,
+    "Country": "China",
+    "Emissions_Mt_CO2eq": 6634.098028
+   },
+   {
+    "Year": 2025,
+    "Country": "Germany",
+    "Emissions_Mt_CO2eq": 180.164205
+   },
+   {
+    "Year": 2025,
+    "Country": "India",
+    "Emissions_Mt_CO2eq": 1571.65284
+   },
+   {
+    "Year": 2025,
+    "Country": "Indonesia",
+    "Emissions_Mt_CO2eq": 384.327116
+   },
+   {
+    "Year": 2025,
+    "Country": "Japan",
+    "Emissions_Mt_CO2eq": 442.099722
+   },
+   {
+    "Year": 2025,
+    "Country": "South Africa",
+    "Emissions_Mt_CO2eq": 191.219582
+   },
+   {
+    "Year": 2025,
+    "Country": "United Kingdom",
+    "Emissions_Mt_CO2eq": 50.489405
+   },
+   {
+    "Year": 2025,
+    "Country": "United States",
+    "Emissions_Mt_CO2eq": 1573.493615
+   }
+  ],
+  "charts": "Animated horizontal bar race of Power Industry emissions, one frame per year"
+ }
+}

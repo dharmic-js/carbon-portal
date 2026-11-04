@@ -1,0 +1,485 @@
+{
+ "_about": "Everything defined in notebook Cell 11 (control panel). The portal's controls start at these defaults.",
+ "defaults": {
+  "BUDGET_USD_M": 10000,
+  "TARGET_MT_PER_YEAR": 25,
+  "SCENARIO": "Announced pledges (IEA APS)",
+  "OBJECTIVE": "Maximise financial return (NPV)",
+  "MAX_COUNTRY_SHARE": 0.3,
+  "MIN_SECTOR_SHARE": 0.2,
+  "MAX_PROJECT_SHARE": 0.3
+ },
+ "control_ranges": {
+  "BUDGET_USD_M": {
+   "min": 1000,
+   "max": 80000,
+   "step": 1000
+  },
+  "TARGET_MT_PER_YEAR": {
+   "min": 0,
+   "max": 200,
+   "step": 1
+  },
+  "SCENARIO": [
+   "Current policies",
+   "Announced pledges (IEA APS)",
+   "Net zero (IEA NZE)"
+  ],
+  "OBJECTIVE": [
+   "Maximise financial return (NPV)",
+   "Maximise CO2e avoided"
+  ],
+  "MAX_COUNTRY_SHARE": {
+   "min": 0.1,
+   "max": 1.0,
+   "step": 0.05
+  },
+  "MIN_SECTOR_SHARE": {
+   "min": 0.0,
+   "max": 0.33,
+   "step": 0.01
+  },
+  "MAX_PROJECT_SHARE": {
+   "min": 0.1,
+   "max": 1.0,
+   "step": 0.05
+  }
+ },
+ "constants": {
+  "BASE_YEAR": 2025,
+  "FORECAST_YEAR": 2030,
+  "TREND_WINDOW": 10,
+  "AGRI_PRICE_SHARE": 0.25,
+  "VOLUNTARY_CREDIT_PRICE": 5,
+  "POWER_PRICE_USD_MWH": 50,
+  "EMERGING_FOCUS": [
+   "Brazil",
+   "India",
+   "Indonesia",
+   "South Africa"
+  ]
+ },
+ "COUNTRY_INFO": {
+  "Australia": {
+   "group": "Advanced",
+   "price_now": 25,
+   "discount": 0.05,
+   "grid": 0.525
+  },
+  "Brazil": {
+   "group": "Emerging",
+   "price_now": 0,
+   "discount": 0.1,
+   "grid": 0.11
+  },
+  "Canada": {
+   "group": "Advanced",
+   "price_now": 70,
+   "discount": 0.05,
+   "grid": 0.191
+  },
+  "China": {
+   "group": "Emerging",
+   "price_now": 14,
+   "discount": 0.06,
+   "grid": 0.525
+  },
+  "Germany": {
+   "group": "Advanced",
+   "price_now": 87,
+   "discount": 0.05,
+   "grid": 0.33
+  },
+  "India": {
+   "group": "Emerging",
+   "price_now": 0,
+   "discount": 0.1,
+   "grid": 0.67
+  },
+  "Indonesia": {
+   "group": "Emerging",
+   "price_now": 2,
+   "discount": 0.1,
+   "grid": 0.68
+  },
+  "Japan": {
+   "group": "Advanced",
+   "price_now": 2,
+   "discount": 0.05,
+   "grid": 0.477
+  },
+  "South Africa": {
+   "group": "Emerging",
+   "price_now": 17,
+   "discount": 0.1,
+   "grid": 0.699
+  },
+  "United Kingdom": {
+   "group": "Advanced",
+   "price_now": 63,
+   "discount": 0.05,
+   "grid": 0.217
+  },
+  "United States": {
+   "group": "Advanced",
+   "price_now": 0,
+   "discount": 0.05,
+   "grid": 0.384
+  }
+ },
+ "SCENARIO_PRICES": {
+  "Current policies": null,
+  "Announced pledges (IEA APS)": {
+   "Advanced": 160,
+   "Emerging": 65
+  },
+  "Net zero (IEA NZE)": {
+   "Advanced": 180,
+   "Emerging": 125
+  }
+ },
+ "INTERVENTIONS": {
+  "Utility-scale solar PV": {
+   "sector": "Power Industry",
+   "type": "power",
+   "capex_per_kw": 691,
+   "capacity_factor": 0.17,
+   "om_share": 0.015,
+   "life": 25,
+   "reach": 0.03
+  },
+  "Onshore wind": {
+   "sector": "Power Industry",
+   "type": "power",
+   "capex_per_kw": 1041,
+   "capacity_factor": 0.34,
+   "om_share": 0.025,
+   "life": 25,
+   "reach": 0.02
+  },
+  "Industrial energy efficiency": {
+   "sector": "Industrial Combustion",
+   "type": "fixed",
+   "capex_per_tpa": 450,
+   "benefit_per_t": 45,
+   "life": 15,
+   "reach": 0.02
+  },
+  "Electrified process heat (heat pumps)": {
+   "sector": "Industrial Combustion",
+   "type": "fixed",
+   "capex_per_tpa": 900,
+   "benefit_per_t": 10,
+   "life": 20,
+   "reach": 0.015
+  },
+  "Clean fuel switch (biomass / hydrogen)": {
+   "sector": "Industrial Combustion",
+   "type": "fixed",
+   "capex_per_tpa": 1200,
+   "benefit_per_t": -60,
+   "life": 20,
+   "reach": 0.01
+  },
+  "Precision fertiliser management": {
+   "sector": "Agriculture",
+   "type": "fixed",
+   "capex_per_tpa": 400,
+   "benefit_per_t": 30,
+   "life": 10,
+   "reach": 0.01
+  },
+  "Livestock methane feed additives": {
+   "sector": "Agriculture",
+   "type": "fixed",
+   "capex_per_tpa": 400,
+   "benefit_per_t": -20,
+   "life": 10,
+   "reach": 0.01
+  },
+  "Rice paddy water management (AWD)": {
+   "sector": "Agriculture",
+   "type": "fixed",
+   "capex_per_tpa": 300,
+   "benefit_per_t": 5,
+   "life": 10,
+   "reach": 0.01,
+   "countries": [
+    "China",
+    "India",
+    "Indonesia"
+   ]
+  }
+ },
+ "DATA_SOURCES": [
+  {
+   "item": "Emissions by country & sector",
+   "source": "EDGAR Community GHG Database (EDGAR_2026_GHG), European Commission JRC; report 'GHG emissions of all world countries – 2026'"
+  },
+  {
+   "item": "Current carbon prices",
+   "source": "World Bank, State and Trends of Carbon Pricing 2026; IEA GEC Model documentation 2025 (current-policy prices for Canada, China, EU, Japan); UK ETS & ACCU market reports 2026"
+  },
+  {
+   "item": "Scenario carbon prices",
+   "source": "IEA, Global Energy and Climate Model Documentation 2025, Table 2.4 (2035 values, US$2024)"
+  },
+  {
+   "item": "Solar & wind costs",
+   "source": "IRENA, Renewable Power Generation Costs in 2024 (2025): solar US$691/kW, CF 17%; onshore wind US$1,041/kW, CF 34%"
+  },
+  {
+   "item": "Grid carbon intensity",
+   "source": "Ember electricity data via Our World in Data energy dataset (2025; Indonesia 2024)"
+  },
+  {
+   "item": "Cost of capital",
+   "source": "IEA Cost of Capital Observatory: financing costs in emerging economies at least 2x advanced economies"
+  },
+  {
+   "item": "Abatement cost bands",
+   "source": "IPCC AR6 Working Group III, Summary for Policymakers, Figure SPM.7"
+  },
+  {
+   "item": "1.5 C pathway",
+   "source": "IPCC AR6 Synthesis Report: global GHG -43% by 2030 vs 2019"
+  },
+  {
+   "item": "GDP & population",
+   "source": "World Bank Open Data API (NY.GDP.MKTP.CD, SP.POP.TOTL); offline fallback: World Bank 2023 GDP, UN WPP 2024 population via Our World in Data"
+  }
+ ],
+ "market_inputs": [
+  {
+   "Country": "China",
+   "Sector": "Power Industry",
+   "Forecast_2030_Mt": 8205.605563,
+   "Priority_Score": 93.181818,
+   "Emissions_2025_Mt": 6634.098028
+  },
+  {
+   "Country": "India",
+   "Sector": "Power Industry",
+   "Forecast_2030_Mt": 1833.393003,
+   "Priority_Score": 90.454545,
+   "Emissions_2025_Mt": 1571.65284
+  },
+  {
+   "Country": "India",
+   "Sector": "Agriculture",
+   "Forecast_2030_Mt": 878.063807,
+   "Priority_Score": 89.242424,
+   "Emissions_2025_Mt": 834.174064
+  },
+  {
+   "Country": "India",
+   "Sector": "Industrial Combustion",
+   "Forecast_2030_Mt": 758.381306,
+   "Priority_Score": 86.363636,
+   "Emissions_2025_Mt": 681.770928
+  },
+  {
+   "Country": "Indonesia",
+   "Sector": "Power Industry",
+   "Forecast_2030_Mt": 485.440002,
+   "Priority_Score": 81.212121,
+   "Emissions_2025_Mt": 384.327116
+  },
+  {
+   "Country": "Brazil",
+   "Sector": "Agriculture",
+   "Forecast_2030_Mt": 687.576891,
+   "Priority_Score": 73.787879,
+   "Emissions_2025_Mt": 623.685116
+  },
+  {
+   "Country": "China",
+   "Sector": "Agriculture",
+   "Forecast_2030_Mt": 773.637106,
+   "Priority_Score": 72.575758,
+   "Emissions_2025_Mt": 762.989955
+  },
+  {
+   "Country": "China",
+   "Sector": "Industrial Combustion",
+   "Forecast_2030_Mt": 2503.933301,
+   "Priority_Score": 71.060606,
+   "Emissions_2025_Mt": 2675.285189
+  },
+  {
+   "Country": "Indonesia",
+   "Sector": "Industrial Combustion",
+   "Forecast_2030_Mt": 150.451588,
+   "Priority_Score": 70.0,
+   "Emissions_2025_Mt": 133.505651
+  },
+  {
+   "Country": "Australia",
+   "Sector": "Agriculture",
+   "Forecast_2030_Mt": 136.049873,
+   "Priority_Score": 65.757576,
+   "Emissions_2025_Mt": 134.01902
+  },
+  {
+   "Country": "Indonesia",
+   "Sector": "Agriculture",
+   "Forecast_2030_Mt": 144.21809,
+   "Priority_Score": 61.969697,
+   "Emissions_2025_Mt": 140.711312
+  },
+  {
+   "Country": "United States",
+   "Sector": "Industrial Combustion",
+   "Forecast_2030_Mt": 461.516024,
+   "Priority_Score": 61.666667,
+   "Emissions_2025_Mt": 457.613364
+  },
+  {
+   "Country": "United States",
+   "Sector": "Agriculture",
+   "Forecast_2030_Mt": 397.961789,
+   "Priority_Score": 60.606061,
+   "Emissions_2025_Mt": 397.938081
+  },
+  {
+   "Country": "Canada",
+   "Sector": "Agriculture",
+   "Forecast_2030_Mt": 73.079811,
+   "Priority_Score": 56.060606,
+   "Emissions_2025_Mt": 70.319207
+  },
+  {
+   "Country": "South Africa",
+   "Sector": "Power Industry",
+   "Forecast_2030_Mt": 176.979256,
+   "Priority_Score": 53.181818,
+   "Emissions_2025_Mt": 191.219582
+  },
+  {
+   "Country": "United States",
+   "Sector": "Power Industry",
+   "Forecast_2030_Mt": 1217.859245,
+   "Priority_Score": 50.757576,
+   "Emissions_2025_Mt": 1573.493615
+  },
+  {
+   "Country": "Brazil",
+   "Sector": "Industrial Combustion",
+   "Forecast_2030_Mt": 89.781565,
+   "Priority_Score": 48.787879,
+   "Emissions_2025_Mt": 93.71968
+  },
+  {
+   "Country": "Japan",
+   "Sector": "Power Industry",
+   "Forecast_2030_Mt": 363.808176,
+   "Priority_Score": 45.909091,
+   "Emissions_2025_Mt": 442.099722
+  },
+  {
+   "Country": "Canada",
+   "Sector": "Industrial Combustion",
+   "Forecast_2030_Mt": 66.679947,
+   "Priority_Score": 45.30303,
+   "Emissions_2025_Mt": 66.593223
+  },
+  {
+   "Country": "South Africa",
+   "Sector": "Agriculture",
+   "Forecast_2030_Mt": 39.361432,
+   "Priority_Score": 43.181818,
+   "Emissions_2025_Mt": 40.437446
+  },
+  {
+   "Country": "Japan",
+   "Sector": "Industrial Combustion",
+   "Forecast_2030_Mt": 139.493567,
+   "Priority_Score": 40.30303,
+   "Emissions_2025_Mt": 161.228172
+  },
+  {
+   "Country": "South Africa",
+   "Sector": "Industrial Combustion",
+   "Forecast_2030_Mt": 44.475848,
+   "Priority_Score": 39.242424,
+   "Emissions_2025_Mt": 47.152482
+  },
+  {
+   "Country": "Australia",
+   "Sector": "Power Industry",
+   "Forecast_2030_Mt": 124.7261,
+   "Priority_Score": 38.636364,
+   "Emissions_2025_Mt": 152.006632
+  },
+  {
+   "Country": "Australia",
+   "Sector": "Industrial Combustion",
+   "Forecast_2030_Mt": 40.762713,
+   "Priority_Score": 37.878788,
+   "Emissions_2025_Mt": 38.824655
+  },
+  {
+   "Country": "Japan",
+   "Sector": "Agriculture",
+   "Forecast_2030_Mt": 43.850856,
+   "Priority_Score": 35.757576,
+   "Emissions_2025_Mt": 43.70197
+  },
+  {
+   "Country": "Canada",
+   "Sector": "Power Industry",
+   "Forecast_2030_Mt": 60.813221,
+   "Priority_Score": 32.272727,
+   "Emissions_2025_Mt": 81.423102
+  },
+  {
+   "Country": "Germany",
+   "Sector": "Industrial Combustion",
+   "Forecast_2030_Mt": 76.730437,
+   "Priority_Score": 30.757576,
+   "Emissions_2025_Mt": 81.613722
+  },
+  {
+   "Country": "Germany",
+   "Sector": "Power Industry",
+   "Forecast_2030_Mt": 89.446556,
+   "Priority_Score": 29.69697,
+   "Emissions_2025_Mt": 180.164205
+  },
+  {
+   "Country": "United Kingdom",
+   "Sector": "Agriculture",
+   "Forecast_2030_Mt": 49.787915,
+   "Priority_Score": 28.939394,
+   "Emissions_2025_Mt": 51.522304
+  },
+  {
+   "Country": "Brazil",
+   "Sector": "Power Industry",
+   "Forecast_2030_Mt": 33.99512,
+   "Priority_Score": 25.0,
+   "Emissions_2025_Mt": 59.12319
+  },
+  {
+   "Country": "Germany",
+   "Sector": "Agriculture",
+   "Forecast_2030_Mt": 44.955269,
+   "Priority_Score": 24.242424,
+   "Emissions_2025_Mt": 53.472931
+  },
+  {
+   "Country": "United Kingdom",
+   "Sector": "Power Industry",
+   "Forecast_2030_Mt": 12.141485,
+   "Priority_Score": 9.545455,
+   "Emissions_2025_Mt": 50.489405
+  },
+  {
+   "Country": "United Kingdom",
+   "Sector": "Industrial Combustion",
+   "Forecast_2030_Mt": 19.734378,
+   "Priority_Score": 6.666667,
+   "Emissions_2025_Mt": 24.553564
+  }
+ ]
+}
