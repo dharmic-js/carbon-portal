@@ -1,7 +1,7 @@
 # Carbon Strategy & Investment Optimizer
 
 **Interactive Web Portal & Climate Investment Fund Simulator**  
-Built for university Applied Python business-analytics coursework.
+Built for university Introduction to Python Programming (IPP) coursework.
 
 🔗 **Live Portal:** `https://carbon-strategy-optimizer.vercel.app`  
 📓 **Python Source Notebook:** [`analysis/IPP_PROJECT_FINAL_simplified.ipynb`](analysis/IPP_PROJECT_FINAL_simplified.ipynb)  
@@ -55,8 +55,6 @@ In strict accordance with project requirements, **Part A** reproduces all histor
 | `/markets` | **Chart B1: Market Priority Matrix**, sortable market profiles, live World Bank API integration, 2030 trajectory gap, carbon exposure | Cells 12–16 |
 | `/simulator` | **Chart B2: MACC**, **Chart B3: Capital Allocation**, **Chart B4: Strategy Comparison**, **Chart B5: Carbon-Price Stress Test**, KPI cards, interactive controls, 7 preset scenarios, downloadable allocation CSV | Cells 11, 17–21 |
 | `/company` | Enterprise Decarbonization Lens: footprint calculator, trajectory gap, carbon tax liability, actionable interventions (KPIs & tables only) | Cell 22 |
-| `/methodology` | Mathematical formulation, LP constraints, data sources with links, limitations, downloadable project files | Cells 11, 18 |
-| `/chart-sources` | Full notebook cell lineage and data field mapping for every visual | All Cells |
 
 ---
 
@@ -132,7 +130,7 @@ npm start
 
 ## Team & Academic Attribution
 
-- **Course:** Introduction to Python (Applied Python Project), 2026
-- **Authors:** `[Name 1 – Roll no.]` · `[Name 2 – Roll no.]`
+- **Course:** Introduction to Python Programming (IPP), 2026
+- **Team:** Anuj Gupta · Dhruv Malhotra
 - **Faculty Instructor:** `[Instructor]`
 - **License:** Code under MIT License. Primary datasets retain original open licenses (CC BY 4.0 for EDGAR).

@@ -70,3 +70,4 @@ export default function KpiCards({ cards, columns = 3, className = "" }: KpiCard
     </div>
   );
 }
+

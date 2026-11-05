@@ -76,7 +76,7 @@ export default function CompanyLensPage() {
       {/* Header */}
       <div className="space-y-3">
         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-teal-50 border border-teal-200 text-teal-800 text-xs font-semibold uppercase tracking-wider">
-          <span>Enterprise Strategic Lens · Notebook Cell 22</span>
+          <span>Enterprise Strategic Lens</span>
         </div>
         <h1 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
           Company Lens: Translating National Data to Enterprise Strategy
@@ -215,7 +215,7 @@ export default function CompanyLensPage() {
             <span className="italic font-medium">
               &ldquo;Use national data as context; your own emissions come from your own GHG inventory.&rdquo;
             </span>
-            <span className="text-slate-400 font-mono">Cell 22</span>
+            <span className="text-slate-400 font-mono">GHG Protocol Lens</span>
           </div>
 
           {/* KPI Cards */}
@@ -233,7 +233,7 @@ export default function CompanyLensPage() {
                 </p>
               </div>
               <span className="text-xs font-mono font-medium text-slate-500">
-                Cell 22
+                IEA & World Bank Scenarios
               </span>
             </div>
 
@@ -279,7 +279,7 @@ export default function CompanyLensPage() {
                 </p>
               </div>
               <span className="text-xs font-mono font-medium text-slate-500">
-                Cell 22
+                Intervention Database
               </span>
             </div>
 
@@ -337,3 +337,4 @@ export default function CompanyLensPage() {
     </div>
   );
 }
+

@@ -8,8 +8,6 @@ import {
   TrendingUp,
   SlidersHorizontal,
   Building2,
-  BookOpen,
-  FileText,
   Menu,
   X,
   Leaf,
@@ -25,8 +23,6 @@ export default function Navbar() {
     { href: "/markets", label: "Market Intelligence", icon: TrendingUp },
     { href: "/simulator", label: "Fund Simulator", icon: SlidersHorizontal },
     { href: "/company", label: "Company Lens", icon: Building2 },
-    { href: "/methodology", label: "Methodology", icon: BookOpen },
-    { href: "/chart-sources", label: "Chart Sources", icon: FileText },
   ];
 
   return (
@@ -48,7 +44,7 @@ export default function Navbar() {
           </Link>
 
           {/* Desktop navigation */}
-          <nav className="hidden lg:flex items-center gap-1">
+          <nav className="hidden md:flex items-center gap-1.5">
             {navLinks.map((link) => {
               const Icon = link.icon;
               const isActive =
@@ -73,7 +69,7 @@ export default function Navbar() {
           </nav>
 
           {/* Mobile menu button */}
-          <div className="lg:hidden flex items-center">
+          <div className="md:hidden flex items-center">
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="p-2 rounded-md text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition"
@@ -87,7 +83,7 @@ export default function Navbar() {
 
       {/* Mobile navigation drawer */}
       {isOpen && (
-        <div className="lg:hidden border-b border-slate-200 bg-white px-4 pt-2 pb-4 space-y-1 shadow-lg">
+        <div className="md:hidden border-b border-slate-200 bg-white px-4 pt-2 pb-4 space-y-1 shadow-lg">
           {navLinks.map((link) => {
             const Icon = link.icon;
             const isActive =
@@ -115,3 +111,4 @@ export default function Navbar() {
     </header>
   );
 }
+

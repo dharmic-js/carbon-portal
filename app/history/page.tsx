@@ -124,37 +124,59 @@ export default function HistoryPage() {
   });
 
   // --- CHART 4: CELL 6 (Treemap) ---
-  const treemapLabels = ["Total Emissions", ...sectorsList];
-  const treemapParents = ["", "Total Emissions", "Total Emissions", "Total Emissions"];
-  const treemapValues = [
-    cell6.rows.reduce((sum, r) => sum + r.Emissions_Mt_CO2eq, 0),
-    cell6.rows
-      .filter((r) => r.Sector === "Power Industry")
-      .reduce((sum, r) => sum + r.Emissions_Mt_CO2eq, 0),
-    cell6.rows
-      .filter((r) => r.Sector === "Industrial Combustion")
-      .reduce((sum, r) => sum + r.Emissions_Mt_CO2eq, 0),
-    cell6.rows
-      .filter((r) => r.Sector === "Agriculture")
-      .reduce((sum, r) => sum + r.Emissions_Mt_CO2eq, 0),
-  ];
+  const powerSum = cell6.rows
+    .filter((r) => r.Sector === "Power Industry")
+    .reduce((sum, r) => sum + r.Emissions_Mt_CO2eq, 0);
+  const indSum = cell6.rows
+    .filter((r) => r.Sector === "Industrial Combustion")
+    .reduce((sum, r) => sum + r.Emissions_Mt_CO2eq, 0);
+  const agriSum = cell6.rows
+    .filter((r) => r.Sector === "Agriculture")
+    .reduce((sum, r) => sum + r.Emissions_Mt_CO2eq, 0);
 
-  for (const r of cell6.rows) {
-    treemapLabels.push(`${r.Country} (${r.Sector.slice(0, 4)})`);
+  const treemapIds: string[] = ["Power Industry", "Industrial Combustion", "Agriculture"];
+  const treemapLabels: string[] = ["Power Industry", "Industrial Combustion", "Agriculture"];
+  const treemapParents: string[] = ["", "", ""];
+  const treemapValues: number[] = [powerSum, indSum, agriSum];
+  const treemapColors: number[] = [powerSum, indSum, agriSum];
+
+  // Sort rows descending so largest emitters are packed first
+  const sortedCell6Rows = [...cell6.rows].sort((a, b) => b.Emissions_Mt_CO2eq - a.Emissions_Mt_CO2eq);
+
+  for (const r of sortedCell6Rows) {
+    treemapIds.push(`${r.Sector}/${r.Country}`);
+    treemapLabels.push(r.Country);
     treemapParents.push(r.Sector);
     treemapValues.push(r.Emissions_Mt_CO2eq);
+    treemapColors.push(r.Emissions_Mt_CO2eq);
   }
 
-  const treemapTrace: Plotly.Data = {
+  const treemapTrace: any = {
     type: "treemap",
+    ids: treemapIds,
     labels: treemapLabels,
     parents: treemapParents,
     values: treemapValues,
-    textinfo: "label+percent parent",
-    marker: {
-      colorscale: "YlOrRd",
+    branchvalues: "total",
+    texttemplate: "<b>%{label}</b><br>%{value:,.1f} Mt<br>(%{percentParent:.1%})",
+    hovertemplate: "<b>%{label}</b><br>Sector: %{parent}<br>Emissions: %{value:,.2f} Mt CO₂e<br>Sector Share: %{percentParent:.1%}<br>Sample Share: %{percentRoot:.1%}<extra></extra>",
+    insidetextfont: { family: "Inter, system-ui, sans-serif", size: 12 },
+    pathbar: { visible: true, thickness: 24 },
+    tiling: {
+      packing: "squarify",
+      pad: 3,
     },
-    hoverinfo: "label+value+percent parent",
+    marker: {
+      colors: treemapColors,
+      colorscale: "YlOrRd",
+      showscale: true,
+      colorbar: {
+        title: { text: "Mt CO₂e", side: "top" },
+        thickness: 16,
+        len: 0.85,
+        y: 0.5,
+      },
+    },
   };
 
   // --- CHART 5: CELL 7 (Bump Chart) ---
@@ -254,7 +276,7 @@ export default function HistoryPage() {
           Historical Analysis (1990–2025)
         </h1>
         <p className="text-base sm:text-lg text-slate-600 max-w-4xl leading-relaxed">
-          Reconstruction of all eight historical visuals from the Applied Python project notebook.
+          Reconstruction of all eight historical visuals from the Introduction to Python Programming (IPP) project notebook.
           Tracing emissions across 11 major economies reveals the massive structural divergence
           in power, industry, and agriculture over 36 years.
         </p>
@@ -388,12 +410,12 @@ export default function HistoryPage() {
         cellNumber={6}
         insight="The hierarchical decomposition reveals that China Power Industry alone represents over 35% of all sampled emissions across the 11 countries, demonstrating the decisive impact of Chinese grid transition on global progress."
       >
-        <div className="h-[520px]">
+        <div className="h-[680px]">
           <PlotlyChart
             data={[treemapTrace]}
             layout={{
-              height: 500,
-              margin: { l: 10, r: 10, t: 10, b: 10 },
+              height: 650,
+              margin: { l: 8, r: 8, t: 8, b: 8 },
             }}
           />
         </div>

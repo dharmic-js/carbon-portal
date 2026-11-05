@@ -191,7 +191,7 @@ export default function MarketsPage() {
       {/* Page Header */}
       <div className="space-y-3">
         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-teal-50 border border-teal-200 text-teal-800 text-xs font-semibold uppercase tracking-wider">
-          <span>Part B · Notebook Cells 12–16</span>
+          <span>Part B · Market Intelligence</span>
         </div>
         <h1 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
           Market Intelligence & Priority Scorecard
@@ -202,12 +202,11 @@ export default function MarketsPage() {
         </p>
       </div>
 
-      {/* 📊 CHART B1: Market Priority Matrix (Cell 14) */}
+      {/* 📊 CHART B1: Market Priority Matrix */}
       <section className="space-y-4">
         <ChartCard
           title="Chart B1: Market Priority Matrix — Growth vs Size with Priority Bubbles"
-          cellNumber={14}
-          sourceText="Source: notebook Cell 14 — priority score = 40% size + 30% growth + 15% near peak + 15% emissions per US$ GDP (percentile ranks)"
+          sourceText="Data: EDGAR_2026_GHG (European Commission JRC) & World Bank Open Data · Priority score = 40% size + 30% growth + 15% near peak + 15% emissions per US$ GDP"
           insight="Markets in the upper-right quadrant ('Priority: large & growing', led by China and India power and industry) combine high absolute volume with expanding trajectories, demanding immediate capital intervention before fossil lock-in."
         >
           <div className="space-y-6">
@@ -299,7 +298,7 @@ export default function MarketsPage() {
                 Priority Scorecard (All 33 Markets)
               </h3>
               <p className="text-xs text-slate-500">
-                Logic: notebook Cell 14 · Ranked by multi-criteria priority score
+                Ranked by multi-criteria priority score · Data: EDGAR_2026_GHG & World Bank
               </p>
             </div>
             <span className="text-xs font-medium text-slate-500">
@@ -370,7 +369,7 @@ export default function MarketsPage() {
               Market Profiles (33 Markets)
             </h3>
             <p className="text-xs text-slate-500">
-              Logic: notebook Cell 12 (`MarketProfile` class) · Decadal growth, volatility & linear 2030 forecast
+              Decadal growth, volatility & linear 2030 forecast · Data: EDGAR_2026_GHG (European Commission JRC)
             </p>
           </div>
 
@@ -539,7 +538,7 @@ export default function MarketsPage() {
               <span>Fair Comparison: Intensity Per Person & Per Dollar GDP</span>
             </h3>
             <p className="text-xs text-slate-500">
-              Logic: notebook Cell 13 · Normalising emissions against demographic and economic scales
+              Normalising emissions against demographic and economic scales · Data: World Bank Open Data API
             </p>
           </div>
 
@@ -680,7 +679,7 @@ export default function MarketsPage() {
               2030 Outlook: Business-As-Usual Trend vs 1.5 °C Pathway Gap
             </h3>
             <p className="text-xs text-slate-500">
-              Logic: notebook Cell 15 · Calibrated to IPCC AR6 WGIII global pathway (-43% by 2030 vs 2019)
+              Calibrated to IPCC AR6 WGIII global pathway (-43% by 2030 vs 2019) · Data: EDGAR & IPCC AR6
             </p>
           </div>
 
@@ -758,7 +757,7 @@ export default function MarketsPage() {
             Carbon Pricing Exposure & Repricing Risk
           </h3>
           <p className="text-xs text-slate-500">
-            Logic: notebook Cell 16 · Annual carbon valuation of emissions under today&apos;s policies vs IEA Net Zero (NZE)
+            Annual carbon valuation of emissions under today&apos;s policies vs IEA Net Zero (NZE) · Data: World Bank & IEA WEO 2025
           </p>
         </div>
 

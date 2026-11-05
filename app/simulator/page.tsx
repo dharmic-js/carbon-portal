@@ -817,7 +817,7 @@ export default function SimulatorPage() {
                 </div>
               </div>
               <span className="text-xs font-mono font-medium text-slate-500 whitespace-nowrap">
-                Cell 18 HiGHS
+                HiGHS LP Solver
               </span>
             </div>
           )}
@@ -828,16 +828,16 @@ export default function SimulatorPage() {
               <h3 className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                 Portfolio Performance Metrics
               </h3>
-              <span className="text-xs text-slate-400">Logic: notebook Cell 18</span>
+              <span className="text-xs text-slate-400">HiGHS Optimal Plan</span>
             </div>
             <KpiCards cards={kpiCards} columns={3} />
           </section>
 
-          {/* 3. 📊 CHART B2: Marginal Abatement Cost Curve (Cell 17) */}
+          {/* 3. 📊 CHART B2: Marginal Abatement Cost Curve */}
           <section className="space-y-3">
             <ChartCard
               title="Chart B2: Marginal Abatement Cost Curve (MACC)"
-              cellNumber={17}
+              sourceText="Data: EDGAR_2026_GHG, IRENA Renewable Power 2024, IPCC AR6 WGIII & IEA WEO 2025"
               insight={`For the ${scenario} scenario, ${formatMt(maccSelfPayMt, 1, "Mt")} of the total ${formatMt(maccTotalMt, 1, "Mt")} available abatement potential pays for itself even with zero carbon price (negative net cost per tonne). Bars below scenario dashed lines pay for themselves under carbon markets.`}
               headerAction={
                 <div className="text-xs font-semibold px-2.5 py-1 rounded bg-teal-50 border border-teal-200 text-teal-800">
@@ -951,11 +951,11 @@ export default function SimulatorPage() {
             </ChartCard>
           </section>
 
-          {/* 4. 📊 CHART B3: "Where the money goes" (Cells 18 & 21) */}
+          {/* 4. 📊 CHART B3: "Where the money goes" */}
           <section className="space-y-4">
             <ChartCard
               title="Chart B3: Recommended Portfolio Allocation & Impact"
-              cellNumber="18 & 21"
+              sourceText="Data: EDGAR_2026_GHG (European Commission JRC) & Project Database · HiGHS LP Solution"
               insight="The optimal linear allocation balances capital limits across countries with high-abatement project types. Red dashed line indicates the strict country exposure cap."
             >
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -1133,11 +1133,11 @@ export default function SimulatorPage() {
             </div>
           </section>
 
-          {/* 5. 📊 CHART B4: Strategy Comparison (Cell 19) */}
+          {/* 5. 📊 CHART B4: Strategy Comparison */}
           <section className="space-y-4">
             <ChartCard
               title="Chart B4: Strategy Comparison — Value of Analytics vs Heuristics"
-              cellNumber={19}
+              sourceText="Data: EDGAR_2026_GHG & Benchmark Strategy Framework · HiGHS LP Evaluation"
               insight={`The impact-optimised linear program avoids ${strategyUplift}× more emissions than an uncalibrated equal split rule across the 33 markets for the exact same budget.`}
             >
               <div className="space-y-6">
@@ -1258,11 +1258,11 @@ export default function SimulatorPage() {
             </ChartCard>
           </section>
 
-          {/* 6. 📊 CHART B5: Carbon-Price Risk (Cell 20) */}
+          {/* 6. 📊 CHART B5: Carbon-Price Risk */}
           <section className="space-y-4">
             <ChartCard
               title="Chart B5: Carbon-Price Risk — Re-Valuing the Same Recommended Plan"
-              cellNumber={20}
+              sourceText="Data: IEA Global Energy & Climate Model (Scenario Prices) & World Bank State of Carbon Pricing 2026"
               insight="Testing the exact recommended plan across the 3 future pricing trajectories demonstrates value resilience: the plan generates significant returns under pledged climate policies, with upside accelerating under Net Zero."
             >
               <div className="h-[420px]">
@@ -1291,7 +1291,7 @@ export default function SimulatorPage() {
                 Stress Tests & Policy Levers (Tables Only)
               </h3>
               <p className="text-xs text-slate-500">
-                Logic: notebook Cell 20 · (a) Budget frontier scale curve · (b) De-risking levers for emerging markets
+                (a) Budget frontier scale curve · (b) De-risking levers for emerging markets · Data: Model Parameters
               </p>
             </div>
 
@@ -1397,7 +1397,7 @@ export default function SimulatorPage() {
                 </h3>
               </div>
               <span className="text-xs text-slate-400 font-mono">
-                Rule-Based Engine · Cell 21
+                Rule-Based Recommendations Engine
               </span>
             </div>
 

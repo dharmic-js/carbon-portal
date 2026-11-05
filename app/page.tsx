@@ -64,7 +64,7 @@ export default function HomePage() {
       <div className="text-center max-w-4xl mx-auto space-y-4">
         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-teal-50 border border-teal-200 text-teal-800 text-xs font-semibold uppercase tracking-wider">
           <Zap className="w-3.5 h-3.5 text-teal-600" />
-          <span>Applied Python Business Analytics Project</span>
+          <span>Introduction to Python Programming (IPP)</span>
         </div>
 
         <h1 className="text-3xl sm:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight">
@@ -214,3 +214,4 @@ export default function HomePage() {
     </div>
   );
 }
+

@@ -1,10 +1,9 @@
 import React from "react";
-import Link from "next/link";
-import { Info } from "lucide-react";
 
 interface ChartCardProps {
   title: string;
   cellNumber?: number | string;
+  showCellNumber?: boolean;
   sourceText?: string;
   insight?: string;
   children: React.ReactNode;
@@ -15,33 +14,28 @@ interface ChartCardProps {
 export default function ChartCard({
   title,
   cellNumber,
+  showCellNumber = true,
   sourceText,
   insight,
   children,
   headerAction,
   className = "",
 }: ChartCardProps) {
-  const defaultSource = cellNumber
+  const defaultSource = sourceText
+    ? sourceText
+    : cellNumber && showCellNumber
     ? `Source: project notebook, Cell ${cellNumber} · Data: EDGAR_2026_GHG (European Commission JRC)`
-    : sourceText || "Data: EDGAR_2026_GHG (European Commission JRC)";
+    : "Data: EDGAR_2026_GHG (European Commission JRC)";
 
   return (
     <div
-      className={`bg-white rounded-xl border border-slate-200 shadow-sm p-4 sm:p-6 transition hover:shadow-md ${className}`}
+      className={`bg-white rounded-xl border border-slate-200/90 shadow-sm p-4 sm:p-6 transition hover:shadow-md ${className}`}
     >
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-3">
         <div className="flex items-center gap-2">
           <h3 className="text-lg font-semibold text-slate-900 tracking-tight">
             {title}
           </h3>
-          <Link
-            href="/chart-sources"
-            title="View chart lineage and source details"
-            className="inline-flex items-center gap-1 text-xs text-teal-700 bg-teal-50 hover:bg-teal-100 px-2 py-0.5 rounded-full font-medium transition"
-          >
-            <Info className="w-3 h-3" />
-            <span>ⓘ source</span>
-          </Link>
         </div>
         {headerAction && <div>{headerAction}</div>}
       </div>
@@ -60,3 +54,4 @@ export default function ChartCard({
     </div>
   );
 }
+

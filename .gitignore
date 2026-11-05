@@ -26,3 +26,5 @@ dist/
 # TypeScript cache
 *.tsbuildinfo
 next-env.d.ts
+
+.vercel

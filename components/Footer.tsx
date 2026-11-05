@@ -1,5 +1,4 @@
 import React from "react";
-import Link from "next/link";
 import { Github, ExternalLink, ShieldAlert } from "lucide-react";
 
 export default function Footer() {
@@ -17,7 +16,7 @@ export default function Footer() {
               </span>
             </div>
             <p className="text-xs text-slate-400 leading-relaxed">
-              Applied Python business-analytics project evaluating 33 country–sector markets
+              Introduction to Python Programming (IPP) business-analytics project evaluating 33 country–sector markets
               across 1990–2025 and simulating optimal capital allocation for a US$10 billion
               decarbonisation fund.
             </p>
@@ -51,10 +50,10 @@ export default function Footer() {
               Project & Team
             </h4>
             <p className="text-xs text-slate-400 mb-2">
-              Course: Introduction to Python (Applied Python Project)
+              Course: Introduction to Python Programming (IPP)
             </p>
             <p className="text-xs text-slate-300 font-medium mb-3">
-              Team: <span className="text-teal-400">[Name 1]</span> · <span className="text-teal-400">[Name 2]</span>
+              Team: <span className="text-teal-400 font-medium">Anuj Gupta</span> · <span className="text-teal-400 font-medium">Dhruv Malhotra</span>
             </p>
             <div className="flex items-center gap-3">
               <a
@@ -67,12 +66,6 @@ export default function Footer() {
                 <span>GitHub Repository</span>
                 <ExternalLink className="w-3 h-3 text-slate-400" />
               </a>
-              <Link
-                href="/chart-sources"
-                className="text-xs text-teal-400 hover:underline"
-              >
-                Chart Sources ⓘ
-              </Link>
             </div>
           </div>
         </div>
@@ -88,7 +81,7 @@ export default function Footer() {
 
         <div className="flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-2">
           <span>
-            Applied Python Project · Data: EDGAR_2026_GHG (European Commission JRC), World Bank, IEA, IRENA, IPCC · Illustrative fund — not investment advice
+            Introduction to Python Programming (IPP) · Data: EDGAR_2026_GHG (European Commission JRC), World Bank, IEA, IRENA, IPCC · Illustrative fund — not investment advice
           </span>
           <span>MIT License</span>
         </div>
