@@ -55,11 +55,10 @@ export default function Navbar() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className={`inline-flex items-center gap-1.5 px-3 py-2 text-sm font-medium rounded-lg transition ${
-                    isActive
+                  className={`inline-flex items-center gap-1.5 px-3 py-2 text-sm font-medium rounded-lg transition ${isActive
                       ? "bg-slate-100 text-teal-900 font-semibold"
                       : "text-slate-600 hover:text-slate-900 hover:bg-slate-50"
-                  }`}
+                    }`}
                 >
                   <Icon className={`w-4 h-4 ${isActive ? "text-teal-700" : "text-slate-400"}`} />
                   <span>{link.label}</span>
@@ -95,11 +94,10 @@ export default function Navbar() {
                 key={link.href}
                 href={link.href}
                 onClick={() => setIsOpen(false)}
-                className={`flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium transition ${
-                  isActive
+                className={`flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium transition ${isActive
                     ? "bg-teal-50 text-teal-900 font-semibold"
                     : "text-slate-700 hover:bg-slate-50"
-                }`}
+                  }`}
               >
                 <Icon className={`w-5 h-5 ${isActive ? "text-teal-700" : "text-slate-400"}`} />
                 <span>{link.label}</span>

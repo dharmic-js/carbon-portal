@@ -50,6 +50,12 @@ export default function PlotlyChart({ className, ...props }: PlotlyChartProps) {
     paper_bgcolor: "transparent",
     plot_bgcolor: "transparent",
     margin: { l: 50, r: 30, t: 40, b: 50, ...(props.layout?.margin || {}) },
+    legend: {
+      bgcolor: "transparent",
+      bordercolor: "transparent",
+      borderwidth: 0,
+      ...(props.layout?.legend || {}),
+    },
     hoverlabel: {
       bgcolor: "#0f172a",
       bordercolor: "#334155",
@@ -61,22 +67,8 @@ export default function PlotlyChart({ className, ...props }: PlotlyChartProps) {
 
   const mergedConfig = {
     responsive: true,
-    displayModeBar: "hover",
+    displayModeBar: false,
     displaylogo: false,
-    modeBarButtonsToRemove: [
-      "lasso2d",
-      "select2d",
-      "toggleSpikelines",
-      "hoverClosestCartesian",
-      "hoverCompareCartesian",
-    ],
-    toImageButtonOptions: {
-      format: "png",
-      filename: "carbon_chart",
-      height: 600,
-      width: 1000,
-      scale: 2,
-    },
     ...props.config,
   };
 

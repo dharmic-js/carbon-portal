@@ -22,29 +22,16 @@
   }
 }
 
-/* Clean minimal hover-only styling for Plotly modebar */
-.js-plotly-plot .plotly .modebar {
-  top: 6px !important;
-  right: 6px !important;
-  background: rgba(255, 255, 255, 0.9) !important;
-  backdrop-filter: blur(6px) !important;
-  border-radius: 6px !important;
-  padding: 2px 4px !important;
-  border: 1px solid rgba(226, 232, 240, 0.8) !important;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06) !important;
-  transition: opacity 0.2s ease-in-out !important;
-}
-
-.js-plotly-plot .plotly .modebar-btn {
-  padding: 3px !important;
-}
-
-.js-plotly-plot .plotly .modebar-btn svg {
-  fill: #64748b !important;
-}
-
-.js-plotly-plot .plotly .modebar-btn:hover svg {
-  fill: #0f766e !important;
+/* Ensure modebar containers and empty toolbar overlays never render */
+.js-plotly-plot .plotly .modebar,
+.js-plotly-plot .plotly .modebar-container,
+.js-plotly-plot .plotly .modebar--hover {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+  width: 0 !important;
+  height: 0 !important;
 }
 
 /* Custom scrollbars for clean table horizontal scrolling */

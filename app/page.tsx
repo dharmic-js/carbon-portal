@@ -119,8 +119,8 @@ export default function HomePage() {
             <span className="text-xs font-bold text-teal-700 uppercase tracking-widest block">
               Approved Problem Statement
             </span>
-            <blockquote className="text-lg sm:text-xl font-medium text-slate-900 leading-snug">
-              &ldquo;How have emissions changed across Agriculture, Industrial Combustion and Power Industry in 11 countries from 1990 to 2025, and which sectors and countries should be prioritised for decarbonisation?&rdquo;
+            <blockquote className="text-lg sm:text-xl font-medium text-slate-900 leading-relaxed">
+              &ldquo;How have emissions changed across Agriculture, Industrial Combustion and Power Industry in 11 countries from 1990 to 2025, and how should a US$10 billion climate investment fund allocate its capital across these countries and sectors to avoid at least 25 million tonnes of CO₂e a year at the best financial return, within its risk limits and under uncertain future carbon prices&rdquo;
             </blockquote>
             <p className="text-sm text-slate-500 pt-1">
               Dataset: 1,188 observations spanning Australia, Brazil, Canada, China, Germany, India, Indonesia, Japan, South Africa, United Kingdom, and the United States across 36 years.

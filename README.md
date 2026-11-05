@@ -16,7 +16,7 @@ The **Carbon Strategy & Investment Optimizer** bridges academic climate-data ana
 
 ### Problem Statement
 
-> **"How have emissions changed across Agriculture, Industrial Combustion and Power Industry in 11 countries from 1990 to 2025, and which sectors and countries should be prioritised for decarbonisation?"**
+> **"How have emissions changed across Agriculture, Industrial Combustion and Power Industry in 11 countries from 1990 to 2025, and how should a US$10 billion climate investment fund allocate its capital across these countries and sectors to avoid at least 25 million tonnes of CO₂e a year at the best financial return, within its risk limits and under uncertain future carbon prices"**
 
 - **Part A: Historical Analysis (Notebook Cells 1–10):** Rigorous data cleaning, quality auditing, and 8 visual perspectives exploring emissions trends, structural shifts, and country trajectories.
 - **Part B: Capital Allocation Engine (Notebook Cells 11–23):** An illustrative US$10 billion climate investment fund optimizing financial returns and carbon impact across 80 candidate projects spanning 33 country–sector markets. Risk guardrails include: max 30% per country, max 30% per technology, min 20% per sector.
